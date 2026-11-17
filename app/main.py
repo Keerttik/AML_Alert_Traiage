@@ -278,6 +278,7 @@ if st.session_state.user_role == "AML Analyst (L1/L2)":
             label_visibility="collapsed"
         )
         st.session_state.current_alert_id = selected_display
+        current_alert_id = selected_display
 
         # Run Triage Engine
         analysis_result = engine.triage_alert(st.session_state.current_alert_id)
@@ -441,9 +442,9 @@ if st.session_state.user_role == "AML Analyst (L1/L2)":
             with st.expander("💬 Ask Copilot About This Case (Instant Q&A)"):
                 col_q, col_b = st.columns([3, 1])
                 with col_q:
-                    analyst_q = st.text_input("Ask a question:", placeholder="e.g. Compare total cash deposits to declared monthly income", label_visibility="collapsed")
+                    analyst_q = st.text_input("Ask a question:", placeholder="e.g. Compare total cash deposits to declared monthly income", label_visibility="collapsed", key=f"q_in_{current_alert_id}")
                 with col_b:
-                    ask_btn = st.button("Ask Copilot", use_container_width=True)
+                    ask_btn = st.button("Ask Copilot", use_container_width=True, key=f"btn_ask_{current_alert_id}")
 
                 if ask_btn and analyst_q:
                     ans_res = conversational_assistant.answer_query(analyst_q, context)
