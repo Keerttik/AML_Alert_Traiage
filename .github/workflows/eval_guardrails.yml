@@ -11,6 +11,9 @@ jobs:
     name: Evaluate Compliance Guardrails (Zero False Negatives)
     runs-on: ubuntu-latest
 
+    env:
+      PYTHONPATH: .
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -28,7 +31,7 @@ jobs:
 
       - name: Run Unit Test Suite
         run: |
-          pytest tests/ -v
+          python -m pytest tests/ -v
 
       - name: Execute 75-Scenario Golden Evaluation Harness
         run: |
@@ -36,19 +39,4 @@ jobs:
 
       - name: Validate Regulatory Guardrail Gates
         run: |
-          python -c "
-          import json, sys
-          report = json.load(open('evaluation/eval_report_latest.json'))
-          m = report['metrics']
-          print(f'Evaluating Guardrail Gate: Missed Escalations = {m[\"missed_escalations_count\"]}')
-          if m['missed_escalations_count'] > 0:
-              print('FATAL REGULATORY BREACH: Missed escalations must be exactly 0!')
-              sys.exit(1)
-          if m['citation_accuracy_percent'] < 95.0:
-              print(f'CITATION BREACH: Accuracy {m[\"citation_accuracy_percent\"]}% < 95%')
-              sys.exit(1)
-          if m['hallucination_rate_percent'] > 2.0:
-              print(f'HALLUCINATION BREACH: Rate {m[\"hallucination_rate_percent\"]}% > 2%')
-              sys.exit(1)
-          print('ALL REGULATORY GUARDRAILS PASSED SUCCESSFULLY.')
-          "
+          python evaluation/validate_ci_gate.py
