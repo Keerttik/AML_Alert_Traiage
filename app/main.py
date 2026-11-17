@@ -180,7 +180,7 @@ with st.sidebar:
         "Compliance Manager / BSA Officer", 
         "Internal Auditor / Examiner",
         "💼 Executive PM Portfolio & Case Study",
-        "📑 PRD & System Specs (Interview Showcase)"
+        "📑 Product Specs & Architecture Library"
     ]
     current_idx = role_options.index(st.session_state.user_role) if st.session_state.user_role in role_options else 0
     selected_role = st.selectbox("Role View:", options=role_options, index=current_idx)
@@ -244,7 +244,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==============================================================================
-# PM SPECIFICATION & SYSTEM DESIGN ARTIFACTS (INTERVIEW SHOWCASE)
+# PM SPECIFICATION & SYSTEM DESIGN ARTIFACTS
 # ==============================================================================
 DOCS_CATALOG = {
     "PRD_AML_Copilot.md": {
@@ -303,10 +303,10 @@ DOCS_CATALOG = {
         ]
     },
     "docs/PM_INTERVIEW_DEFENSE_GUIDE.md": {
-        "title": "🎯 PM Interview Defense Guide",
-        "badge": "Interview Playbook",
+        "title": "🎯 Product Strategy & Decision Defense Guide",
+        "badge": "Strategy & Governance",
         "color": "#ea580c",
-        "description": "Frameworks, behavioral stories, and system design answers for defending AI product choices in interviews.",
+        "description": "Comprehensive design rationales and architectural decisions addressing regulatory examiners, AI safety, and compliance leadership.",
         "takeaways": [
             "How to defend the Human-in-the-Loop decision against autonomous closure proposals.",
             "How to explain calibration for asymmetric downside risk (regulatory fines vs analyst triage minutes).",
@@ -345,7 +345,7 @@ def render_document_library(embedded: bool = False):
                 <div>
                     <h2 style="color:#ffffff; margin:0 0 6px 0; font-size:22px; font-weight:700;">📑 Product Management & System Architecture Library</h2>
                     <div style="font-size:13px; color:#94a3b8; line-height:1.5;">
-                        Official product requirements, AI architecture specs, regulatory filings (Fed SR 11-7), and interview defense playbooks.
+                        Official product requirements, AI architecture specs, regulatory filings (Fed SR 11-7), and operational governance documentation.
                     </div>
                 </div>
                 <div>
@@ -399,7 +399,7 @@ def render_document_library(embedded: bool = False):
         </div>
         <div style="font-size:14px; font-weight:600; color:#1e293b; margin-bottom:6px;">{meta['description']}</div>
         <div style="font-size:13px; color:#334155; line-height:1.6;">
-            <b>💡 Interviewer Key Takeaways:</b>
+            <b>💡 Executive & Regulatory Takeaways:</b>
             <ul style="margin:4px 0 0 16px; padding:0;">
                 {"".join([f"<li>{t}</li>" for t in meta['takeaways']])}
             </ul>
@@ -436,10 +436,10 @@ elif st.session_state.user_role == "Compliance Manager / BSA Officer":
     tabs = st.tabs(["📈 Pilot A/B Performance", "🗂️ Team Queue Oversight", "⚖️ Override Analysis", "📡 Model Drift Telemetry"])
 elif st.session_state.user_role == "Internal Auditor / Examiner":
     tabs = st.tabs(["🔒 Tamper-Evident Audit Trail", "⚖️ Regulatory Anti-Bias Audit", "📋 Case Inspector"])
-elif st.session_state.user_role == "📑 PRD & System Specs (Interview Showcase)":
+elif st.session_state.user_role == "📑 Product Specs & Architecture Library":
     tabs = []
 else:
-    tabs = st.tabs(["📊 Executive Summary & ROI", "📑 PRD & System Specs", "🛡️ Guardrails & Architecture", "📈 Pilot Findings", "💬 PM Interview Defense"])
+    tabs = st.tabs(["📊 Executive Summary & ROI", "📑 PRD & System Specs", "🛡️ Guardrails & Architecture", "📈 Pilot Findings", "💬 Strategy & Governance Defense"])
 
 # ==============================================================================
 # VIEW 1: AML ANALYST TRIAGE WORKSPACE
@@ -915,9 +915,9 @@ elif st.session_state.user_role == "Internal Auditor / Examiner":
                 st.json(record)
 
 # ==============================================================================
-# VIEW 4: 📑 PRD & SYSTEM SPECS (INTERVIEW SHOWCASE - DEDICATED FULL VIEW)
+# VIEW 4: 📑 PRODUCT SPECS & ARCHITECTURE LIBRARY (DEDICATED FULL VIEW)
 # ==============================================================================
-elif st.session_state.user_role == "📑 PRD & System Specs (Interview Showcase)":
+elif st.session_state.user_role == "📑 Product Specs & Architecture Library":
     render_document_library(embedded=False)
 
 # ==============================================================================
@@ -990,7 +990,7 @@ else:
             st.dataframe(pd.DataFrame(sim_data["weekly_trends"]), use_container_width=True, hide_index=True)
 
     with tabs[4]:
-        st.subheader("💬 PM Interview Defense & Talking Points")
+        st.subheader("💬 Product Strategy & Architecture Defense")
         with st.expander("Q1: Why build a copilot instead of autonomous alert closure?"):
             st.write("Under Bank Secrecy Act (BSA) regulations, banks carry strict statutory liability for missed reports. An autonomous agent that auto-closes alerts creates unacceptable tail-risk liability. Human-in-the-loop captures ~60% time savings without stripping legal accountability.")
         with st.expander("Q2: How did you prevent hallucinations?"):
