@@ -1,0 +1,3554 @@
+[
+  {
+    "customer_id": "PILOT-CUST-0001",
+    "name": "Pilot Subject 001 (US)",
+    "account_number": "ACCT-8800001",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 51646.8,
+    "declared_monthly_income": 4303.9,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5164.68,
+      "withdrawals": 4734.29
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0002",
+    "name": "Pilot Subject 002 (US)",
+    "account_number": "ACCT-8800002",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 20193.96,
+    "declared_monthly_income": 1682.83,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 2019.4,
+      "withdrawals": 1851.11
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0003",
+    "name": "Pilot Subject 003 (US)",
+    "account_number": "ACCT-8800003",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 70111.92,
+    "declared_monthly_income": 5842.66,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7011.19,
+      "withdrawals": 6426.93
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0004",
+    "name": "Pilot Subject 004 (US)",
+    "account_number": "ACCT-8800004",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 87079.44,
+    "declared_monthly_income": 7256.62,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8707.94,
+      "withdrawals": 7982.28
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0005",
+    "name": "Pilot Subject 005 (US)",
+    "account_number": "ACCT-8800005",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 87578.88,
+    "declared_monthly_income": 7298.24,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8757.89,
+      "withdrawals": 8028.06
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0006",
+    "name": "Pilot Subject 006 (US)",
+    "account_number": "ACCT-8800006",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 183610.56,
+    "declared_monthly_income": 15300.88,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 18361.06,
+      "withdrawals": 16830.97
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0007",
+    "name": "Pilot Subject 007 (US)",
+    "account_number": "ACCT-8800007",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 116304.12,
+    "declared_monthly_income": 9692.01,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 11630.41,
+      "withdrawals": 10661.21
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0008",
+    "name": "Pilot Subject 008 (US)",
+    "account_number": "ACCT-8800008",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 253687.92,
+    "declared_monthly_income": 21140.66,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 25368.79,
+      "withdrawals": 23254.73
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0009",
+    "name": "Pilot Subject 009 (Unknown)",
+    "account_number": "ACCT-8800009",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0010",
+    "name": "Pilot Subject 010 (US)",
+    "account_number": "ACCT-8800010",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 64245.36,
+    "declared_monthly_income": 5353.78,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6424.54,
+      "withdrawals": 5889.16
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0011",
+    "name": "Pilot Subject 011 (Jordan)",
+    "account_number": "ACCT-8800011",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 167906.76,
+    "declared_monthly_income": 13992.23,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 16790.68,
+      "withdrawals": 15391.45
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0012",
+    "name": "Pilot Subject 012 (US)",
+    "account_number": "ACCT-8800012",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1325309.28,
+    "declared_monthly_income": 110442.44,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 132530.93,
+      "withdrawals": 121486.68
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0013",
+    "name": "Pilot Subject 013 (US)",
+    "account_number": "ACCT-8800013",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 57676.68,
+    "declared_monthly_income": 4806.39,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5767.67,
+      "withdrawals": 5287.03
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0014",
+    "name": "Pilot Subject 014 (US)",
+    "account_number": "ACCT-8800014",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 19785.48,
+    "declared_monthly_income": 1648.79,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1978.55,
+      "withdrawals": 1813.67
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0015",
+    "name": "Pilot Subject 015 (US)",
+    "account_number": "ACCT-8800015",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 64390.44,
+    "declared_monthly_income": 5365.87,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6439.04,
+      "withdrawals": 5902.46
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0016",
+    "name": "Pilot Subject 016 (US)",
+    "account_number": "ACCT-8800016",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 72261.24,
+    "declared_monthly_income": 6021.77,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7226.12,
+      "withdrawals": 6623.95
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0017",
+    "name": "Pilot Subject 017 (US)",
+    "account_number": "ACCT-8800017",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 99689.4,
+    "declared_monthly_income": 8307.45,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9968.94,
+      "withdrawals": 9138.2
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0018",
+    "name": "Pilot Subject 018 (US)",
+    "account_number": "ACCT-8800018",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 171561.12,
+    "declared_monthly_income": 14296.76,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 17156.11,
+      "withdrawals": 15726.44
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0019",
+    "name": "Pilot Subject 019 (US)",
+    "account_number": "ACCT-8800019",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 130373.52,
+    "declared_monthly_income": 10864.46,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 13037.35,
+      "withdrawals": 11950.91
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0020",
+    "name": "Pilot Subject 020 (US)",
+    "account_number": "ACCT-8800020",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 205780.08,
+    "declared_monthly_income": 17148.34,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 20578.01,
+      "withdrawals": 18863.17
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0021",
+    "name": "Pilot Subject 021 (Unknown)",
+    "account_number": "ACCT-8800021",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0022",
+    "name": "Pilot Subject 022 (US)",
+    "account_number": "ACCT-8800022",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 72998.52,
+    "declared_monthly_income": 6083.21,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7299.85,
+      "withdrawals": 6691.53
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0023",
+    "name": "Pilot Subject 023 (Jordan)",
+    "account_number": "ACCT-8800023",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 177735.48,
+    "declared_monthly_income": 14811.29,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 17773.55,
+      "withdrawals": 16292.42
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0024",
+    "name": "Pilot Subject 024 (US)",
+    "account_number": "ACCT-8800024",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1190892.12,
+    "declared_monthly_income": 99241.01,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 119089.21,
+      "withdrawals": 109165.11
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0025",
+    "name": "Pilot Subject 025 (US)",
+    "account_number": "ACCT-8800025",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 45339.36,
+    "declared_monthly_income": 3778.28,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 4533.94,
+      "withdrawals": 4156.11
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0026",
+    "name": "Pilot Subject 026 (US)",
+    "account_number": "ACCT-8800026",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 18919.08,
+    "declared_monthly_income": 1576.59,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1891.91,
+      "withdrawals": 1734.25
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0027",
+    "name": "Pilot Subject 027 (US)",
+    "account_number": "ACCT-8800027",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 65661.48,
+    "declared_monthly_income": 5471.79,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6566.15,
+      "withdrawals": 6018.97
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0028",
+    "name": "Pilot Subject 028 (US)",
+    "account_number": "ACCT-8800028",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 82192.44,
+    "declared_monthly_income": 6849.37,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8219.24,
+      "withdrawals": 7534.31
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0029",
+    "name": "Pilot Subject 029 (US)",
+    "account_number": "ACCT-8800029",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 108062.76,
+    "declared_monthly_income": 9005.23,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 10806.28,
+      "withdrawals": 9905.75
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0030",
+    "name": "Pilot Subject 030 (US)",
+    "account_number": "ACCT-8800030",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 198307.56,
+    "declared_monthly_income": 16525.63,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 19830.76,
+      "withdrawals": 18178.19
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0031",
+    "name": "Pilot Subject 031 (US)",
+    "account_number": "ACCT-8800031",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 115734.84,
+    "declared_monthly_income": 9644.57,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 11573.48,
+      "withdrawals": 10609.03
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0032",
+    "name": "Pilot Subject 032 (US)",
+    "account_number": "ACCT-8800032",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 269086.08,
+    "declared_monthly_income": 22423.84,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 26908.61,
+      "withdrawals": 24666.22
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0033",
+    "name": "Pilot Subject 033 (Unknown)",
+    "account_number": "ACCT-8800033",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0034",
+    "name": "Pilot Subject 034 (US)",
+    "account_number": "ACCT-8800034",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 69247.2,
+    "declared_monthly_income": 5770.6,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6924.72,
+      "withdrawals": 6347.66
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0035",
+    "name": "Pilot Subject 035 (Jordan)",
+    "account_number": "ACCT-8800035",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 173501.28,
+    "declared_monthly_income": 14458.44,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 17350.13,
+      "withdrawals": 15904.28
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0036",
+    "name": "Pilot Subject 036 (US)",
+    "account_number": "ACCT-8800036",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1201619.88,
+    "declared_monthly_income": 100134.99,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 120161.99,
+      "withdrawals": 110148.49
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0037",
+    "name": "Pilot Subject 037 (US)",
+    "account_number": "ACCT-8800037",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 43322.64,
+    "declared_monthly_income": 3610.22,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 4332.26,
+      "withdrawals": 3971.24
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0038",
+    "name": "Pilot Subject 038 (US)",
+    "account_number": "ACCT-8800038",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 19881.48,
+    "declared_monthly_income": 1656.79,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1988.15,
+      "withdrawals": 1822.47
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0039",
+    "name": "Pilot Subject 039 (US)",
+    "account_number": "ACCT-8800039",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 63728.88,
+    "declared_monthly_income": 5310.74,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6372.89,
+      "withdrawals": 5841.81
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0040",
+    "name": "Pilot Subject 040 (US)",
+    "account_number": "ACCT-8800040",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 84453.96,
+    "declared_monthly_income": 7037.83,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8445.4,
+      "withdrawals": 7741.61
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0041",
+    "name": "Pilot Subject 041 (US)",
+    "account_number": "ACCT-8800041",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 90391.32,
+    "declared_monthly_income": 7532.61,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9039.13,
+      "withdrawals": 8285.87
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0042",
+    "name": "Pilot Subject 042 (US)",
+    "account_number": "ACCT-8800042",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 191964.24,
+    "declared_monthly_income": 15997.02,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 19196.42,
+      "withdrawals": 17596.72
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0043",
+    "name": "Pilot Subject 043 (US)",
+    "account_number": "ACCT-8800043",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 117506.16,
+    "declared_monthly_income": 9792.18,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 11750.62,
+      "withdrawals": 10771.4
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0044",
+    "name": "Pilot Subject 044 (US)",
+    "account_number": "ACCT-8800044",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 228521.28,
+    "declared_monthly_income": 19043.44,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 22852.13,
+      "withdrawals": 20947.78
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0045",
+    "name": "Pilot Subject 045 (Unknown)",
+    "account_number": "ACCT-8800045",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0046",
+    "name": "Pilot Subject 046 (US)",
+    "account_number": "ACCT-8800046",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 61595.76,
+    "declared_monthly_income": 5132.98,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6159.58,
+      "withdrawals": 5646.28
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0047",
+    "name": "Pilot Subject 047 (Jordan)",
+    "account_number": "ACCT-8800047",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 192419.88,
+    "declared_monthly_income": 16034.99,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 19241.99,
+      "withdrawals": 17638.49
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0048",
+    "name": "Pilot Subject 048 (US)",
+    "account_number": "ACCT-8800048",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1267862.16,
+    "declared_monthly_income": 105655.18,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 126786.22,
+      "withdrawals": 116220.7
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0049",
+    "name": "Pilot Subject 049 (US)",
+    "account_number": "ACCT-8800049",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 49947.84,
+    "declared_monthly_income": 4162.32,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 4994.78,
+      "withdrawals": 4578.55
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0050",
+    "name": "Pilot Subject 050 (US)",
+    "account_number": "ACCT-8800050",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 17407.2,
+    "declared_monthly_income": 1450.6,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1740.72,
+      "withdrawals": 1595.66
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0051",
+    "name": "Pilot Subject 051 (US)",
+    "account_number": "ACCT-8800051",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 69029.76,
+    "declared_monthly_income": 5752.48,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6902.98,
+      "withdrawals": 6327.73
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0052",
+    "name": "Pilot Subject 052 (US)",
+    "account_number": "ACCT-8800052",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 88304.28,
+    "declared_monthly_income": 7358.69,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8830.43,
+      "withdrawals": 8094.56
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0053",
+    "name": "Pilot Subject 053 (US)",
+    "account_number": "ACCT-8800053",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 94185.48,
+    "declared_monthly_income": 7848.79,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9418.55,
+      "withdrawals": 8633.67
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0054",
+    "name": "Pilot Subject 054 (US)",
+    "account_number": "ACCT-8800054",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 198439.68,
+    "declared_monthly_income": 16536.64,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 19843.97,
+      "withdrawals": 18190.3
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0055",
+    "name": "Pilot Subject 055 (US)",
+    "account_number": "ACCT-8800055",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 143835.48,
+    "declared_monthly_income": 11986.29,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 14383.55,
+      "withdrawals": 13184.92
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0056",
+    "name": "Pilot Subject 056 (US)",
+    "account_number": "ACCT-8800056",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 220773.0,
+    "declared_monthly_income": 18397.75,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 22077.3,
+      "withdrawals": 20237.53
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0057",
+    "name": "Pilot Subject 057 (Unknown)",
+    "account_number": "ACCT-8800057",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0058",
+    "name": "Pilot Subject 058 (US)",
+    "account_number": "ACCT-8800058",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 82781.64,
+    "declared_monthly_income": 6898.47,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8278.16,
+      "withdrawals": 7588.32
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0059",
+    "name": "Pilot Subject 059 (Jordan)",
+    "account_number": "ACCT-8800059",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 198271.32,
+    "declared_monthly_income": 16522.61,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 19827.13,
+      "withdrawals": 18174.87
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0060",
+    "name": "Pilot Subject 060 (US)",
+    "account_number": "ACCT-8800060",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1230054.36,
+    "declared_monthly_income": 102504.53,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 123005.44,
+      "withdrawals": 112754.98
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0061",
+    "name": "Pilot Subject 061 (US)",
+    "account_number": "ACCT-8800061",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 55644.6,
+    "declared_monthly_income": 4637.05,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5564.46,
+      "withdrawals": 5100.76
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0062",
+    "name": "Pilot Subject 062 (US)",
+    "account_number": "ACCT-8800062",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 19462.2,
+    "declared_monthly_income": 1621.85,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1946.22,
+      "withdrawals": 1784.04
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0063",
+    "name": "Pilot Subject 063 (US)",
+    "account_number": "ACCT-8800063",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 62026.56,
+    "declared_monthly_income": 5168.88,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6202.66,
+      "withdrawals": 5685.77
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0064",
+    "name": "Pilot Subject 064 (US)",
+    "account_number": "ACCT-8800064",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 75772.56,
+    "declared_monthly_income": 6314.38,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7577.26,
+      "withdrawals": 6945.82
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0065",
+    "name": "Pilot Subject 065 (US)",
+    "account_number": "ACCT-8800065",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 93629.04,
+    "declared_monthly_income": 7802.42,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9362.9,
+      "withdrawals": 8582.66
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0066",
+    "name": "Pilot Subject 066 (US)",
+    "account_number": "ACCT-8800066",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 180226.08,
+    "declared_monthly_income": 15018.84,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 18022.61,
+      "withdrawals": 16520.72
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0067",
+    "name": "Pilot Subject 067 (US)",
+    "account_number": "ACCT-8800067",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 145555.32,
+    "declared_monthly_income": 12129.61,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 14555.53,
+      "withdrawals": 13342.57
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0068",
+    "name": "Pilot Subject 068 (US)",
+    "account_number": "ACCT-8800068",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 230128.56,
+    "declared_monthly_income": 19177.38,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 23012.86,
+      "withdrawals": 21095.12
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0069",
+    "name": "Pilot Subject 069 (Unknown)",
+    "account_number": "ACCT-8800069",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0070",
+    "name": "Pilot Subject 070 (US)",
+    "account_number": "ACCT-8800070",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 81279.48,
+    "declared_monthly_income": 6773.29,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8127.95,
+      "withdrawals": 7450.62
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0071",
+    "name": "Pilot Subject 071 (Jordan)",
+    "account_number": "ACCT-8800071",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 169727.76,
+    "declared_monthly_income": 14143.98,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 16972.78,
+      "withdrawals": 15558.38
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0072",
+    "name": "Pilot Subject 072 (US)",
+    "account_number": "ACCT-8800072",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1294588.08,
+    "declared_monthly_income": 107882.34,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 129458.81,
+      "withdrawals": 118670.57
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0073",
+    "name": "Pilot Subject 073 (US)",
+    "account_number": "ACCT-8800073",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 57205.08,
+    "declared_monthly_income": 4767.09,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5720.51,
+      "withdrawals": 5243.8
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0074",
+    "name": "Pilot Subject 074 (US)",
+    "account_number": "ACCT-8800074",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 17107.92,
+    "declared_monthly_income": 1425.66,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1710.79,
+      "withdrawals": 1568.23
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0075",
+    "name": "Pilot Subject 075 (US)",
+    "account_number": "ACCT-8800075",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 61936.68,
+    "declared_monthly_income": 5161.39,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6193.67,
+      "withdrawals": 5677.53
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0076",
+    "name": "Pilot Subject 076 (US)",
+    "account_number": "ACCT-8800076",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 92209.2,
+    "declared_monthly_income": 7684.1,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9220.92,
+      "withdrawals": 8452.51
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0077",
+    "name": "Pilot Subject 077 (US)",
+    "account_number": "ACCT-8800077",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 108366.24,
+    "declared_monthly_income": 9030.52,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 10836.62,
+      "withdrawals": 9933.57
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0078",
+    "name": "Pilot Subject 078 (US)",
+    "account_number": "ACCT-8800078",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 164653.8,
+    "declared_monthly_income": 13721.15,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 16465.38,
+      "withdrawals": 15093.27
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0079",
+    "name": "Pilot Subject 079 (US)",
+    "account_number": "ACCT-8800079",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 145780.56,
+    "declared_monthly_income": 12148.38,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 14578.06,
+      "withdrawals": 13363.22
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0080",
+    "name": "Pilot Subject 080 (US)",
+    "account_number": "ACCT-8800080",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 217221.6,
+    "declared_monthly_income": 18101.8,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 21722.16,
+      "withdrawals": 19911.98
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0081",
+    "name": "Pilot Subject 081 (Unknown)",
+    "account_number": "ACCT-8800081",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0082",
+    "name": "Pilot Subject 082 (US)",
+    "account_number": "ACCT-8800082",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 65015.28,
+    "declared_monthly_income": 5417.94,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6501.53,
+      "withdrawals": 5959.73
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0083",
+    "name": "Pilot Subject 083 (Jordan)",
+    "account_number": "ACCT-8800083",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 204970.44,
+    "declared_monthly_income": 17080.87,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 20497.04,
+      "withdrawals": 18788.96
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0084",
+    "name": "Pilot Subject 084 (US)",
+    "account_number": "ACCT-8800084",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1329971.64,
+    "declared_monthly_income": 110830.97,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 132997.16,
+      "withdrawals": 121914.07
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0085",
+    "name": "Pilot Subject 085 (US)",
+    "account_number": "ACCT-8800085",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 56815.2,
+    "declared_monthly_income": 4734.6,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5681.52,
+      "withdrawals": 5208.06
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0086",
+    "name": "Pilot Subject 086 (US)",
+    "account_number": "ACCT-8800086",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 18955.68,
+    "declared_monthly_income": 1579.64,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1895.57,
+      "withdrawals": 1737.6
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0087",
+    "name": "Pilot Subject 087 (US)",
+    "account_number": "ACCT-8800087",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 63052.2,
+    "declared_monthly_income": 5254.35,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6305.22,
+      "withdrawals": 5779.79
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0088",
+    "name": "Pilot Subject 088 (US)",
+    "account_number": "ACCT-8800088",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 84368.28,
+    "declared_monthly_income": 7030.69,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8436.83,
+      "withdrawals": 7733.76
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0089",
+    "name": "Pilot Subject 089 (US)",
+    "account_number": "ACCT-8800089",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 92786.16,
+    "declared_monthly_income": 7732.18,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9278.62,
+      "withdrawals": 8505.4
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0090",
+    "name": "Pilot Subject 090 (US)",
+    "account_number": "ACCT-8800090",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 194577.0,
+    "declared_monthly_income": 16214.75,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 19457.7,
+      "withdrawals": 17836.23
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0091",
+    "name": "Pilot Subject 091 (US)",
+    "account_number": "ACCT-8800091",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 139115.16,
+    "declared_monthly_income": 11592.93,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 13911.52,
+      "withdrawals": 12752.22
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0092",
+    "name": "Pilot Subject 092 (US)",
+    "account_number": "ACCT-8800092",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 213262.8,
+    "declared_monthly_income": 17771.9,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 21326.28,
+      "withdrawals": 19549.09
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0093",
+    "name": "Pilot Subject 093 (Unknown)",
+    "account_number": "ACCT-8800093",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0094",
+    "name": "Pilot Subject 094 (US)",
+    "account_number": "ACCT-8800094",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 71070.96,
+    "declared_monthly_income": 5922.58,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7107.1,
+      "withdrawals": 6514.84
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0095",
+    "name": "Pilot Subject 095 (Jordan)",
+    "account_number": "ACCT-8800095",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 173802.0,
+    "declared_monthly_income": 14483.5,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 17380.2,
+      "withdrawals": 15931.85
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0096",
+    "name": "Pilot Subject 096 (US)",
+    "account_number": "ACCT-8800096",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1339922.04,
+    "declared_monthly_income": 111660.17,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 133992.2,
+      "withdrawals": 122826.19
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0097",
+    "name": "Pilot Subject 097 (US)",
+    "account_number": "ACCT-8800097",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 44106.6,
+    "declared_monthly_income": 3675.55,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 4410.66,
+      "withdrawals": 4043.11
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0098",
+    "name": "Pilot Subject 098 (US)",
+    "account_number": "ACCT-8800098",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 19247.04,
+    "declared_monthly_income": 1603.92,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1924.7,
+      "withdrawals": 1764.31
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0099",
+    "name": "Pilot Subject 099 (US)",
+    "account_number": "ACCT-8800099",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 79360.68,
+    "declared_monthly_income": 6613.39,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7936.07,
+      "withdrawals": 7274.73
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0100",
+    "name": "Pilot Subject 100 (US)",
+    "account_number": "ACCT-8800100",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 88373.28,
+    "declared_monthly_income": 7364.44,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8837.33,
+      "withdrawals": 8100.88
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0101",
+    "name": "Pilot Subject 101 (US)",
+    "account_number": "ACCT-8800101",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 92291.4,
+    "declared_monthly_income": 7690.95,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9229.14,
+      "withdrawals": 8460.05
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0102",
+    "name": "Pilot Subject 102 (US)",
+    "account_number": "ACCT-8800102",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 185946.0,
+    "declared_monthly_income": 15495.5,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 18594.6,
+      "withdrawals": 17045.05
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0103",
+    "name": "Pilot Subject 103 (US)",
+    "account_number": "ACCT-8800103",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 155018.76,
+    "declared_monthly_income": 12918.23,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 15501.88,
+      "withdrawals": 14210.05
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0104",
+    "name": "Pilot Subject 104 (US)",
+    "account_number": "ACCT-8800104",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 252724.32,
+    "declared_monthly_income": 21060.36,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 25272.43,
+      "withdrawals": 23166.4
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0105",
+    "name": "Pilot Subject 105 (Unknown)",
+    "account_number": "ACCT-8800105",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0106",
+    "name": "Pilot Subject 106 (US)",
+    "account_number": "ACCT-8800106",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 65456.52,
+    "declared_monthly_income": 5454.71,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6545.65,
+      "withdrawals": 6000.18
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0107",
+    "name": "Pilot Subject 107 (Jordan)",
+    "account_number": "ACCT-8800107",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 181495.08,
+    "declared_monthly_income": 15124.59,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 18149.51,
+      "withdrawals": 16637.05
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0108",
+    "name": "Pilot Subject 108 (US)",
+    "account_number": "ACCT-8800108",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1128833.04,
+    "declared_monthly_income": 94069.42,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 112883.3,
+      "withdrawals": 103476.36
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0109",
+    "name": "Pilot Subject 109 (US)",
+    "account_number": "ACCT-8800109",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 45426.84,
+    "declared_monthly_income": 3785.57,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 4542.68,
+      "withdrawals": 4164.13
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0110",
+    "name": "Pilot Subject 110 (US)",
+    "account_number": "ACCT-8800110",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 16872.96,
+    "declared_monthly_income": 1406.08,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1687.3,
+      "withdrawals": 1546.69
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0111",
+    "name": "Pilot Subject 111 (US)",
+    "account_number": "ACCT-8800111",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 74834.64,
+    "declared_monthly_income": 6236.22,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7483.46,
+      "withdrawals": 6859.84
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0112",
+    "name": "Pilot Subject 112 (US)",
+    "account_number": "ACCT-8800112",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 83076.0,
+    "declared_monthly_income": 6923.0,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8307.6,
+      "withdrawals": 7615.3
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0113",
+    "name": "Pilot Subject 113 (US)",
+    "account_number": "ACCT-8800113",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 102581.16,
+    "declared_monthly_income": 8548.43,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 10258.12,
+      "withdrawals": 9403.27
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0114",
+    "name": "Pilot Subject 114 (US)",
+    "account_number": "ACCT-8800114",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 182588.4,
+    "declared_monthly_income": 15215.7,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 18258.84,
+      "withdrawals": 16737.27
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0115",
+    "name": "Pilot Subject 115 (US)",
+    "account_number": "ACCT-8800115",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 134500.8,
+    "declared_monthly_income": 11208.4,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 13450.08,
+      "withdrawals": 12329.24
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0116",
+    "name": "Pilot Subject 116 (US)",
+    "account_number": "ACCT-8800116",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 240804.48,
+    "declared_monthly_income": 20067.04,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 24080.45,
+      "withdrawals": 22073.74
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0117",
+    "name": "Pilot Subject 117 (Unknown)",
+    "account_number": "ACCT-8800117",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0118",
+    "name": "Pilot Subject 118 (US)",
+    "account_number": "ACCT-8800118",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 80352.24,
+    "declared_monthly_income": 6696.02,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8035.22,
+      "withdrawals": 7365.62
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0119",
+    "name": "Pilot Subject 119 (Jordan)",
+    "account_number": "ACCT-8800119",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 164854.68,
+    "declared_monthly_income": 13737.89,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 16485.47,
+      "withdrawals": 15111.68
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0120",
+    "name": "Pilot Subject 120 (US)",
+    "account_number": "ACCT-8800120",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1241752.68,
+    "declared_monthly_income": 103479.39,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 124175.27,
+      "withdrawals": 113827.33
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0121",
+    "name": "Pilot Subject 121 (US)",
+    "account_number": "ACCT-8800121",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 52476.96,
+    "declared_monthly_income": 4373.08,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5247.7,
+      "withdrawals": 4810.39
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0122",
+    "name": "Pilot Subject 122 (US)",
+    "account_number": "ACCT-8800122",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 20013.72,
+    "declared_monthly_income": 1667.81,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 2001.37,
+      "withdrawals": 1834.59
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0123",
+    "name": "Pilot Subject 123 (US)",
+    "account_number": "ACCT-8800123",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 66349.2,
+    "declared_monthly_income": 5529.1,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6634.92,
+      "withdrawals": 6082.01
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0124",
+    "name": "Pilot Subject 124 (US)",
+    "account_number": "ACCT-8800124",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 89033.4,
+    "declared_monthly_income": 7419.45,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8903.34,
+      "withdrawals": 8161.4
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0125",
+    "name": "Pilot Subject 125 (US)",
+    "account_number": "ACCT-8800125",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 82105.8,
+    "declared_monthly_income": 6842.15,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8210.58,
+      "withdrawals": 7526.36
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0126",
+    "name": "Pilot Subject 126 (US)",
+    "account_number": "ACCT-8800126",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 196012.44,
+    "declared_monthly_income": 16334.37,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 19601.24,
+      "withdrawals": 17967.81
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0127",
+    "name": "Pilot Subject 127 (US)",
+    "account_number": "ACCT-8800127",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 151265.76,
+    "declared_monthly_income": 12605.48,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 15126.58,
+      "withdrawals": 13866.03
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0128",
+    "name": "Pilot Subject 128 (US)",
+    "account_number": "ACCT-8800128",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 245096.76,
+    "declared_monthly_income": 20424.73,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 24509.68,
+      "withdrawals": 22467.2
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0129",
+    "name": "Pilot Subject 129 (Unknown)",
+    "account_number": "ACCT-8800129",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0130",
+    "name": "Pilot Subject 130 (US)",
+    "account_number": "ACCT-8800130",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 69452.4,
+    "declared_monthly_income": 5787.7,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6945.24,
+      "withdrawals": 6366.47
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0131",
+    "name": "Pilot Subject 131 (Jordan)",
+    "account_number": "ACCT-8800131",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 217644.24,
+    "declared_monthly_income": 18137.02,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 21764.42,
+      "withdrawals": 19950.72
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0132",
+    "name": "Pilot Subject 132 (US)",
+    "account_number": "ACCT-8800132",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1139079.96,
+    "declared_monthly_income": 94923.33,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 113908.0,
+      "withdrawals": 104415.66
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0133",
+    "name": "Pilot Subject 133 (US)",
+    "account_number": "ACCT-8800133",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 54926.4,
+    "declared_monthly_income": 4577.2,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5492.64,
+      "withdrawals": 5034.92
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0134",
+    "name": "Pilot Subject 134 (US)",
+    "account_number": "ACCT-8800134",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 18906.96,
+    "declared_monthly_income": 1575.58,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1890.7,
+      "withdrawals": 1733.14
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0135",
+    "name": "Pilot Subject 135 (US)",
+    "account_number": "ACCT-8800135",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 70165.44,
+    "declared_monthly_income": 5847.12,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7016.54,
+      "withdrawals": 6431.83
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0136",
+    "name": "Pilot Subject 136 (US)",
+    "account_number": "ACCT-8800136",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 77235.84,
+    "declared_monthly_income": 6436.32,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7723.58,
+      "withdrawals": 7079.95
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0137",
+    "name": "Pilot Subject 137 (US)",
+    "account_number": "ACCT-8800137",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 107499.84,
+    "declared_monthly_income": 8958.32,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 10749.98,
+      "withdrawals": 9854.15
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0138",
+    "name": "Pilot Subject 138 (US)",
+    "account_number": "ACCT-8800138",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 179915.04,
+    "declared_monthly_income": 14992.92,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 17991.5,
+      "withdrawals": 16492.21
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0139",
+    "name": "Pilot Subject 139 (US)",
+    "account_number": "ACCT-8800139",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 148179.24,
+    "declared_monthly_income": 12348.27,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 14817.92,
+      "withdrawals": 13583.1
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0140",
+    "name": "Pilot Subject 140 (US)",
+    "account_number": "ACCT-8800140",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 220503.84,
+    "declared_monthly_income": 18375.32,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 22050.38,
+      "withdrawals": 20212.85
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0141",
+    "name": "Pilot Subject 141 (Unknown)",
+    "account_number": "ACCT-8800141",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0142",
+    "name": "Pilot Subject 142 (US)",
+    "account_number": "ACCT-8800142",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 71186.64,
+    "declared_monthly_income": 5932.22,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7118.66,
+      "withdrawals": 6525.44
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0143",
+    "name": "Pilot Subject 143 (Jordan)",
+    "account_number": "ACCT-8800143",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 211722.84,
+    "declared_monthly_income": 17643.57,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 21172.28,
+      "withdrawals": 19407.93
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0144",
+    "name": "Pilot Subject 144 (US)",
+    "account_number": "ACCT-8800144",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1193582.4,
+    "declared_monthly_income": 99465.2,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 119358.24,
+      "withdrawals": 109411.72
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0145",
+    "name": "Pilot Subject 145 (US)",
+    "account_number": "ACCT-8800145",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 47827.32,
+    "declared_monthly_income": 3985.61,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 4782.73,
+      "withdrawals": 4384.17
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0146",
+    "name": "Pilot Subject 146 (US)",
+    "account_number": "ACCT-8800146",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 18235.2,
+    "declared_monthly_income": 1519.6,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1823.52,
+      "withdrawals": 1671.56
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0147",
+    "name": "Pilot Subject 147 (US)",
+    "account_number": "ACCT-8800147",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 67449.0,
+    "declared_monthly_income": 5620.75,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6744.9,
+      "withdrawals": 6182.83
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0148",
+    "name": "Pilot Subject 148 (US)",
+    "account_number": "ACCT-8800148",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 73113.84,
+    "declared_monthly_income": 6092.82,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7311.38,
+      "withdrawals": 6702.1
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0149",
+    "name": "Pilot Subject 149 (US)",
+    "account_number": "ACCT-8800149",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 99062.52,
+    "declared_monthly_income": 8255.21,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9906.25,
+      "withdrawals": 9080.73
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0150",
+    "name": "Pilot Subject 150 (US)",
+    "account_number": "ACCT-8800150",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 205821.84,
+    "declared_monthly_income": 17151.82,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 20582.18,
+      "withdrawals": 18867.0
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0151",
+    "name": "Pilot Subject 151 (US)",
+    "account_number": "ACCT-8800151",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 145039.08,
+    "declared_monthly_income": 12086.59,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 14503.91,
+      "withdrawals": 13295.25
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0152",
+    "name": "Pilot Subject 152 (US)",
+    "account_number": "ACCT-8800152",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 252966.96,
+    "declared_monthly_income": 21080.58,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 25296.7,
+      "withdrawals": 23188.64
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0153",
+    "name": "Pilot Subject 153 (Unknown)",
+    "account_number": "ACCT-8800153",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0154",
+    "name": "Pilot Subject 154 (US)",
+    "account_number": "ACCT-8800154",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 65788.92,
+    "declared_monthly_income": 5482.41,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6578.89,
+      "withdrawals": 6030.65
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0155",
+    "name": "Pilot Subject 155 (Jordan)",
+    "account_number": "ACCT-8800155",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 212817.96,
+    "declared_monthly_income": 17734.83,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 21281.8,
+      "withdrawals": 19508.31
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0156",
+    "name": "Pilot Subject 156 (US)",
+    "account_number": "ACCT-8800156",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1320540.72,
+    "declared_monthly_income": 110045.06,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 132054.07,
+      "withdrawals": 121049.57
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0157",
+    "name": "Pilot Subject 157 (US)",
+    "account_number": "ACCT-8800157",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 50080.08,
+    "declared_monthly_income": 4173.34,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5008.01,
+      "withdrawals": 4590.67
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0158",
+    "name": "Pilot Subject 158 (US)",
+    "account_number": "ACCT-8800158",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 17516.04,
+    "declared_monthly_income": 1459.67,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1751.6,
+      "withdrawals": 1605.64
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0159",
+    "name": "Pilot Subject 159 (US)",
+    "account_number": "ACCT-8800159",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 64437.24,
+    "declared_monthly_income": 5369.77,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6443.72,
+      "withdrawals": 5906.75
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0160",
+    "name": "Pilot Subject 160 (US)",
+    "account_number": "ACCT-8800160",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 92104.8,
+    "declared_monthly_income": 7675.4,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9210.48,
+      "withdrawals": 8442.94
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0161",
+    "name": "Pilot Subject 161 (US)",
+    "account_number": "ACCT-8800161",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 101860.2,
+    "declared_monthly_income": 8488.35,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 10186.02,
+      "withdrawals": 9337.19
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0162",
+    "name": "Pilot Subject 162 (US)",
+    "account_number": "ACCT-8800162",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 160033.92,
+    "declared_monthly_income": 13336.16,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 16003.39,
+      "withdrawals": 14669.78
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0163",
+    "name": "Pilot Subject 163 (US)",
+    "account_number": "ACCT-8800163",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 151188.84,
+    "declared_monthly_income": 12599.07,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 15118.88,
+      "withdrawals": 13858.98
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0164",
+    "name": "Pilot Subject 164 (US)",
+    "account_number": "ACCT-8800164",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 231827.52,
+    "declared_monthly_income": 19318.96,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 23182.75,
+      "withdrawals": 21250.86
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0165",
+    "name": "Pilot Subject 165 (Unknown)",
+    "account_number": "ACCT-8800165",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0166",
+    "name": "Pilot Subject 166 (US)",
+    "account_number": "ACCT-8800166",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 81042.12,
+    "declared_monthly_income": 6753.51,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8104.21,
+      "withdrawals": 7428.86
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0167",
+    "name": "Pilot Subject 167 (Jordan)",
+    "account_number": "ACCT-8800167",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 169209.0,
+    "declared_monthly_income": 14100.75,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 16920.9,
+      "withdrawals": 15510.83
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0168",
+    "name": "Pilot Subject 168 (US)",
+    "account_number": "ACCT-8800168",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1311350.64,
+    "declared_monthly_income": 109279.22,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 131135.06,
+      "withdrawals": 120207.14
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0169",
+    "name": "Pilot Subject 169 (US)",
+    "account_number": "ACCT-8800169",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 47402.64,
+    "declared_monthly_income": 3950.22,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 4740.26,
+      "withdrawals": 4345.24
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0170",
+    "name": "Pilot Subject 170 (US)",
+    "account_number": "ACCT-8800170",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 17501.16,
+    "declared_monthly_income": 1458.43,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1750.12,
+      "withdrawals": 1604.27
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0171",
+    "name": "Pilot Subject 171 (US)",
+    "account_number": "ACCT-8800171",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 77155.56,
+    "declared_monthly_income": 6429.63,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7715.56,
+      "withdrawals": 7072.59
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0172",
+    "name": "Pilot Subject 172 (US)",
+    "account_number": "ACCT-8800172",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 86764.56,
+    "declared_monthly_income": 7230.38,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8676.46,
+      "withdrawals": 7953.42
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0173",
+    "name": "Pilot Subject 173 (US)",
+    "account_number": "ACCT-8800173",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 94425.0,
+    "declared_monthly_income": 7868.75,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9442.5,
+      "withdrawals": 8655.62
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0174",
+    "name": "Pilot Subject 174 (US)",
+    "account_number": "ACCT-8800174",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 184154.88,
+    "declared_monthly_income": 15346.24,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 18415.49,
+      "withdrawals": 16880.86
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0175",
+    "name": "Pilot Subject 175 (US)",
+    "account_number": "ACCT-8800175",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 148148.64,
+    "declared_monthly_income": 12345.72,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 14814.86,
+      "withdrawals": 13580.29
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0176",
+    "name": "Pilot Subject 176 (US)",
+    "account_number": "ACCT-8800176",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 247129.2,
+    "declared_monthly_income": 20594.1,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 24712.92,
+      "withdrawals": 22653.51
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0177",
+    "name": "Pilot Subject 177 (Unknown)",
+    "account_number": "ACCT-8800177",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0178",
+    "name": "Pilot Subject 178 (US)",
+    "account_number": "ACCT-8800178",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 72879.48,
+    "declared_monthly_income": 6073.29,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7287.95,
+      "withdrawals": 6680.62
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0179",
+    "name": "Pilot Subject 179 (Jordan)",
+    "account_number": "ACCT-8800179",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 203171.88,
+    "declared_monthly_income": 16930.99,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 20317.19,
+      "withdrawals": 18624.09
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0180",
+    "name": "Pilot Subject 180 (US)",
+    "account_number": "ACCT-8800180",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1052655.0,
+    "declared_monthly_income": 87721.25,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 105265.5,
+      "withdrawals": 96493.38
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0181",
+    "name": "Pilot Subject 181 (US)",
+    "account_number": "ACCT-8800181",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 54413.88,
+    "declared_monthly_income": 4534.49,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5441.39,
+      "withdrawals": 4987.94
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0182",
+    "name": "Pilot Subject 182 (US)",
+    "account_number": "ACCT-8800182",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 18847.44,
+    "declared_monthly_income": 1570.62,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1884.74,
+      "withdrawals": 1727.68
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0183",
+    "name": "Pilot Subject 183 (US)",
+    "account_number": "ACCT-8800183",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 64107.36,
+    "declared_monthly_income": 5342.28,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6410.74,
+      "withdrawals": 5876.51
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0184",
+    "name": "Pilot Subject 184 (US)",
+    "account_number": "ACCT-8800184",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 74042.52,
+    "declared_monthly_income": 6170.21,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7404.25,
+      "withdrawals": 6787.23
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0185",
+    "name": "Pilot Subject 185 (US)",
+    "account_number": "ACCT-8800185",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 108478.92,
+    "declared_monthly_income": 9039.91,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 10847.89,
+      "withdrawals": 9943.9
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0186",
+    "name": "Pilot Subject 186 (US)",
+    "account_number": "ACCT-8800186",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 167300.88,
+    "declared_monthly_income": 13941.74,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 16730.09,
+      "withdrawals": 15335.91
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0187",
+    "name": "Pilot Subject 187 (US)",
+    "account_number": "ACCT-8800187",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 148222.2,
+    "declared_monthly_income": 12351.85,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 14822.22,
+      "withdrawals": 13587.04
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0188",
+    "name": "Pilot Subject 188 (US)",
+    "account_number": "ACCT-8800188",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 235294.08,
+    "declared_monthly_income": 19607.84,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 23529.41,
+      "withdrawals": 21568.62
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0189",
+    "name": "Pilot Subject 189 (Unknown)",
+    "account_number": "ACCT-8800189",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Pilot dataset customer mapped from archetype 'Missing KYC Data'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0190",
+    "name": "Pilot Subject 190 (US)",
+    "account_number": "ACCT-8800190",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 68362.68,
+    "declared_monthly_income": 5696.89,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 6836.27,
+      "withdrawals": 6266.58
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0191",
+    "name": "Pilot Subject 191 (Jordan)",
+    "account_number": "ACCT-8800191",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 216500.76,
+    "declared_monthly_income": 18041.73,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 21650.08,
+      "withdrawals": 19845.9
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0192",
+    "name": "Pilot Subject 192 (US)",
+    "account_number": "ACCT-8800192",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1183916.4,
+    "declared_monthly_income": 98659.7,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 118391.64,
+      "withdrawals": 108525.67
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0193",
+    "name": "Pilot Subject 193 (US)",
+    "account_number": "ACCT-8800193",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 49722.72,
+    "declared_monthly_income": 4143.56,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 4972.27,
+      "withdrawals": 4557.92
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0194",
+    "name": "Pilot Subject 194 (US)",
+    "account_number": "ACCT-8800194",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 16787.64,
+    "declared_monthly_income": 1398.97,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 1678.76,
+      "withdrawals": 1538.87
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0195",
+    "name": "Pilot Subject 195 (US)",
+    "account_number": "ACCT-8800195",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 76907.76,
+    "declared_monthly_income": 6408.98,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7690.78,
+      "withdrawals": 7049.88
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0196",
+    "name": "Pilot Subject 196 (US)",
+    "account_number": "ACCT-8800196",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 72331.32,
+    "declared_monthly_income": 6027.61,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7233.13,
+      "withdrawals": 6630.37
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0197",
+    "name": "Pilot Subject 197 (US)",
+    "account_number": "ACCT-8800197",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 83336.64,
+    "declared_monthly_income": 6944.72,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8333.66,
+      "withdrawals": 7639.19
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0198",
+    "name": "Pilot Subject 198 (US)",
+    "account_number": "ACCT-8800198",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 201259.68,
+    "declared_monthly_income": 16771.64,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 20125.97,
+      "withdrawals": 18448.8
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0199",
+    "name": "Pilot Subject 199 (US)",
+    "account_number": "ACCT-8800199",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 137336.76,
+    "declared_monthly_income": 11444.73,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 13733.68,
+      "withdrawals": 12589.2
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
+  },
+  {
+    "customer_id": "PILOT-CUST-0200",
+    "name": "Pilot Subject 200 (US)",
+    "account_number": "ACCT-8800200",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 259421.76,
+    "declared_monthly_income": 21618.48,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 25942.18,
+      "withdrawals": 23780.33
+    },
+    "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
+  }
+]

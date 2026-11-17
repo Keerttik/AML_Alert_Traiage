@@ -1,0 +1,29 @@
+[
+  {
+    "entity_id": "WL-9012",
+    "name": "Belka Capital Holdings Ltd",
+    "list_type": "Sanctions / OFAC Equivalent",
+    "jurisdiction": "Cyprus / BVI",
+    "designation": "Shell entity tied to sanctioned trade facilitation network",
+    "date_listed": "2024-05-18",
+    "akas": ["Belka Holdings", "Belka Trade Int."]
+  },
+  {
+    "entity_id": "WL-8821",
+    "name": "Dr. Tariq Al-Mansoor",
+    "list_type": "PEP (Politically Exposed Person)",
+    "jurisdiction": "Jordan",
+    "designation": "Former senior government official in infrastructure ministry",
+    "date_listed": "2023-01-10",
+    "akas": ["Tariq Mansoor", "Tariq Al-Mansoor"]
+  },
+  {
+    "entity_id": "WL-7714",
+    "name": "Vanguard Oceanic Clearing Corp",
+    "list_type": "Adverse Media / High-Risk MSB",
+    "jurisdiction": "Panama",
+    "designation": "Unregistered Money Service Business under investigation for illicit remittance flows",
+    "date_listed": "2025-02-14",
+    "akas": ["Oceanic Clearing", "VOCC Panama"]
+  }
+]

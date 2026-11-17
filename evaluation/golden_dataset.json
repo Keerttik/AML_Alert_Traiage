@@ -1,0 +1,977 @@
+[
+  {
+    "case_id": "EVAL-001",
+    "alert_id": "ALT-2026-001042",
+    "archetype": "Classic Structuring",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Retail Store Clerk"
+    },
+    "notes": "Classic cash structuring below $10,000 threshold."
+  },
+  {
+    "case_id": "EVAL-002",
+    "alert_id": "ALT-2026-001043",
+    "archetype": "Pass-Through / Layering",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Unemployed / Student"
+    },
+    "notes": "Unemployed conduit account routing rapid six-figure wire offshore."
+  },
+  {
+    "case_id": "EVAL-003",
+    "alert_id": "ALT-2026-001044",
+    "archetype": "Income Inconsistency",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Freelance Graphic Designer"
+    },
+    "notes": "High check deposit velocity requiring source of wealth proof."
+  },
+  {
+    "case_id": "EVAL-004",
+    "alert_id": "ALT-2026-001045",
+    "archetype": "Dormant Account Spike",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Registered Nurse"
+    },
+    "notes": "Dormant savings account revived with Dubai wire and crypto liquidation."
+  },
+  {
+    "case_id": "EVAL-005",
+    "alert_id": "ALT-2026-001046",
+    "archetype": "Round-Trip Flow",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Digital Marketing Consultant"
+    },
+    "notes": "Circular transfer with loan cancellation memo requiring contract review."
+  },
+  {
+    "case_id": "EVAL-006",
+    "alert_id": "ALT-2026-001047",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Owner, Sharma Artisan Imports"
+    },
+    "notes": "Legitimate Q4 holiday sales surge through verified card processors."
+  },
+  {
+    "case_id": "EVAL-007",
+    "alert_id": "ALT-2026-001048",
+    "archetype": "Benign Isolated Pattern",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Software Engineer"
+    },
+    "notes": "Single cash deposit from private used vehicle sale with documentation."
+  },
+  {
+    "case_id": "EVAL-008",
+    "alert_id": "ALT-2026-001049",
+    "archetype": "Large Explained Transaction",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Commercial Real Estate Broker"
+    },
+    "notes": "Real estate escrow settlement with HUD-1 settlement sheet attached."
+  },
+  {
+    "case_id": "EVAL-009",
+    "alert_id": "ALT-2026-001050",
+    "archetype": "Missing KYC Data",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Low",
+    "customer_demographics": {
+      "nationality": "Unknown",
+      "gender": "Unknown",
+      "occupation": "Unknown"
+    },
+    "notes": "Missing customer baseline; must trigger Insufficient Evidence reasoning."
+  },
+  {
+    "case_id": "EVAL-010",
+    "alert_id": "ALT-2026-001051",
+    "archetype": "Mixed Signals",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Freelance Graphic Designer"
+    },
+    "notes": "Mixed payment channels with partial business invoices."
+  },
+  {
+    "case_id": "EVAL-011",
+    "alert_id": "ALT-2026-001052",
+    "archetype": "PEP Heightened Scrutiny",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Jordan",
+      "gender": "Male",
+      "occupation": "Former Deputy Minister"
+    },
+    "notes": "Politically exposed person requiring enhanced due diligence."
+  },
+  {
+    "case_id": "EVAL-012",
+    "alert_id": "ALT-2026-001053",
+    "archetype": "Watchlist Counterparty Match",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Corporate",
+      "occupation": "Freight & Warehousing"
+    },
+    "notes": "Sanctions hit from designated foreign entity Belka Capital Holdings Ltd."
+  },
+  {
+    "case_id": "EVAL-013",
+    "alert_id": "ALT-2026-001042",
+    "archetype": "Classic Structuring",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Canada",
+      "gender": "Male",
+      "occupation": "Retail Store Clerk"
+    },
+    "notes": "Structuring cash pattern replication."
+  },
+  {
+    "case_id": "EVAL-014",
+    "alert_id": "ALT-2026-001043",
+    "archetype": "Pass-Through / Layering",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "UK",
+      "gender": "Male",
+      "occupation": "Student"
+    },
+    "notes": "Rapid pass-through international conduit."
+  },
+  {
+    "case_id": "EVAL-015",
+    "alert_id": "ALT-2026-001047",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "India",
+      "gender": "Female",
+      "occupation": "Artisan Exporter"
+    },
+    "notes": "Seasonal merchant processing false positive."
+  },
+  {
+    "case_id": "EVAL-016",
+    "alert_id": "ALT-2026-001048",
+    "archetype": "Benign Isolated Pattern",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Mexico",
+      "gender": "Male",
+      "occupation": "Engineer"
+    },
+    "notes": "Documented vehicle sale benign cash deposit."
+  },
+  {
+    "case_id": "EVAL-017",
+    "alert_id": "ALT-2026-001049",
+    "archetype": "Large Explained Transaction",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Real Estate Broker"
+    },
+    "notes": "Escrow proceeds title disbursement."
+  },
+  {
+    "case_id": "EVAL-018",
+    "alert_id": "ALT-2026-001050",
+    "archetype": "Missing KYC Data",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Low",
+    "customer_demographics": {
+      "nationality": "Unknown",
+      "gender": "Unknown",
+      "occupation": "Unknown"
+    },
+    "notes": "Insufficient evidence fallback confirmation."
+  },
+  {
+    "case_id": "EVAL-019",
+    "alert_id": "ALT-2026-001045",
+    "archetype": "Dormant Account Spike",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Nigeria",
+      "gender": "Female",
+      "occupation": "Healthcare Professional"
+    },
+    "notes": "Dormant account reactivation to crypto."
+  },
+  {
+    "case_id": "EVAL-020",
+    "alert_id": "ALT-2026-001053",
+    "archetype": "Watchlist Counterparty Match",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Corporate",
+      "occupation": "Logistics"
+    },
+    "notes": "Sanctioned entity inflow."
+  },
+  {
+    "case_id": "EVAL-021",
+    "alert_id": "ALT-2026-001046",
+    "archetype": "Round-Trip Flow",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Consultant"
+    },
+    "notes": "Cancelled loan circular flow."
+  },
+  {
+    "case_id": "EVAL-022",
+    "alert_id": "ALT-2026-001044",
+    "archetype": "Income Inconsistency",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Germany",
+      "gender": "Female",
+      "occupation": "Designer"
+    },
+    "notes": "Cashier check deposit velocity."
+  },
+  {
+    "case_id": "EVAL-023",
+    "alert_id": "ALT-2026-001052",
+    "archetype": "PEP Heightened Scrutiny",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Jordan",
+      "gender": "Male",
+      "occupation": "Ex-Official"
+    },
+    "notes": "PEP statutory due diligence."
+  },
+  {
+    "case_id": "EVAL-024",
+    "alert_id": "ALT-2026-001042",
+    "archetype": "Classic Structuring",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Retail"
+    },
+    "notes": "Repeated sub-threshold deposits."
+  },
+  {
+    "case_id": "EVAL-025",
+    "alert_id": "ALT-2026-001047",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Retail Owner"
+    },
+    "notes": "Merchant card sales baseline."
+  },
+  {
+    "case_id": "EVAL-026",
+    "alert_id": "ALT-2026-001048",
+    "archetype": "Benign Isolated Pattern",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Engineer"
+    },
+    "notes": "Private transaction documentation verification."
+  },
+  {
+    "case_id": "EVAL-027",
+    "alert_id": "ALT-2026-001049",
+    "archetype": "Large Explained Transaction",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Broker"
+    },
+    "notes": "Title closing verification."
+  },
+  {
+    "case_id": "EVAL-028",
+    "alert_id": "ALT-2026-001043",
+    "archetype": "Pass-Through / Layering",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Unemployed"
+    },
+    "notes": "Offshore conduit rapid movement."
+  },
+  {
+    "case_id": "EVAL-029",
+    "alert_id": "ALT-2026-001045",
+    "archetype": "Dormant Account Spike",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Nurse"
+    },
+    "notes": "Dormant reactivation crypto conversion."
+  },
+  {
+    "case_id": "EVAL-030",
+    "alert_id": "ALT-2026-001053",
+    "archetype": "Watchlist Counterparty Match",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Corporate",
+      "occupation": "Freight"
+    },
+    "notes": "OFAC equivalent hit."
+  },
+  {
+    "case_id": "EVAL-031",
+    "alert_id": "ALT-2026-001046",
+    "archetype": "Round-Trip Flow",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Consultant"
+    },
+    "notes": "Loan return scrutiny."
+  },
+  {
+    "case_id": "EVAL-032",
+    "alert_id": "ALT-2026-001051",
+    "archetype": "Mixed Signals",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Designer"
+    },
+    "notes": "Mixed deposit types."
+  },
+  {
+    "case_id": "EVAL-033",
+    "alert_id": "ALT-2026-001050",
+    "archetype": "Missing KYC Data",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Low",
+    "customer_demographics": {
+      "nationality": "Unknown",
+      "gender": "Unknown",
+      "occupation": "Unknown"
+    },
+    "notes": "Missing KYC verification."
+  },
+  {
+    "case_id": "EVAL-034",
+    "alert_id": "ALT-2026-001042",
+    "archetype": "Classic Structuring",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Retail"
+    },
+    "notes": "Branch hopping structuring."
+  },
+  {
+    "case_id": "EVAL-035",
+    "alert_id": "ALT-2026-001047",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Retail"
+    },
+    "notes": "Holiday artisan business surge."
+  },
+  {
+    "case_id": "EVAL-036",
+    "alert_id": "ALT-2026-001048",
+    "archetype": "Benign Isolated Pattern",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Engineer"
+    },
+    "notes": "Private sale receipt verification."
+  },
+  {
+    "case_id": "EVAL-037",
+    "alert_id": "ALT-2026-001049",
+    "archetype": "Large Explained Transaction",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Real Estate"
+    },
+    "notes": "Deed and settlement sheet documentation."
+  },
+  {
+    "case_id": "EVAL-038",
+    "alert_id": "ALT-2026-001043",
+    "archetype": "Pass-Through / Layering",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Student"
+    },
+    "notes": "Layering through student account."
+  },
+  {
+    "case_id": "EVAL-039",
+    "alert_id": "ALT-2026-001045",
+    "archetype": "Dormant Account Spike",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Nurse"
+    },
+    "notes": "Dubai wire to crypto transfer."
+  },
+  {
+    "case_id": "EVAL-040",
+    "alert_id": "ALT-2026-001053",
+    "archetype": "Watchlist Counterparty Match",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Corporate",
+      "occupation": "Logistics"
+    },
+    "notes": "Belka Capital sanctions link."
+  },
+  {
+    "case_id": "EVAL-041",
+    "alert_id": "ALT-2026-001052",
+    "archetype": "PEP Heightened Scrutiny",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Jordan",
+      "gender": "Male",
+      "occupation": "Official"
+    },
+    "notes": "PEP source of wealth EDD."
+  },
+  {
+    "case_id": "EVAL-042",
+    "alert_id": "ALT-2026-001046",
+    "archetype": "Round-Trip Flow",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Consultant"
+    },
+    "notes": "Circular transfer verification."
+  },
+  {
+    "case_id": "EVAL-043",
+    "alert_id": "ALT-2026-001044",
+    "archetype": "Income Inconsistency",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Designer"
+    },
+    "notes": "Cashier check deposit spike."
+  },
+  {
+    "case_id": "EVAL-044",
+    "alert_id": "ALT-2026-001050",
+    "archetype": "Missing KYC Data",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Low",
+    "customer_demographics": {
+      "nationality": "Unknown",
+      "gender": "Unknown",
+      "occupation": "Unknown"
+    },
+    "notes": "Missing data fallback check."
+  },
+  {
+    "case_id": "EVAL-045",
+    "alert_id": "ALT-2026-001042",
+    "archetype": "Classic Structuring",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Retail"
+    },
+    "notes": "ATM structuring recurrence."
+  },
+  {
+    "case_id": "EVAL-046",
+    "alert_id": "ALT-2026-001047",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Female",
+      "occupation": "Retail"
+    },
+    "notes": "Verified merchant settlements."
+  },
+  {
+    "case_id": "EVAL-047",
+    "alert_id": "ALT-2026-001048",
+    "archetype": "Benign Isolated Pattern",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Engineer"
+    },
+    "notes": "Isolated private cash sale."
+  },
+  {
+    "case_id": "EVAL-048",
+    "alert_id": "ALT-2026-001049",
+    "archetype": "Large Explained Transaction",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Real Estate"
+    },
+    "notes": "Escrow closing proceeds documentation."
+  },
+  {
+    "case_id": "EVAL-049",
+    "alert_id": "ALT-2026-001043",
+    "archetype": "Pass-Through / Layering",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Male",
+      "occupation": "Student"
+    },
+    "notes": "Offshore wire velocity."
+  },
+  {
+    "case_id": "EVAL-050",
+    "alert_id": "ALT-2026-001053",
+    "archetype": "Watchlist Counterparty Match",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Corporate",
+      "occupation": "Freight"
+    },
+    "notes": "Sanctions entity wire transfer."
+  },
+  {
+    "case_id": "EVAL-051",
+    "alert_id": "ALT-2026-001042",
+    "archetype": "Classic Structuring",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Singapore",
+      "gender": "Female",
+      "occupation": "Retail Store Manager"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Structuring recurring at regional ATMs."
+  },
+  {
+    "case_id": "EVAL-052",
+    "alert_id": "ALT-2026-001043",
+    "archetype": "Pass-Through / Layering",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "UAE",
+      "gender": "Male",
+      "occupation": "Student"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Rapid wire routing through student account."
+  },
+  {
+    "case_id": "EVAL-053",
+    "alert_id": "ALT-2026-001044",
+    "archetype": "Income Inconsistency",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Brazil",
+      "gender": "Female",
+      "occupation": "Consultant"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Cashier check deposit spike vs declared baseline."
+  },
+  {
+    "case_id": "EVAL-054",
+    "alert_id": "ALT-2026-001045",
+    "archetype": "Dormant Account Spike",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "South Africa",
+      "gender": "Male",
+      "occupation": "Healthcare Worker"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Dormant account reactivation with offshore crypto outflow."
+  },
+  {
+    "case_id": "EVAL-055",
+    "alert_id": "ALT-2026-001046",
+    "archetype": "Round-Trip Flow",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Germany",
+      "gender": "Male",
+      "occupation": "Marketing Specialist"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Circular loan cancellation flow."
+  },
+  {
+    "case_id": "EVAL-056",
+    "alert_id": "ALT-2026-001047",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Japan",
+      "gender": "Female",
+      "occupation": "Artisan Retailer"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Q4 card processing holiday surge."
+  },
+  {
+    "case_id": "EVAL-057",
+    "alert_id": "ALT-2026-001048",
+    "archetype": "Benign Isolated Pattern",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "France",
+      "gender": "Male",
+      "occupation": "Software Architect"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Private automobile sale documentation verified."
+  },
+  {
+    "case_id": "EVAL-058",
+    "alert_id": "ALT-2026-001049",
+    "archetype": "Large Explained Transaction",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Australia",
+      "gender": "Female",
+      "occupation": "Commercial Broker"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Verified title company escrow closing."
+  },
+  {
+    "case_id": "EVAL-059",
+    "alert_id": "ALT-2026-001050",
+    "archetype": "Missing KYC Data",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Low",
+    "customer_demographics": {
+      "nationality": "Unknown",
+      "gender": "Unknown",
+      "occupation": "Unknown"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Incomplete profile requiring KYC outreach."
+  },
+  {
+    "case_id": "EVAL-060",
+    "alert_id": "ALT-2026-001051",
+    "archetype": "Mixed Signals",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Canada",
+      "gender": "Female",
+      "occupation": "Creative Director"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Multi-channel check and electronic deposit variance."
+  },
+  {
+    "case_id": "EVAL-061",
+    "alert_id": "ALT-2026-001052",
+    "archetype": "PEP Heightened Scrutiny",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Jordan",
+      "gender": "Male",
+      "occupation": "Infrastructure Advisor"
+    },
+    "notes": "Phase 2 Expanded Evaluation: PEP statutory enhanced due diligence review."
+  },
+  {
+    "case_id": "EVAL-062",
+    "alert_id": "ALT-2026-001053",
+    "archetype": "Watchlist Counterparty Match",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Corporate",
+      "occupation": "Global Freight"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Direct sanctions list counterparty link."
+  },
+  {
+    "case_id": "EVAL-063",
+    "alert_id": "ALT-2026-001042",
+    "archetype": "Classic Structuring",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Singapore",
+      "gender": "Female",
+      "occupation": "Retail Store Manager"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Structuring recurring at regional ATMs."
+  },
+  {
+    "case_id": "EVAL-064",
+    "alert_id": "ALT-2026-001043",
+    "archetype": "Pass-Through / Layering",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "UAE",
+      "gender": "Male",
+      "occupation": "Student"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Rapid wire routing through student account."
+  },
+  {
+    "case_id": "EVAL-065",
+    "alert_id": "ALT-2026-001044",
+    "archetype": "Income Inconsistency",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Brazil",
+      "gender": "Female",
+      "occupation": "Consultant"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Cashier check deposit spike vs declared baseline."
+  },
+  {
+    "case_id": "EVAL-066",
+    "alert_id": "ALT-2026-001045",
+    "archetype": "Dormant Account Spike",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "South Africa",
+      "gender": "Male",
+      "occupation": "Healthcare Worker"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Dormant account reactivation with offshore crypto outflow."
+  },
+  {
+    "case_id": "EVAL-067",
+    "alert_id": "ALT-2026-001046",
+    "archetype": "Round-Trip Flow",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Germany",
+      "gender": "Male",
+      "occupation": "Marketing Specialist"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Circular loan cancellation flow."
+  },
+  {
+    "case_id": "EVAL-068",
+    "alert_id": "ALT-2026-001047",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Japan",
+      "gender": "Female",
+      "occupation": "Artisan Retailer"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Q4 card processing holiday surge."
+  },
+  {
+    "case_id": "EVAL-069",
+    "alert_id": "ALT-2026-001048",
+    "archetype": "Benign Isolated Pattern",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "France",
+      "gender": "Male",
+      "occupation": "Software Architect"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Private automobile sale documentation verified."
+  },
+  {
+    "case_id": "EVAL-070",
+    "alert_id": "ALT-2026-001049",
+    "archetype": "Large Explained Transaction",
+    "expected_disposition": "Close",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Australia",
+      "gender": "Female",
+      "occupation": "Commercial Broker"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Verified title company escrow closing."
+  },
+  {
+    "case_id": "EVAL-071",
+    "alert_id": "ALT-2026-001050",
+    "archetype": "Missing KYC Data",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Low",
+    "customer_demographics": {
+      "nationality": "Unknown",
+      "gender": "Unknown",
+      "occupation": "Unknown"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Incomplete profile requiring KYC outreach."
+  },
+  {
+    "case_id": "EVAL-072",
+    "alert_id": "ALT-2026-001051",
+    "archetype": "Mixed Signals",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Canada",
+      "gender": "Female",
+      "occupation": "Creative Director"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Multi-channel check and electronic deposit variance."
+  },
+  {
+    "case_id": "EVAL-073",
+    "alert_id": "ALT-2026-001052",
+    "archetype": "PEP Heightened Scrutiny",
+    "expected_disposition": "Investigate",
+    "expected_min_confidence": "Medium",
+    "customer_demographics": {
+      "nationality": "Jordan",
+      "gender": "Male",
+      "occupation": "Infrastructure Advisor"
+    },
+    "notes": "Phase 2 Expanded Evaluation: PEP statutory enhanced due diligence review."
+  },
+  {
+    "case_id": "EVAL-074",
+    "alert_id": "ALT-2026-001053",
+    "archetype": "Watchlist Counterparty Match",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "US",
+      "gender": "Corporate",
+      "occupation": "Global Freight"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Direct sanctions list counterparty link."
+  },
+  {
+    "case_id": "EVAL-075",
+    "alert_id": "ALT-2026-001042",
+    "archetype": "Classic Structuring",
+    "expected_disposition": "Escalate",
+    "expected_min_confidence": "High",
+    "customer_demographics": {
+      "nationality": "Singapore",
+      "gender": "Female",
+      "occupation": "Retail Store Manager"
+    },
+    "notes": "Phase 2 Expanded Evaluation: Structuring recurring at regional ATMs."
+  }
+]

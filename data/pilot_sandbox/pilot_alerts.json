@@ -1,0 +1,3655 @@
+[
+  {
+    "alert_id": "ALT-PILOT-0001",
+    "customer_id": "PILOT-CUST-0001",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0001-01",
+      "TXN-P0001-02",
+      "TXN-P0001-03",
+      "TXN-P0001-04",
+      "TXN-P0001-05",
+      "TXN-P0001-06",
+      "TXN-P0001-07",
+      "TXN-P0001-08",
+      "TXN-P0001-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0002",
+    "customer_id": "PILOT-CUST-0002",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0002-01",
+      "TXN-P0002-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0003",
+    "customer_id": "PILOT-CUST-0003",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0003-01",
+      "TXN-P0003-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0004",
+    "customer_id": "PILOT-CUST-0004",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0004-01",
+      "TXN-P0004-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0005",
+    "customer_id": "PILOT-CUST-0005",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0005-01",
+      "TXN-P0005-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0006",
+    "customer_id": "PILOT-CUST-0006",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0006-01",
+      "TXN-P0006-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0007",
+    "customer_id": "PILOT-CUST-0007",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0007-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0008",
+    "customer_id": "PILOT-CUST-0008",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0008-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0009",
+    "customer_id": "PILOT-CUST-0009",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0009-01",
+      "TXN-P0009-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0010",
+    "customer_id": "PILOT-CUST-0010",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0010-01",
+      "TXN-P0010-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0011",
+    "customer_id": "PILOT-CUST-0011",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0011-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0012",
+    "customer_id": "PILOT-CUST-0012",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0012-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0013",
+    "customer_id": "PILOT-CUST-0013",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0013-01",
+      "TXN-P0013-02",
+      "TXN-P0013-03",
+      "TXN-P0013-04",
+      "TXN-P0013-05",
+      "TXN-P0013-06",
+      "TXN-P0013-07",
+      "TXN-P0013-08",
+      "TXN-P0013-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0014",
+    "customer_id": "PILOT-CUST-0014",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0014-01",
+      "TXN-P0014-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0015",
+    "customer_id": "PILOT-CUST-0015",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0015-01",
+      "TXN-P0015-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0016",
+    "customer_id": "PILOT-CUST-0016",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0016-01",
+      "TXN-P0016-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0017",
+    "customer_id": "PILOT-CUST-0017",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0017-01",
+      "TXN-P0017-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0018",
+    "customer_id": "PILOT-CUST-0018",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0018-01",
+      "TXN-P0018-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0019",
+    "customer_id": "PILOT-CUST-0019",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0019-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0020",
+    "customer_id": "PILOT-CUST-0020",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0020-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0021",
+    "customer_id": "PILOT-CUST-0021",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0021-01",
+      "TXN-P0021-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0022",
+    "customer_id": "PILOT-CUST-0022",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0022-01",
+      "TXN-P0022-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0023",
+    "customer_id": "PILOT-CUST-0023",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0023-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0024",
+    "customer_id": "PILOT-CUST-0024",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0024-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0025",
+    "customer_id": "PILOT-CUST-0025",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0025-01",
+      "TXN-P0025-02",
+      "TXN-P0025-03",
+      "TXN-P0025-04",
+      "TXN-P0025-05",
+      "TXN-P0025-06",
+      "TXN-P0025-07",
+      "TXN-P0025-08",
+      "TXN-P0025-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0026",
+    "customer_id": "PILOT-CUST-0026",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0026-01",
+      "TXN-P0026-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0027",
+    "customer_id": "PILOT-CUST-0027",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0027-01",
+      "TXN-P0027-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0028",
+    "customer_id": "PILOT-CUST-0028",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0028-01",
+      "TXN-P0028-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0029",
+    "customer_id": "PILOT-CUST-0029",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0029-01",
+      "TXN-P0029-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0030",
+    "customer_id": "PILOT-CUST-0030",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0030-01",
+      "TXN-P0030-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0031",
+    "customer_id": "PILOT-CUST-0031",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0031-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0032",
+    "customer_id": "PILOT-CUST-0032",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0032-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0033",
+    "customer_id": "PILOT-CUST-0033",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0033-01",
+      "TXN-P0033-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0034",
+    "customer_id": "PILOT-CUST-0034",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0034-01",
+      "TXN-P0034-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0035",
+    "customer_id": "PILOT-CUST-0035",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0035-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0036",
+    "customer_id": "PILOT-CUST-0036",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0036-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0037",
+    "customer_id": "PILOT-CUST-0037",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0037-01",
+      "TXN-P0037-02",
+      "TXN-P0037-03",
+      "TXN-P0037-04",
+      "TXN-P0037-05",
+      "TXN-P0037-06",
+      "TXN-P0037-07",
+      "TXN-P0037-08",
+      "TXN-P0037-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0038",
+    "customer_id": "PILOT-CUST-0038",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0038-01",
+      "TXN-P0038-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0039",
+    "customer_id": "PILOT-CUST-0039",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0039-01",
+      "TXN-P0039-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0040",
+    "customer_id": "PILOT-CUST-0040",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0040-01",
+      "TXN-P0040-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0041",
+    "customer_id": "PILOT-CUST-0041",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0041-01",
+      "TXN-P0041-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0042",
+    "customer_id": "PILOT-CUST-0042",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0042-01",
+      "TXN-P0042-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0043",
+    "customer_id": "PILOT-CUST-0043",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0043-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0044",
+    "customer_id": "PILOT-CUST-0044",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0044-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0045",
+    "customer_id": "PILOT-CUST-0045",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0045-01",
+      "TXN-P0045-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0046",
+    "customer_id": "PILOT-CUST-0046",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0046-01",
+      "TXN-P0046-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0047",
+    "customer_id": "PILOT-CUST-0047",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0047-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0048",
+    "customer_id": "PILOT-CUST-0048",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0048-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0049",
+    "customer_id": "PILOT-CUST-0049",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0049-01",
+      "TXN-P0049-02",
+      "TXN-P0049-03",
+      "TXN-P0049-04",
+      "TXN-P0049-05",
+      "TXN-P0049-06",
+      "TXN-P0049-07",
+      "TXN-P0049-08",
+      "TXN-P0049-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0050",
+    "customer_id": "PILOT-CUST-0050",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0050-01",
+      "TXN-P0050-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0051",
+    "customer_id": "PILOT-CUST-0051",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0051-01",
+      "TXN-P0051-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0052",
+    "customer_id": "PILOT-CUST-0052",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0052-01",
+      "TXN-P0052-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0053",
+    "customer_id": "PILOT-CUST-0053",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0053-01",
+      "TXN-P0053-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0054",
+    "customer_id": "PILOT-CUST-0054",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0054-01",
+      "TXN-P0054-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0055",
+    "customer_id": "PILOT-CUST-0055",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0055-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0056",
+    "customer_id": "PILOT-CUST-0056",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0056-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0057",
+    "customer_id": "PILOT-CUST-0057",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0057-01",
+      "TXN-P0057-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0058",
+    "customer_id": "PILOT-CUST-0058",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0058-01",
+      "TXN-P0058-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0059",
+    "customer_id": "PILOT-CUST-0059",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0059-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0060",
+    "customer_id": "PILOT-CUST-0060",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0060-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0061",
+    "customer_id": "PILOT-CUST-0061",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0061-01",
+      "TXN-P0061-02",
+      "TXN-P0061-03",
+      "TXN-P0061-04",
+      "TXN-P0061-05",
+      "TXN-P0061-06",
+      "TXN-P0061-07",
+      "TXN-P0061-08",
+      "TXN-P0061-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0062",
+    "customer_id": "PILOT-CUST-0062",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0062-01",
+      "TXN-P0062-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0063",
+    "customer_id": "PILOT-CUST-0063",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0063-01",
+      "TXN-P0063-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0064",
+    "customer_id": "PILOT-CUST-0064",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0064-01",
+      "TXN-P0064-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0065",
+    "customer_id": "PILOT-CUST-0065",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0065-01",
+      "TXN-P0065-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0066",
+    "customer_id": "PILOT-CUST-0066",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0066-01",
+      "TXN-P0066-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0067",
+    "customer_id": "PILOT-CUST-0067",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0067-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0068",
+    "customer_id": "PILOT-CUST-0068",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0068-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0069",
+    "customer_id": "PILOT-CUST-0069",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0069-01",
+      "TXN-P0069-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0070",
+    "customer_id": "PILOT-CUST-0070",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0070-01",
+      "TXN-P0070-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0071",
+    "customer_id": "PILOT-CUST-0071",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0071-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0072",
+    "customer_id": "PILOT-CUST-0072",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0072-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0073",
+    "customer_id": "PILOT-CUST-0073",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0073-01",
+      "TXN-P0073-02",
+      "TXN-P0073-03",
+      "TXN-P0073-04",
+      "TXN-P0073-05",
+      "TXN-P0073-06",
+      "TXN-P0073-07",
+      "TXN-P0073-08",
+      "TXN-P0073-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0074",
+    "customer_id": "PILOT-CUST-0074",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0074-01",
+      "TXN-P0074-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0075",
+    "customer_id": "PILOT-CUST-0075",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0075-01",
+      "TXN-P0075-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0076",
+    "customer_id": "PILOT-CUST-0076",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0076-01",
+      "TXN-P0076-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0077",
+    "customer_id": "PILOT-CUST-0077",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0077-01",
+      "TXN-P0077-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0078",
+    "customer_id": "PILOT-CUST-0078",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0078-01",
+      "TXN-P0078-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0079",
+    "customer_id": "PILOT-CUST-0079",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0079-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0080",
+    "customer_id": "PILOT-CUST-0080",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0080-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0081",
+    "customer_id": "PILOT-CUST-0081",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0081-01",
+      "TXN-P0081-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0082",
+    "customer_id": "PILOT-CUST-0082",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0082-01",
+      "TXN-P0082-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0083",
+    "customer_id": "PILOT-CUST-0083",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0083-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0084",
+    "customer_id": "PILOT-CUST-0084",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0084-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0085",
+    "customer_id": "PILOT-CUST-0085",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0085-01",
+      "TXN-P0085-02",
+      "TXN-P0085-03",
+      "TXN-P0085-04",
+      "TXN-P0085-05",
+      "TXN-P0085-06",
+      "TXN-P0085-07",
+      "TXN-P0085-08",
+      "TXN-P0085-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0086",
+    "customer_id": "PILOT-CUST-0086",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0086-01",
+      "TXN-P0086-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0087",
+    "customer_id": "PILOT-CUST-0087",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0087-01",
+      "TXN-P0087-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0088",
+    "customer_id": "PILOT-CUST-0088",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0088-01",
+      "TXN-P0088-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0089",
+    "customer_id": "PILOT-CUST-0089",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0089-01",
+      "TXN-P0089-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0090",
+    "customer_id": "PILOT-CUST-0090",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0090-01",
+      "TXN-P0090-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0091",
+    "customer_id": "PILOT-CUST-0091",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0091-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0092",
+    "customer_id": "PILOT-CUST-0092",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0092-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0093",
+    "customer_id": "PILOT-CUST-0093",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0093-01",
+      "TXN-P0093-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0094",
+    "customer_id": "PILOT-CUST-0094",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0094-01",
+      "TXN-P0094-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0095",
+    "customer_id": "PILOT-CUST-0095",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0095-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0096",
+    "customer_id": "PILOT-CUST-0096",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0096-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0097",
+    "customer_id": "PILOT-CUST-0097",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0097-01",
+      "TXN-P0097-02",
+      "TXN-P0097-03",
+      "TXN-P0097-04",
+      "TXN-P0097-05",
+      "TXN-P0097-06",
+      "TXN-P0097-07",
+      "TXN-P0097-08",
+      "TXN-P0097-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0098",
+    "customer_id": "PILOT-CUST-0098",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0098-01",
+      "TXN-P0098-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0099",
+    "customer_id": "PILOT-CUST-0099",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0099-01",
+      "TXN-P0099-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0100",
+    "customer_id": "PILOT-CUST-0100",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0100-01",
+      "TXN-P0100-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0101",
+    "customer_id": "PILOT-CUST-0101",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0101-01",
+      "TXN-P0101-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0102",
+    "customer_id": "PILOT-CUST-0102",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0102-01",
+      "TXN-P0102-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0103",
+    "customer_id": "PILOT-CUST-0103",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0103-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0104",
+    "customer_id": "PILOT-CUST-0104",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0104-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0105",
+    "customer_id": "PILOT-CUST-0105",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0105-01",
+      "TXN-P0105-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0106",
+    "customer_id": "PILOT-CUST-0106",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0106-01",
+      "TXN-P0106-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0107",
+    "customer_id": "PILOT-CUST-0107",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0107-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0108",
+    "customer_id": "PILOT-CUST-0108",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0108-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0109",
+    "customer_id": "PILOT-CUST-0109",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0109-01",
+      "TXN-P0109-02",
+      "TXN-P0109-03",
+      "TXN-P0109-04",
+      "TXN-P0109-05",
+      "TXN-P0109-06",
+      "TXN-P0109-07",
+      "TXN-P0109-08",
+      "TXN-P0109-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0110",
+    "customer_id": "PILOT-CUST-0110",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0110-01",
+      "TXN-P0110-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0111",
+    "customer_id": "PILOT-CUST-0111",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0111-01",
+      "TXN-P0111-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0112",
+    "customer_id": "PILOT-CUST-0112",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0112-01",
+      "TXN-P0112-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0113",
+    "customer_id": "PILOT-CUST-0113",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0113-01",
+      "TXN-P0113-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0114",
+    "customer_id": "PILOT-CUST-0114",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0114-01",
+      "TXN-P0114-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0115",
+    "customer_id": "PILOT-CUST-0115",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0115-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0116",
+    "customer_id": "PILOT-CUST-0116",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0116-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0117",
+    "customer_id": "PILOT-CUST-0117",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0117-01",
+      "TXN-P0117-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0118",
+    "customer_id": "PILOT-CUST-0118",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0118-01",
+      "TXN-P0118-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0119",
+    "customer_id": "PILOT-CUST-0119",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0119-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0120",
+    "customer_id": "PILOT-CUST-0120",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0120-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0121",
+    "customer_id": "PILOT-CUST-0121",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0121-01",
+      "TXN-P0121-02",
+      "TXN-P0121-03",
+      "TXN-P0121-04",
+      "TXN-P0121-05",
+      "TXN-P0121-06",
+      "TXN-P0121-07",
+      "TXN-P0121-08",
+      "TXN-P0121-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0122",
+    "customer_id": "PILOT-CUST-0122",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0122-01",
+      "TXN-P0122-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0123",
+    "customer_id": "PILOT-CUST-0123",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0123-01",
+      "TXN-P0123-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0124",
+    "customer_id": "PILOT-CUST-0124",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0124-01",
+      "TXN-P0124-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0125",
+    "customer_id": "PILOT-CUST-0125",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0125-01",
+      "TXN-P0125-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0126",
+    "customer_id": "PILOT-CUST-0126",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0126-01",
+      "TXN-P0126-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0127",
+    "customer_id": "PILOT-CUST-0127",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0127-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0128",
+    "customer_id": "PILOT-CUST-0128",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0128-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0129",
+    "customer_id": "PILOT-CUST-0129",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0129-01",
+      "TXN-P0129-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0130",
+    "customer_id": "PILOT-CUST-0130",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0130-01",
+      "TXN-P0130-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0131",
+    "customer_id": "PILOT-CUST-0131",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0131-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0132",
+    "customer_id": "PILOT-CUST-0132",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0132-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0133",
+    "customer_id": "PILOT-CUST-0133",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0133-01",
+      "TXN-P0133-02",
+      "TXN-P0133-03",
+      "TXN-P0133-04",
+      "TXN-P0133-05",
+      "TXN-P0133-06",
+      "TXN-P0133-07",
+      "TXN-P0133-08",
+      "TXN-P0133-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0134",
+    "customer_id": "PILOT-CUST-0134",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0134-01",
+      "TXN-P0134-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0135",
+    "customer_id": "PILOT-CUST-0135",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0135-01",
+      "TXN-P0135-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0136",
+    "customer_id": "PILOT-CUST-0136",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0136-01",
+      "TXN-P0136-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0137",
+    "customer_id": "PILOT-CUST-0137",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0137-01",
+      "TXN-P0137-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0138",
+    "customer_id": "PILOT-CUST-0138",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0138-01",
+      "TXN-P0138-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0139",
+    "customer_id": "PILOT-CUST-0139",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0139-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0140",
+    "customer_id": "PILOT-CUST-0140",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0140-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0141",
+    "customer_id": "PILOT-CUST-0141",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0141-01",
+      "TXN-P0141-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0142",
+    "customer_id": "PILOT-CUST-0142",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0142-01",
+      "TXN-P0142-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0143",
+    "customer_id": "PILOT-CUST-0143",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0143-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0144",
+    "customer_id": "PILOT-CUST-0144",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0144-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0145",
+    "customer_id": "PILOT-CUST-0145",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0145-01",
+      "TXN-P0145-02",
+      "TXN-P0145-03",
+      "TXN-P0145-04",
+      "TXN-P0145-05",
+      "TXN-P0145-06",
+      "TXN-P0145-07",
+      "TXN-P0145-08",
+      "TXN-P0145-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0146",
+    "customer_id": "PILOT-CUST-0146",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0146-01",
+      "TXN-P0146-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0147",
+    "customer_id": "PILOT-CUST-0147",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0147-01",
+      "TXN-P0147-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0148",
+    "customer_id": "PILOT-CUST-0148",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0148-01",
+      "TXN-P0148-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0149",
+    "customer_id": "PILOT-CUST-0149",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0149-01",
+      "TXN-P0149-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0150",
+    "customer_id": "PILOT-CUST-0150",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0150-01",
+      "TXN-P0150-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0151",
+    "customer_id": "PILOT-CUST-0151",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0151-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0152",
+    "customer_id": "PILOT-CUST-0152",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0152-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0153",
+    "customer_id": "PILOT-CUST-0153",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0153-01",
+      "TXN-P0153-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0154",
+    "customer_id": "PILOT-CUST-0154",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0154-01",
+      "TXN-P0154-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0155",
+    "customer_id": "PILOT-CUST-0155",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0155-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0156",
+    "customer_id": "PILOT-CUST-0156",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0156-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0157",
+    "customer_id": "PILOT-CUST-0157",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0157-01",
+      "TXN-P0157-02",
+      "TXN-P0157-03",
+      "TXN-P0157-04",
+      "TXN-P0157-05",
+      "TXN-P0157-06",
+      "TXN-P0157-07",
+      "TXN-P0157-08",
+      "TXN-P0157-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0158",
+    "customer_id": "PILOT-CUST-0158",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0158-01",
+      "TXN-P0158-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0159",
+    "customer_id": "PILOT-CUST-0159",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0159-01",
+      "TXN-P0159-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0160",
+    "customer_id": "PILOT-CUST-0160",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0160-01",
+      "TXN-P0160-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0161",
+    "customer_id": "PILOT-CUST-0161",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0161-01",
+      "TXN-P0161-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0162",
+    "customer_id": "PILOT-CUST-0162",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0162-01",
+      "TXN-P0162-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0163",
+    "customer_id": "PILOT-CUST-0163",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0163-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0164",
+    "customer_id": "PILOT-CUST-0164",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0164-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0165",
+    "customer_id": "PILOT-CUST-0165",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0165-01",
+      "TXN-P0165-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0166",
+    "customer_id": "PILOT-CUST-0166",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0166-01",
+      "TXN-P0166-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0167",
+    "customer_id": "PILOT-CUST-0167",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0167-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0168",
+    "customer_id": "PILOT-CUST-0168",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0168-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0169",
+    "customer_id": "PILOT-CUST-0169",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0169-01",
+      "TXN-P0169-02",
+      "TXN-P0169-03",
+      "TXN-P0169-04",
+      "TXN-P0169-05",
+      "TXN-P0169-06",
+      "TXN-P0169-07",
+      "TXN-P0169-08",
+      "TXN-P0169-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0170",
+    "customer_id": "PILOT-CUST-0170",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0170-01",
+      "TXN-P0170-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0171",
+    "customer_id": "PILOT-CUST-0171",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0171-01",
+      "TXN-P0171-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0172",
+    "customer_id": "PILOT-CUST-0172",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0172-01",
+      "TXN-P0172-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0173",
+    "customer_id": "PILOT-CUST-0173",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0173-01",
+      "TXN-P0173-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0174",
+    "customer_id": "PILOT-CUST-0174",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0174-01",
+      "TXN-P0174-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0175",
+    "customer_id": "PILOT-CUST-0175",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0175-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0176",
+    "customer_id": "PILOT-CUST-0176",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0176-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0177",
+    "customer_id": "PILOT-CUST-0177",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0177-01",
+      "TXN-P0177-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0178",
+    "customer_id": "PILOT-CUST-0178",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0178-01",
+      "TXN-P0178-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0179",
+    "customer_id": "PILOT-CUST-0179",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0179-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0180",
+    "customer_id": "PILOT-CUST-0180",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0180-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0181",
+    "customer_id": "PILOT-CUST-0181",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0181-01",
+      "TXN-P0181-02",
+      "TXN-P0181-03",
+      "TXN-P0181-04",
+      "TXN-P0181-05",
+      "TXN-P0181-06",
+      "TXN-P0181-07",
+      "TXN-P0181-08",
+      "TXN-P0181-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0182",
+    "customer_id": "PILOT-CUST-0182",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0182-01",
+      "TXN-P0182-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0183",
+    "customer_id": "PILOT-CUST-0183",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0183-01",
+      "TXN-P0183-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0184",
+    "customer_id": "PILOT-CUST-0184",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0184-01",
+      "TXN-P0184-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0185",
+    "customer_id": "PILOT-CUST-0185",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0185-01",
+      "TXN-P0185-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0186",
+    "customer_id": "PILOT-CUST-0186",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0186-01",
+      "TXN-P0186-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0187",
+    "customer_id": "PILOT-CUST-0187",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0187-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0188",
+    "customer_id": "PILOT-CUST-0188",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0188-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0189",
+    "customer_id": "PILOT-CUST-0189",
+    "rule_id": "RAPID-009",
+    "rule_name": "Cross-Border Wire Velocity",
+    "rule_description": "Flags rapid international transfers exceeding $50,000 on accounts with incomplete KYC validation.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Customer account executed $85,000 incoming wire and $82,000 outgoing wire within 24 hours.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Missing KYC Data",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Insufficient evidence to determine legitimacy: Customer record lacks declared occupation, income, and CDD documentation due to legacy data migration defect. Must obtain KYC before disposition.",
+    "flagged_txn_ids": [
+      "TXN-P0189-01",
+      "TXN-P0189-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0190",
+    "customer_id": "PILOT-CUST-0190",
+    "rule_id": "MULTI-010",
+    "rule_name": "Multi-Channel Deposit Inconsistency",
+    "rule_description": "Flags simultaneous surge across non-standard cash/check deposit channels for professional services accounts.",
+    "trigger_date": "2026-11-06",
+    "trigger_summary": "Combination of cashier checks and electronic deposits totaling $105,200 in one week.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Mixed Signals",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Mixed indicators: partial legitimate design invoices present alongside high-value cashier checks without remitter documentation.",
+    "flagged_txn_ids": [
+      "TXN-P0190-01",
+      "TXN-P0190-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0191",
+    "customer_id": "PILOT-CUST-0191",
+    "rule_id": "PEP-011",
+    "rule_name": "Politically Exposed Person (PEP) Unusual Transfer",
+    "rule_description": "Flags any single transaction over $25,000 involving an active or former PEP.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "PEP account received $38,000 international wire from Jordanian consultancy followed by $12,000 cash withdrawal.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "PEP Heightened Scrutiny",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Customer is a designated PEP; while advisory retainer is plausibly aligned with expertise, regulatory EDD requires contract validation and purpose verification.",
+    "flagged_txn_ids": [
+      "TXN-P0191-01"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0192",
+    "customer_id": "PILOT-CUST-0192",
+    "rule_id": "SANCTION-012",
+    "rule_name": "Counterparty Sanctions / High-Risk Watchlist Match",
+    "rule_description": "Flags any transaction involving a counterparty matching internal or OFAC-equivalent sanctions entities.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Account received $75,000 international wire from Belka Capital Holdings Ltd, a listed sanctions entity.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Watchlist Counterparty Match",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Direct wire inflow from Belka Capital Holdings Ltd, designated on sanctions watchlists for illicit trade financing. Mandatory immediate escalation and asset freeze review.",
+    "flagged_txn_ids": [
+      "TXN-P0192-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0193",
+    "customer_id": "PILOT-CUST-0193",
+    "rule_id": "STRUCT-001",
+    "rule_name": "Potential Structuring \u2014 Multiple Sub-Threshold Cash Deposits",
+    "rule_description": "Flags 3+ cash deposits each below $10,000 threshold within a 10-day rolling window totalling over $20,000.",
+    "trigger_date": "2026-11-09",
+    "trigger_summary": "9 cash deposits between $7,800 and $9,900 totalling $83,800 over 9 days across multiple branch locations and ATMs.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Classic Structuring",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "High frequency of sub-threshold cash deposits ($83,800 total) far exceeds retail clerk declared salary ($4,200/mo) with no economic rationale provided. Classic structuring pattern under BSA/AML.",
+    "flagged_txn_ids": [
+      "TXN-P0193-01",
+      "TXN-P0193-02",
+      "TXN-P0193-03",
+      "TXN-P0193-04",
+      "TXN-P0193-05",
+      "TXN-P0193-06",
+      "TXN-P0193-07",
+      "TXN-P0193-08",
+      "TXN-P0193-09"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0194",
+    "customer_id": "PILOT-CUST-0194",
+    "rule_id": "LAYER-002",
+    "rule_name": "Rapid Movement of Funds \u2014 Pass-Through / Layering",
+    "rule_description": "Flags incoming wire followed within 24 hours by outgoing wire for >90% of received value, with little or no account balance retention.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Customer received $145,000 domestic wire from Nexus Trading Partners and executed $142,000 international wire to BVI entity on the same day.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Pass-Through / Layering",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Unemployed student profile with $1,500/mo expected income used as a conduit for $145,000 rapid pass-through to offshore offshore haven (BVI) within hours.",
+    "flagged_txn_ids": [
+      "TXN-P0194-01",
+      "TXN-P0194-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0195",
+    "customer_id": "PILOT-CUST-0195",
+    "rule_id": "INCOME-003",
+    "rule_name": "Significant Income Inconsistency Spike",
+    "rule_description": "Flags transaction volume exceeding 500% of customer's declared monthly income within a 7-day period.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Two cashier check deposits totalling $102,000 deposited in 4 days vs declared monthly income of $6,000.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Income Inconsistency",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Deposits represent 17x monthly declared income for graphic designer; cashier check remitter details require source of wealth investigation before STR determination.",
+    "flagged_txn_ids": [
+      "TXN-P0195-01",
+      "TXN-P0195-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0196",
+    "customer_id": "PILOT-CUST-0196",
+    "rule_id": "DORMANT-004",
+    "rule_name": "Sudden Spike on Long-Dormant Account",
+    "rule_description": "Flags significant wire inflows (> $50,000) on accounts with zero transactional activity in prior 12+ months.",
+    "trigger_date": "2026-11-07",
+    "trigger_summary": "Dormant savings account received $88,000 international wire from Dubai, followed 24 hours later by $85,000 outflow to cryptocurrency exchange.",
+    "priority": "High",
+    "status": "Open",
+    "archetype": "Dormant Account Spike",
+    "ground_truth_disposition": "Escalate",
+    "ground_truth_rationale": "Sudden reactivation of dormant retail account by offshore wire followed by immediate crypto conversion indicates account takeover or money mule activity.",
+    "flagged_txn_ids": [
+      "TXN-P0196-01",
+      "TXN-P0196-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0197",
+    "customer_id": "PILOT-CUST-0197",
+    "rule_id": "ROUNDTRIP-005",
+    "rule_name": "Circular Fund Movement / Round-Trip Transfer",
+    "rule_description": "Flags outbound transfers returned or reversed by the same counterparty within 72 hours for >95% of initial value.",
+    "trigger_date": "2026-11-05",
+    "trigger_summary": "Customer wired $62,000 to Vortex Media Ventures, which returned $61,500 within 48 hours referencing cancelled loan.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Round-Trip Flow",
+    "ground_truth_disposition": "Investigate",
+    "ground_truth_rationale": "Circular transfer with minimal economic purpose; requires analyst outreach to customer for loan agreement or verified cancellation memo.",
+    "flagged_txn_ids": [
+      "TXN-P0197-01",
+      "TXN-P0197-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0198",
+    "customer_id": "PILOT-CUST-0198",
+    "rule_id": "VOLUME-006",
+    "rule_name": "Business Volume Surge vs Rolling Baseline",
+    "rule_description": "Flags commercial deposits exceeding 300% of rolling 90-day average deposit volume.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Sharma Artisan Imports received $90,500 in Shopify/Square merchant processor deposits in 4 days.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Legitimate Business Seasonal Spike",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Documented seasonal retail importer experiencing known Q4 holiday craft surge via registered merchant card settlement processors; verified supplier customs wire on file.",
+    "flagged_txn_ids": [
+      "TXN-P0198-01",
+      "TXN-P0198-02"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0199",
+    "customer_id": "PILOT-CUST-0199",
+    "rule_id": "CASH-007",
+    "rule_name": "Single Large Cash Deposit Near Threshold",
+    "rule_description": "Flags single cash deposit between $9,500 and $9,999 within 5 days of payroll.",
+    "trigger_date": "2026-11-04",
+    "trigger_summary": "Single cash deposit of $9,950 into personal checking account.",
+    "priority": "Low",
+    "status": "Open",
+    "archetype": "Benign Isolated Pattern",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Isolated cash deposit of $9,950 by established software engineer with bill of sale for private used car on file; no subsequent rapid outflows.",
+    "flagged_txn_ids": [
+      "TXN-P0199-03"
+    ]
+  },
+  {
+    "alert_id": "ALT-PILOT-0200",
+    "customer_id": "PILOT-CUST-0200",
+    "rule_id": "LARGE-008",
+    "rule_name": "High Value Incoming Wire Threshold",
+    "rule_description": "Flags incoming wires greater than or equal to $250,000 for individual accounts.",
+    "trigger_date": "2026-11-03",
+    "trigger_summary": "Incoming wire of $450,000 from First American Title & Escrow Co.",
+    "priority": "Medium",
+    "status": "Open",
+    "archetype": "Large Explained Transaction",
+    "ground_truth_disposition": "Close",
+    "ground_truth_rationale": "Real estate broker customer receiving verified escrow proceeds with attached HUD-1 settlement sheet and title deed; funds deployed directly into US Treasury Bills.",
+    "flagged_txn_ids": [
+      "TXN-P0200-01"
+    ]
+  }
+]

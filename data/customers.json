@@ -1,0 +1,215 @@
+[
+  {
+    "customer_id": "CUST-88401",
+    "name": "James Whitfield",
+    "account_number": "ACCT-10088401",
+    "account_type": "Personal Checking",
+    "occupation": "Retail Store Clerk",
+    "declared_annual_income": 50400,
+    "declared_monthly_income": 4200,
+    "account_open_date": "2023-03-15",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 5000,
+      "withdrawals": 4500
+    },
+    "notes": "Standard retail banking customer. Regular payroll deposits from Target Corp."
+  },
+  {
+    "customer_id": "CUST-91204",
+    "name": "Elena Rostova",
+    "account_number": "ACCT-10091204",
+    "account_type": "Personal Checking",
+    "occupation": "Freelance Graphic Designer",
+    "declared_annual_income": 72000,
+    "declared_monthly_income": 6000,
+    "account_open_date": "2022-08-10",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 8000,
+      "withdrawals": 7500
+    },
+    "notes": "Income varies slightly based on client invoices. Domestic wire usage expected."
+  },
+  {
+    "customer_id": "CUST-77319",
+    "name": "Marcus Aurelius Vance",
+    "account_number": "ACCT-10077319",
+    "account_type": "Personal Wealth",
+    "occupation": "Commercial Real Estate Broker",
+    "declared_annual_income": 240000,
+    "declared_monthly_income": 20000,
+    "account_open_date": "2020-01-19",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 35000,
+      "withdrawals": 30000
+    },
+    "notes": "High net worth individual with documented real estate transactions and title escrow transfers."
+  },
+  {
+    "customer_id": "CUST-65412",
+    "name": "Priya Sharma",
+    "account_number": "ACCT-10065412",
+    "account_type": "Business Checking",
+    "occupation": "Owner, Sharma Artisan Imports",
+    "declared_annual_income": 180000,
+    "declared_monthly_income": 15000,
+    "account_open_date": "2021-05-12",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 25000,
+      "withdrawals": 22000
+    },
+    "notes": "Seasonal import business. Q4 holiday sales surge is historically documented."
+  },
+  {
+    "customer_id": "CUST-54321",
+    "name": "Carlos Mendez",
+    "account_number": "ACCT-10054321",
+    "account_type": "Personal Checking",
+    "occupation": "Software Engineer",
+    "declared_annual_income": 135000,
+    "declared_monthly_income": 11250,
+    "account_open_date": "2019-11-04",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 12000,
+      "withdrawals": 11000
+    },
+    "notes": "Bi-weekly direct payroll deposits. Consistent monthly mortgage and living expenses."
+  },
+  {
+    "customer_id": "CUST-43210",
+    "name": "Dr. Tariq Al-Mansoor",
+    "account_number": "ACCT-10043210",
+    "account_type": "Personal Checking",
+    "occupation": "Deputy Minister of Infrastructure (Former)",
+    "declared_annual_income": 190000,
+    "declared_monthly_income": 15800,
+    "account_open_date": "2024-02-01",
+    "risk_rating": "High",
+    "nationality": "Jordan",
+    "pep_status": true,
+    "expected_monthly_volume": {
+      "deposits": 20000,
+      "withdrawals": 18000
+    },
+    "notes": "Politically Exposed Person (PEP). Enhanced Due Diligence (EDD) required annually."
+  },
+  {
+    "customer_id": "CUST-32109",
+    "name": "David K. Sterling",
+    "account_number": "ACCT-10032109",
+    "account_type": "Personal Checking",
+    "occupation": "Unemployed / Student",
+    "declared_annual_income": 18000,
+    "declared_monthly_income": 1500,
+    "account_open_date": "2024-06-20",
+    "risk_rating": "High",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 2000,
+      "withdrawals": 1800
+    },
+    "notes": "Account opened online. Minimal expected transaction activity."
+  },
+  {
+    "customer_id": "CUST-21098",
+    "name": "Amina Bello",
+    "account_number": "ACCT-10021098",
+    "account_type": "Personal Savings",
+    "occupation": "Registered Nurse",
+    "declared_annual_income": 82000,
+    "declared_monthly_income": 6800,
+    "account_open_date": "2018-09-14",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 7000,
+      "withdrawals": 6500
+    },
+    "notes": "Dormant savings account since mid-2023. Minimal transaction history in past 18 months."
+  },
+  {
+    "customer_id": "CUST-10987",
+    "name": "Apex Global Logistics LLC",
+    "account_number": "ACCT-10010987",
+    "account_type": "Corporate Checking",
+    "occupation": "Freight & Warehousing",
+    "declared_annual_income": 1200000,
+    "declared_monthly_income": 100000,
+    "account_open_date": "2023-01-11",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 120000,
+      "withdrawals": 115000
+    },
+    "notes": "Commercial account with regular freight carrier payments and fuel disbursements."
+  },
+  {
+    "customer_id": "CUST-09876",
+    "name": "Incomplete Profile Record",
+    "account_number": "ACCT-10009876",
+    "account_type": "Personal Checking",
+    "occupation": null,
+    "declared_annual_income": null,
+    "declared_monthly_income": null,
+    "account_open_date": "2025-10-01",
+    "risk_rating": "Unknown",
+    "nationality": "Unknown",
+    "pep_status": false,
+    "expected_monthly_volume": null,
+    "notes": "Legacy migration error: Missing CDD/KYC documentation and income verification."
+  },
+  {
+    "customer_id": "CUST-98765",
+    "name": "Lucas Graham",
+    "account_number": "ACCT-10098765",
+    "account_type": "Personal Checking",
+    "occupation": "Digital Marketing Consultant",
+    "declared_annual_income": 95000,
+    "declared_monthly_income": 7900,
+    "account_open_date": "2021-04-18",
+    "risk_rating": "Medium",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 10000,
+      "withdrawals": 9000
+    },
+    "notes": "Client invoices received via Stripe. Occasional ad spend outflows to Meta and Google."
+  },
+  {
+    "customer_id": "CUST-87654",
+    "name": "Sunita Patel",
+    "account_number": "ACCT-10087654",
+    "account_type": "Personal Checking",
+    "occupation": "High School Principal",
+    "declared_annual_income": 105000,
+    "declared_monthly_income": 8750,
+    "account_open_date": "2017-08-25",
+    "risk_rating": "Low",
+    "nationality": "US",
+    "pep_status": false,
+    "expected_monthly_volume": {
+      "deposits": 9000,
+      "withdrawals": 8500
+    },
+    "notes": "Longstanding customer with impeccable credit history and predictable municipal direct deposits."
+  }
+]

@@ -1,0 +1,2553 @@
+{
+  "metrics": {
+    "total_cases_evaluated": 75,
+    "agreement_rate_percent": 100.0,
+    "missed_escalations_count": 0,
+    "missed_escalation_rate_percent": 0.0,
+    "guardrail_passed": true,
+    "fp_screening_precision_percent": 100.0,
+    "citation_accuracy_percent": 100.0,
+    "total_hallucinations": 0,
+    "hallucination_rate_percent": 0.0,
+    "avg_response_time_ms": 0.2,
+    "confusion_matrix": {
+      "Close": {
+        "Close": 21,
+        "Investigate": 0,
+        "Escalate": 0
+      },
+      "Investigate": {
+        "Close": 0,
+        "Investigate": 26,
+        "Escalate": 0
+      },
+      "Escalate": {
+        "Close": 0,
+        "Investigate": 0,
+        "Escalate": 28
+      }
+    },
+    "bias_nationality": {
+      "US": {
+        "Escalate": 18,
+        "Investigate": 8,
+        "Close": 13
+      },
+      "Unknown": {
+        "Investigate": 6
+      },
+      "Jordan": {
+        "Investigate": 5
+      },
+      "Canada": {
+        "Escalate": 1,
+        "Investigate": 2
+      },
+      "UK": {
+        "Escalate": 1
+      },
+      "India": {
+        "Close": 1
+      },
+      "Mexico": {
+        "Close": 1
+      },
+      "Nigeria": {
+        "Escalate": 1
+      },
+      "Germany": {
+        "Investigate": 3
+      },
+      "Singapore": {
+        "Escalate": 3
+      },
+      "UAE": {
+        "Escalate": 2
+      },
+      "Brazil": {
+        "Investigate": 2
+      },
+      "South Africa": {
+        "Escalate": 2
+      },
+      "Japan": {
+        "Close": 2
+      },
+      "France": {
+        "Close": 2
+      },
+      "Australia": {
+        "Close": 2
+      }
+    },
+    "bias_occupation": {
+      "Retail Store Clerk": {
+        "Escalate": 2
+      },
+      "Unemployed / Student": {
+        "Escalate": 1
+      },
+      "Freelance Graphic Designer": {
+        "Investigate": 2
+      },
+      "Registered Nurse": {
+        "Escalate": 1
+      },
+      "Digital Marketing Consultant": {
+        "Investigate": 1
+      },
+      "Owner, Sharma Artisan Imports": {
+        "Close": 1
+      },
+      "Software Engineer": {
+        "Close": 1
+      },
+      "Commercial Real Estate Broker": {
+        "Close": 1
+      },
+      "Unknown": {
+        "Investigate": 6
+      },
+      "Former Deputy Minister": {
+        "Investigate": 1
+      },
+      "Freight & Warehousing": {
+        "Escalate": 1
+      },
+      "Student": {
+        "Escalate": 5
+      },
+      "Artisan Exporter": {
+        "Close": 1
+      },
+      "Engineer": {
+        "Close": 4
+      },
+      "Real Estate Broker": {
+        "Close": 1
+      },
+      "Healthcare Professional": {
+        "Escalate": 1
+      },
+      "Logistics": {
+        "Escalate": 2
+      },
+      "Consultant": {
+        "Investigate": 5
+      },
+      "Designer": {
+        "Investigate": 3
+      },
+      "Ex-Official": {
+        "Investigate": 1
+      },
+      "Retail": {
+        "Escalate": 3,
+        "Close": 2
+      },
+      "Retail Owner": {
+        "Close": 1
+      },
+      "Broker": {
+        "Close": 1
+      },
+      "Unemployed": {
+        "Escalate": 1
+      },
+      "Nurse": {
+        "Escalate": 2
+      },
+      "Freight": {
+        "Escalate": 2
+      },
+      "Real Estate": {
+        "Close": 2
+      },
+      "Official": {
+        "Investigate": 1
+      },
+      "Retail Store Manager": {
+        "Escalate": 3
+      },
+      "Healthcare Worker": {
+        "Escalate": 2
+      },
+      "Marketing Specialist": {
+        "Investigate": 2
+      },
+      "Artisan Retailer": {
+        "Close": 2
+      },
+      "Software Architect": {
+        "Close": 2
+      },
+      "Commercial Broker": {
+        "Close": 2
+      },
+      "Creative Director": {
+        "Investigate": 2
+      },
+      "Infrastructure Advisor": {
+        "Investigate": 2
+      },
+      "Global Freight": {
+        "Escalate": 2
+      }
+    },
+    "thresholds_summary": {
+      "missed_escalations": "PASSED (Target: 0%)",
+      "agreement_rate": "PASSED (>= 85%)",
+      "fp_precision": "PASSED (>= 90%)",
+      "citation_accuracy": "PASSED (>= 95%)",
+      "hallucination_rate": "PASSED (< 2%)"
+    }
+  },
+  "results": [
+    {
+      "case_id": "EVAL-001",
+      "alert_id": "ALT-2026-001042",
+      "archetype": "Classic Structuring",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Occupation]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-101001]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Rule: STRUCT-001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 3,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Retail Store Clerk"
+      }
+    },
+    {
+      "case_id": "EVAL-002",
+      "alert_id": "ALT-2026-001043",
+      "archetype": "Pass-Through / Layering",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-102001]",
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Rule: LAYER-002]",
+          "[Txn: TXN-102002]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Unemployed / Student"
+      }
+    },
+    {
+      "case_id": "EVAL-003",
+      "alert_id": "ALT-2026-001044",
+      "archetype": "Income Inconsistency",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: INCOME-003]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Freelance Graphic Designer"
+      }
+    },
+    {
+      "case_id": "EVAL-004",
+      "alert_id": "ALT-2026-001045",
+      "archetype": "Dormant Account Spike",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 24,
+        "valid_count": 24,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-104001]",
+          "[Rule: DORMANT-004]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Txn: TXN-104002]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Registered Nurse"
+      }
+    },
+    {
+      "case_id": "EVAL-005",
+      "alert_id": "ALT-2026-001046",
+      "archetype": "Round-Trip Flow",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 9,
+        "valid_count": 9,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: ROUNDTRIP-005]",
+          "[Txn: TXN-105001]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Digital Marketing Consultant"
+      }
+    },
+    {
+      "case_id": "EVAL-006",
+      "alert_id": "ALT-2026-001047",
+      "archetype": "Legitimate Business Seasonal Spike",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 11,
+        "valid_count": 11,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-106001]",
+          "[KYC Profile]",
+          "[Rule: VOLUME-006]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Owner, Sharma Artisan Imports"
+      }
+    },
+    {
+      "case_id": "EVAL-007",
+      "alert_id": "ALT-2026-001048",
+      "archetype": "Benign Isolated Pattern",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 12,
+        "valid_count": 12,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-107003]",
+          "[KYC Profile]",
+          "[Rule: CASH-007]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Software Engineer"
+      }
+    },
+    {
+      "case_id": "EVAL-008",
+      "alert_id": "ALT-2026-001049",
+      "archetype": "Large Explained Transaction",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 10,
+        "valid_count": 10,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: LARGE-008]",
+          "[KYC Profile]",
+          "[Txn: TXN-108001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Commercial Real Estate Broker"
+      }
+    },
+    {
+      "case_id": "EVAL-009",
+      "alert_id": "ALT-2026-001050",
+      "archetype": "Missing KYC Data",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Low",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 7,
+        "valid_count": 7,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: RAPID-009]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Unknown",
+        "gender": "Unknown",
+        "occupation": "Unknown"
+      }
+    },
+    {
+      "case_id": "EVAL-010",
+      "alert_id": "ALT-2026-001051",
+      "archetype": "Mixed Signals",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: MULTI-010]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Freelance Graphic Designer"
+      }
+    },
+    {
+      "case_id": "EVAL-011",
+      "alert_id": "ALT-2026-001052",
+      "archetype": "PEP Heightened Scrutiny",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 14,
+        "valid_count": 14,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Watchlist]",
+          "[KYC Profile]",
+          "[Rule: PEP-011]",
+          "[Txn: TXN-111001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Jordan",
+        "gender": "Male",
+        "occupation": "Former Deputy Minister"
+      }
+    },
+    {
+      "case_id": "EVAL-012",
+      "alert_id": "ALT-2026-001053",
+      "archetype": "Watchlist Counterparty Match",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 22,
+        "valid_count": 22,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Txn: TXN-110003]",
+          "[KYC: Name]",
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Watchlist]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Corporate",
+        "occupation": "Freight & Warehousing"
+      }
+    },
+    {
+      "case_id": "EVAL-013",
+      "alert_id": "ALT-2026-001042",
+      "archetype": "Classic Structuring",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Occupation]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-101001]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Rule: STRUCT-001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "Canada",
+        "gender": "Male",
+        "occupation": "Retail Store Clerk"
+      }
+    },
+    {
+      "case_id": "EVAL-014",
+      "alert_id": "ALT-2026-001043",
+      "archetype": "Pass-Through / Layering",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-102001]",
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Rule: LAYER-002]",
+          "[Txn: TXN-102002]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "UK",
+        "gender": "Male",
+        "occupation": "Student"
+      }
+    },
+    {
+      "case_id": "EVAL-015",
+      "alert_id": "ALT-2026-001047",
+      "archetype": "Legitimate Business Seasonal Spike",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 11,
+        "valid_count": 11,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-106001]",
+          "[KYC Profile]",
+          "[Rule: VOLUME-006]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "India",
+        "gender": "Female",
+        "occupation": "Artisan Exporter"
+      }
+    },
+    {
+      "case_id": "EVAL-016",
+      "alert_id": "ALT-2026-001048",
+      "archetype": "Benign Isolated Pattern",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 12,
+        "valid_count": 12,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-107003]",
+          "[KYC Profile]",
+          "[Rule: CASH-007]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Mexico",
+        "gender": "Male",
+        "occupation": "Engineer"
+      }
+    },
+    {
+      "case_id": "EVAL-017",
+      "alert_id": "ALT-2026-001049",
+      "archetype": "Large Explained Transaction",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 10,
+        "valid_count": 10,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: LARGE-008]",
+          "[KYC Profile]",
+          "[Txn: TXN-108001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Real Estate Broker"
+      }
+    },
+    {
+      "case_id": "EVAL-018",
+      "alert_id": "ALT-2026-001050",
+      "archetype": "Missing KYC Data",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Low",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 7,
+        "valid_count": 7,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: RAPID-009]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Unknown",
+        "gender": "Unknown",
+        "occupation": "Unknown"
+      }
+    },
+    {
+      "case_id": "EVAL-019",
+      "alert_id": "ALT-2026-001045",
+      "archetype": "Dormant Account Spike",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 24,
+        "valid_count": 24,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-104001]",
+          "[Rule: DORMANT-004]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Txn: TXN-104002]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Nigeria",
+        "gender": "Female",
+        "occupation": "Healthcare Professional"
+      }
+    },
+    {
+      "case_id": "EVAL-020",
+      "alert_id": "ALT-2026-001053",
+      "archetype": "Watchlist Counterparty Match",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 22,
+        "valid_count": 22,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Txn: TXN-110003]",
+          "[KYC: Name]",
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Watchlist]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Corporate",
+        "occupation": "Logistics"
+      }
+    },
+    {
+      "case_id": "EVAL-021",
+      "alert_id": "ALT-2026-001046",
+      "archetype": "Round-Trip Flow",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 9,
+        "valid_count": 9,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: ROUNDTRIP-005]",
+          "[Txn: TXN-105001]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Consultant"
+      }
+    },
+    {
+      "case_id": "EVAL-022",
+      "alert_id": "ALT-2026-001044",
+      "archetype": "Income Inconsistency",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: INCOME-003]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Germany",
+        "gender": "Female",
+        "occupation": "Designer"
+      }
+    },
+    {
+      "case_id": "EVAL-023",
+      "alert_id": "ALT-2026-001052",
+      "archetype": "PEP Heightened Scrutiny",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 14,
+        "valid_count": 14,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Watchlist]",
+          "[KYC Profile]",
+          "[Rule: PEP-011]",
+          "[Txn: TXN-111001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Jordan",
+        "gender": "Male",
+        "occupation": "Ex-Official"
+      }
+    },
+    {
+      "case_id": "EVAL-024",
+      "alert_id": "ALT-2026-001042",
+      "archetype": "Classic Structuring",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Occupation]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-101001]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Rule: STRUCT-001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Retail"
+      }
+    },
+    {
+      "case_id": "EVAL-025",
+      "alert_id": "ALT-2026-001047",
+      "archetype": "Legitimate Business Seasonal Spike",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 11,
+        "valid_count": 11,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-106001]",
+          "[KYC Profile]",
+          "[Rule: VOLUME-006]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Retail Owner"
+      }
+    },
+    {
+      "case_id": "EVAL-026",
+      "alert_id": "ALT-2026-001048",
+      "archetype": "Benign Isolated Pattern",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 12,
+        "valid_count": 12,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-107003]",
+          "[KYC Profile]",
+          "[Rule: CASH-007]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Engineer"
+      }
+    },
+    {
+      "case_id": "EVAL-027",
+      "alert_id": "ALT-2026-001049",
+      "archetype": "Large Explained Transaction",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 10,
+        "valid_count": 10,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: LARGE-008]",
+          "[KYC Profile]",
+          "[Txn: TXN-108001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Broker"
+      }
+    },
+    {
+      "case_id": "EVAL-028",
+      "alert_id": "ALT-2026-001043",
+      "archetype": "Pass-Through / Layering",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-102001]",
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Rule: LAYER-002]",
+          "[Txn: TXN-102002]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Unemployed"
+      }
+    },
+    {
+      "case_id": "EVAL-029",
+      "alert_id": "ALT-2026-001045",
+      "archetype": "Dormant Account Spike",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 24,
+        "valid_count": 24,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-104001]",
+          "[Rule: DORMANT-004]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Txn: TXN-104002]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Nurse"
+      }
+    },
+    {
+      "case_id": "EVAL-030",
+      "alert_id": "ALT-2026-001053",
+      "archetype": "Watchlist Counterparty Match",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 22,
+        "valid_count": 22,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Txn: TXN-110003]",
+          "[KYC: Name]",
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Watchlist]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Corporate",
+        "occupation": "Freight"
+      }
+    },
+    {
+      "case_id": "EVAL-031",
+      "alert_id": "ALT-2026-001046",
+      "archetype": "Round-Trip Flow",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 9,
+        "valid_count": 9,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: ROUNDTRIP-005]",
+          "[Txn: TXN-105001]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Consultant"
+      }
+    },
+    {
+      "case_id": "EVAL-032",
+      "alert_id": "ALT-2026-001051",
+      "archetype": "Mixed Signals",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: MULTI-010]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Designer"
+      }
+    },
+    {
+      "case_id": "EVAL-033",
+      "alert_id": "ALT-2026-001050",
+      "archetype": "Missing KYC Data",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Low",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 7,
+        "valid_count": 7,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: RAPID-009]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Unknown",
+        "gender": "Unknown",
+        "occupation": "Unknown"
+      }
+    },
+    {
+      "case_id": "EVAL-034",
+      "alert_id": "ALT-2026-001042",
+      "archetype": "Classic Structuring",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Occupation]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-101001]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Rule: STRUCT-001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Retail"
+      }
+    },
+    {
+      "case_id": "EVAL-035",
+      "alert_id": "ALT-2026-001047",
+      "archetype": "Legitimate Business Seasonal Spike",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 11,
+        "valid_count": 11,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-106001]",
+          "[KYC Profile]",
+          "[Rule: VOLUME-006]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Retail"
+      }
+    },
+    {
+      "case_id": "EVAL-036",
+      "alert_id": "ALT-2026-001048",
+      "archetype": "Benign Isolated Pattern",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 12,
+        "valid_count": 12,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-107003]",
+          "[KYC Profile]",
+          "[Rule: CASH-007]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Engineer"
+      }
+    },
+    {
+      "case_id": "EVAL-037",
+      "alert_id": "ALT-2026-001049",
+      "archetype": "Large Explained Transaction",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 10,
+        "valid_count": 10,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: LARGE-008]",
+          "[KYC Profile]",
+          "[Txn: TXN-108001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Real Estate"
+      }
+    },
+    {
+      "case_id": "EVAL-038",
+      "alert_id": "ALT-2026-001043",
+      "archetype": "Pass-Through / Layering",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-102001]",
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Rule: LAYER-002]",
+          "[Txn: TXN-102002]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Student"
+      }
+    },
+    {
+      "case_id": "EVAL-039",
+      "alert_id": "ALT-2026-001045",
+      "archetype": "Dormant Account Spike",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 24,
+        "valid_count": 24,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-104001]",
+          "[Rule: DORMANT-004]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Txn: TXN-104002]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Nurse"
+      }
+    },
+    {
+      "case_id": "EVAL-040",
+      "alert_id": "ALT-2026-001053",
+      "archetype": "Watchlist Counterparty Match",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 22,
+        "valid_count": 22,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Txn: TXN-110003]",
+          "[KYC: Name]",
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Watchlist]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Corporate",
+        "occupation": "Logistics"
+      }
+    },
+    {
+      "case_id": "EVAL-041",
+      "alert_id": "ALT-2026-001052",
+      "archetype": "PEP Heightened Scrutiny",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 14,
+        "valid_count": 14,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Watchlist]",
+          "[KYC Profile]",
+          "[Rule: PEP-011]",
+          "[Txn: TXN-111001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Jordan",
+        "gender": "Male",
+        "occupation": "Official"
+      }
+    },
+    {
+      "case_id": "EVAL-042",
+      "alert_id": "ALT-2026-001046",
+      "archetype": "Round-Trip Flow",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 9,
+        "valid_count": 9,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: ROUNDTRIP-005]",
+          "[Txn: TXN-105001]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Consultant"
+      }
+    },
+    {
+      "case_id": "EVAL-043",
+      "alert_id": "ALT-2026-001044",
+      "archetype": "Income Inconsistency",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: INCOME-003]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Designer"
+      }
+    },
+    {
+      "case_id": "EVAL-044",
+      "alert_id": "ALT-2026-001050",
+      "archetype": "Missing KYC Data",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Low",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 7,
+        "valid_count": 7,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: RAPID-009]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Unknown",
+        "gender": "Unknown",
+        "occupation": "Unknown"
+      }
+    },
+    {
+      "case_id": "EVAL-045",
+      "alert_id": "ALT-2026-001042",
+      "archetype": "Classic Structuring",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Occupation]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-101001]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Rule: STRUCT-001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Retail"
+      }
+    },
+    {
+      "case_id": "EVAL-046",
+      "alert_id": "ALT-2026-001047",
+      "archetype": "Legitimate Business Seasonal Spike",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 11,
+        "valid_count": 11,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-106001]",
+          "[KYC Profile]",
+          "[Rule: VOLUME-006]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Female",
+        "occupation": "Retail"
+      }
+    },
+    {
+      "case_id": "EVAL-047",
+      "alert_id": "ALT-2026-001048",
+      "archetype": "Benign Isolated Pattern",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 12,
+        "valid_count": 12,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-107003]",
+          "[KYC Profile]",
+          "[Rule: CASH-007]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Engineer"
+      }
+    },
+    {
+      "case_id": "EVAL-048",
+      "alert_id": "ALT-2026-001049",
+      "archetype": "Large Explained Transaction",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 10,
+        "valid_count": 10,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: LARGE-008]",
+          "[KYC Profile]",
+          "[Txn: TXN-108001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Real Estate"
+      }
+    },
+    {
+      "case_id": "EVAL-049",
+      "alert_id": "ALT-2026-001043",
+      "archetype": "Pass-Through / Layering",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-102001]",
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Rule: LAYER-002]",
+          "[Txn: TXN-102002]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Male",
+        "occupation": "Student"
+      }
+    },
+    {
+      "case_id": "EVAL-050",
+      "alert_id": "ALT-2026-001053",
+      "archetype": "Watchlist Counterparty Match",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 22,
+        "valid_count": 22,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Txn: TXN-110003]",
+          "[KYC: Name]",
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Watchlist]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Corporate",
+        "occupation": "Freight"
+      }
+    },
+    {
+      "case_id": "EVAL-051",
+      "alert_id": "ALT-2026-001042",
+      "archetype": "Classic Structuring",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Occupation]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-101001]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Rule: STRUCT-001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "Singapore",
+        "gender": "Female",
+        "occupation": "Retail Store Manager"
+      }
+    },
+    {
+      "case_id": "EVAL-052",
+      "alert_id": "ALT-2026-001043",
+      "archetype": "Pass-Through / Layering",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-102001]",
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Rule: LAYER-002]",
+          "[Txn: TXN-102002]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "UAE",
+        "gender": "Male",
+        "occupation": "Student"
+      }
+    },
+    {
+      "case_id": "EVAL-053",
+      "alert_id": "ALT-2026-001044",
+      "archetype": "Income Inconsistency",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: INCOME-003]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Brazil",
+        "gender": "Female",
+        "occupation": "Consultant"
+      }
+    },
+    {
+      "case_id": "EVAL-054",
+      "alert_id": "ALT-2026-001045",
+      "archetype": "Dormant Account Spike",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 24,
+        "valid_count": 24,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-104001]",
+          "[Rule: DORMANT-004]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Txn: TXN-104002]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "South Africa",
+        "gender": "Male",
+        "occupation": "Healthcare Worker"
+      }
+    },
+    {
+      "case_id": "EVAL-055",
+      "alert_id": "ALT-2026-001046",
+      "archetype": "Round-Trip Flow",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 9,
+        "valid_count": 9,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: ROUNDTRIP-005]",
+          "[Txn: TXN-105001]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Germany",
+        "gender": "Male",
+        "occupation": "Marketing Specialist"
+      }
+    },
+    {
+      "case_id": "EVAL-056",
+      "alert_id": "ALT-2026-001047",
+      "archetype": "Legitimate Business Seasonal Spike",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 11,
+        "valid_count": 11,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-106001]",
+          "[KYC Profile]",
+          "[Rule: VOLUME-006]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Japan",
+        "gender": "Female",
+        "occupation": "Artisan Retailer"
+      }
+    },
+    {
+      "case_id": "EVAL-057",
+      "alert_id": "ALT-2026-001048",
+      "archetype": "Benign Isolated Pattern",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 12,
+        "valid_count": 12,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-107003]",
+          "[KYC Profile]",
+          "[Rule: CASH-007]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "France",
+        "gender": "Male",
+        "occupation": "Software Architect"
+      }
+    },
+    {
+      "case_id": "EVAL-058",
+      "alert_id": "ALT-2026-001049",
+      "archetype": "Large Explained Transaction",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 10,
+        "valid_count": 10,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: LARGE-008]",
+          "[KYC Profile]",
+          "[Txn: TXN-108001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Australia",
+        "gender": "Female",
+        "occupation": "Commercial Broker"
+      }
+    },
+    {
+      "case_id": "EVAL-059",
+      "alert_id": "ALT-2026-001050",
+      "archetype": "Missing KYC Data",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Low",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 7,
+        "valid_count": 7,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: RAPID-009]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Unknown",
+        "gender": "Unknown",
+        "occupation": "Unknown"
+      }
+    },
+    {
+      "case_id": "EVAL-060",
+      "alert_id": "ALT-2026-001051",
+      "archetype": "Mixed Signals",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: MULTI-010]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Canada",
+        "gender": "Female",
+        "occupation": "Creative Director"
+      }
+    },
+    {
+      "case_id": "EVAL-061",
+      "alert_id": "ALT-2026-001052",
+      "archetype": "PEP Heightened Scrutiny",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 14,
+        "valid_count": 14,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Watchlist]",
+          "[KYC Profile]",
+          "[Rule: PEP-011]",
+          "[Txn: TXN-111001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Jordan",
+        "gender": "Male",
+        "occupation": "Infrastructure Advisor"
+      }
+    },
+    {
+      "case_id": "EVAL-062",
+      "alert_id": "ALT-2026-001053",
+      "archetype": "Watchlist Counterparty Match",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 22,
+        "valid_count": 22,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Txn: TXN-110003]",
+          "[KYC: Name]",
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Watchlist]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Corporate",
+        "occupation": "Global Freight"
+      }
+    },
+    {
+      "case_id": "EVAL-063",
+      "alert_id": "ALT-2026-001042",
+      "archetype": "Classic Structuring",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Occupation]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-101001]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Rule: STRUCT-001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 2,
+      "customer_demographics": {
+        "nationality": "Singapore",
+        "gender": "Female",
+        "occupation": "Retail Store Manager"
+      }
+    },
+    {
+      "case_id": "EVAL-064",
+      "alert_id": "ALT-2026-001043",
+      "archetype": "Pass-Through / Layering",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-102001]",
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Rule: LAYER-002]",
+          "[Txn: TXN-102002]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "UAE",
+        "gender": "Male",
+        "occupation": "Student"
+      }
+    },
+    {
+      "case_id": "EVAL-065",
+      "alert_id": "ALT-2026-001044",
+      "archetype": "Income Inconsistency",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: INCOME-003]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Brazil",
+        "gender": "Female",
+        "occupation": "Consultant"
+      }
+    },
+    {
+      "case_id": "EVAL-066",
+      "alert_id": "ALT-2026-001045",
+      "archetype": "Dormant Account Spike",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 24,
+        "valid_count": 24,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-104001]",
+          "[Rule: DORMANT-004]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Txn: TXN-104002]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "South Africa",
+        "gender": "Male",
+        "occupation": "Healthcare Worker"
+      }
+    },
+    {
+      "case_id": "EVAL-067",
+      "alert_id": "ALT-2026-001046",
+      "archetype": "Round-Trip Flow",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 9,
+        "valid_count": 9,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: ROUNDTRIP-005]",
+          "[Txn: TXN-105001]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Germany",
+        "gender": "Male",
+        "occupation": "Marketing Specialist"
+      }
+    },
+    {
+      "case_id": "EVAL-068",
+      "alert_id": "ALT-2026-001047",
+      "archetype": "Legitimate Business Seasonal Spike",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 11,
+        "valid_count": 11,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-106001]",
+          "[KYC Profile]",
+          "[Rule: VOLUME-006]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Japan",
+        "gender": "Female",
+        "occupation": "Artisan Retailer"
+      }
+    },
+    {
+      "case_id": "EVAL-069",
+      "alert_id": "ALT-2026-001048",
+      "archetype": "Benign Isolated Pattern",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 12,
+        "valid_count": 12,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Txn: TXN-107003]",
+          "[KYC Profile]",
+          "[Rule: CASH-007]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "France",
+        "gender": "Male",
+        "occupation": "Software Architect"
+      }
+    },
+    {
+      "case_id": "EVAL-070",
+      "alert_id": "ALT-2026-001049",
+      "archetype": "Large Explained Transaction",
+      "expected_disposition": "Close",
+      "predicted_disposition": "Close",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 10,
+        "valid_count": 10,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: LARGE-008]",
+          "[KYC Profile]",
+          "[Txn: TXN-108001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Australia",
+        "gender": "Female",
+        "occupation": "Commercial Broker"
+      }
+    },
+    {
+      "case_id": "EVAL-071",
+      "alert_id": "ALT-2026-001050",
+      "archetype": "Missing KYC Data",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Low",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 7,
+        "valid_count": 7,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC Profile]",
+          "[Rule: RAPID-009]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Unknown",
+        "gender": "Unknown",
+        "occupation": "Unknown"
+      }
+    },
+    {
+      "case_id": "EVAL-072",
+      "alert_id": "ALT-2026-001051",
+      "archetype": "Mixed Signals",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 8,
+        "valid_count": 8,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Rule: MULTI-010]",
+          "[KYC Profile]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Canada",
+        "gender": "Female",
+        "occupation": "Creative Director"
+      }
+    },
+    {
+      "case_id": "EVAL-073",
+      "alert_id": "ALT-2026-001052",
+      "archetype": "PEP Heightened Scrutiny",
+      "expected_disposition": "Investigate",
+      "predicted_disposition": "Investigate",
+      "confidence": "Medium",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 14,
+        "valid_count": 14,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[Watchlist]",
+          "[KYC Profile]",
+          "[Rule: PEP-011]",
+          "[Txn: TXN-111001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "Jordan",
+        "gender": "Male",
+        "occupation": "Infrastructure Advisor"
+      }
+    },
+    {
+      "case_id": "EVAL-074",
+      "alert_id": "ALT-2026-001053",
+      "archetype": "Watchlist Counterparty Match",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 22,
+        "valid_count": 22,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Income]",
+          "[Txn: TXN-110003]",
+          "[KYC: Name]",
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Watchlist]",
+          "[KYC: Occupation]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 0,
+      "customer_demographics": {
+        "nationality": "US",
+        "gender": "Corporate",
+        "occupation": "Global Freight"
+      }
+    },
+    {
+      "case_id": "EVAL-075",
+      "alert_id": "ALT-2026-001042",
+      "archetype": "Classic Structuring",
+      "expected_disposition": "Escalate",
+      "predicted_disposition": "Escalate",
+      "confidence": "High",
+      "validation_status": "PASSED",
+      "hallucinations_detected": 0,
+      "citation_stats": {
+        "total_citations": 20,
+        "valid_count": 20,
+        "invalid_count": 0,
+        "valid_citations": [
+          "[KYC: Account]",
+          "[KYC: Occupation]",
+          "[KYC: Income]",
+          "[KYC: Name]",
+          "[KYC Profile]",
+          "[Txn: TXN-101001]",
+          "[KYC: Baseline]",
+          "[KYC: Risk]",
+          "[Rule: STRUCT-001]"
+        ],
+        "invalid_citations": [],
+        "accuracy_percent": 100.0,
+        "passed_threshold": true
+      },
+      "response_time_ms": 1,
+      "customer_demographics": {
+        "nationality": "Singapore",
+        "gender": "Female",
+        "occupation": "Retail Store Manager"
+      }
+    }
+  ]
+}

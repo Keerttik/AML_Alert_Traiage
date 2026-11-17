@@ -1,0 +1,86 @@
+Problem Statement: AML Alert Triage Copilot
+
+================================================================================
+CONTEXT
+================================================================================
+Banks run transaction monitoring systems that flag suspicious activity, such as 
+cash deposits kept just under reporting limits (structuring), money that passes 
+straight through an account (layering/pass-through), or activity far beyond a 
+customer’s declared income. Each flag becomes an alert that an Anti-Money 
+Laundering (AML) analyst must review before deciding to close it, investigate 
+further, or escalate it as a suspicious transaction report (STR).
+
+================================================================================
+THE PROBLEM
+================================================================================
+Monitoring rules are deliberately broad, because missing a real money laundering 
+case carries severe regulatory penalties. The result is that most alerts turn out 
+to be false positives (frequently >90%). For each alert, analysts manually gather 
+the customer’s KYC profile, transaction history, and counterparties from several 
+disparate systems before they can make an informed judgment.
+
+This creates three critical problems:
+1. Slow triage: Analysts spend most of their time collecting context, not making 
+   judgments.
+2. Alert fatigue: High volumes of false positives reduce attention on genuinely 
+   suspicious cases.
+3. Inconsistent decisions and documentation: Different analysts reach different 
+   conclusions on similar alerts, and the reasoning is not always recorded well 
+   enough for audit and regulatory scrutiny.
+
+================================================================================
+USERS
+================================================================================
+- Primary: AML analysts who triage alerts daily.
+- Secondary: Compliance managers, Quality Assurance (QA) teams, and regulatory 
+  auditors who review decisions and STR narrative quality.
+
+================================================================================
+GOAL
+================================================================================
+Reduce the time an analyst spends per alert and improve decision consistency, 
+without reducing the detection of real suspicious activity.
+
+================================================================================
+PROPOSED SOLUTION
+================================================================================
+A GenAI copilot that, for each alert:
+1. Summarises why the alert fired and what is unusual compared with the 
+   customer’s profile.
+2. Suggests a disposition (Close, Investigate, or Escalate) with clear reasons, 
+   each explicitly citing its source data.
+3. Says "insufficient evidence" instead of guessing or hallucinating when critical 
+   data is absent.
+4. Drafts an STR narrative for escalations, clearly marked as a draft.
+5. Records every AI suggestion, reasoning diff, and analyst decision in an 
+   immutable audit log.
+
+================================================================================
+DESIGN PRINCIPLE
+================================================================================
+The AI prepares and recommends. The analyst decides. 
+The copilot NEVER closes an alert or files a report autonomously.
+
+================================================================================
+SUCCESS METRICS
+================================================================================
+- Primary Metric: Average time spent per alert.
+- Guardrail Metric: Missed escalations on the evaluation set must stay at ZERO (0% false negatives).
+- Alignment Metric: Agreement rate between AI suggestions and senior analyst decisions.
+- Efficiency Metric: Share of false positives correctly suggested for closure.
+- Governance Metric: Audit completeness (100% of decisions have recorded, auditable rationales).
+
+================================================================================
+OUT OF SCOPE (PROTOTYPE)
+================================================================================
+- Real customer or bank data (synthetic/fictional data only).
+- Building underlying detection rules or machine learning scoring models.
+- Autonomous alert closure or automatic STR filing.
+- Production IAM/SSO login, multi-tenant roles, and direct integrations with core banking/monitoring systems.
+
+================================================================================
+PROTOTYPE NOTE
+================================================================================
+Built with fictional data to demonstrate product judgment, safety guardrails, 
+and rigorous evaluation design for generative AI in financial crime compliance.
+

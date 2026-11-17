@@ -1,0 +1,340 @@
+{
+  "cohort": {
+    "analyst_count": 5,
+    "total_alerts_triaged": 20,
+    "duration": "4 Weeks (Simulated)",
+    "analysts": [
+      {
+        "id": "ANALYST-01",
+        "name": "Sarah Chen",
+        "seniority": "Senior Analyst (L2)",
+        "speed_factor": 0.9
+      },
+      {
+        "id": "ANALYST-02",
+        "name": "Marcus Brody",
+        "seniority": "Analyst (L1)",
+        "speed_factor": 1.1
+      },
+      {
+        "id": "ANALYST-03",
+        "name": "Elena Rostova",
+        "seniority": "Analyst (L1)",
+        "speed_factor": 1.05
+      },
+      {
+        "id": "ANALYST-04",
+        "name": "Kwame Osei",
+        "seniority": "Senior Analyst (L2)",
+        "speed_factor": 0.85
+      },
+      {
+        "id": "ANALYST-05",
+        "name": "David Miller",
+        "seniority": "QA Specialist",
+        "speed_factor": 0.95
+      }
+    ]
+  },
+  "ab_comparison": {
+    "avg_manual_time_min": 32.6,
+    "avg_copilot_time_min": 13.7,
+    "time_saved_per_alert_min": 18.9,
+    "time_reduction_percent": 57.9,
+    "total_hours_saved": 6.3
+  },
+  "quality_metrics": {
+    "overall_agreement_percent": 100.0,
+    "override_rate_percent": 0.0,
+    "missed_escalations": 0,
+    "guardrail_status": "PASSED (0 Missed Escalations)"
+  },
+  "weekly_trends": [
+    {
+      "Week": "Week 1",
+      "Alerts Triaged": 5,
+      "Agreement Rate": "100.0%",
+      "Avg Baseline Time": "31.6m",
+      "Avg Copilot Time": "13.4m",
+      "Time Reduction": "57.4%"
+    },
+    {
+      "Week": "Week 2",
+      "Alerts Triaged": 5,
+      "Agreement Rate": "100.0%",
+      "Avg Baseline Time": "33.6m",
+      "Avg Copilot Time": "14.0m",
+      "Time Reduction": "58.2%"
+    },
+    {
+      "Week": "Week 3",
+      "Alerts Triaged": 5,
+      "Agreement Rate": "100.0%",
+      "Avg Baseline Time": "31.8m",
+      "Avg Copilot Time": "14.2m",
+      "Time Reduction": "55.4%"
+    },
+    {
+      "Week": "Week 4",
+      "Alerts Triaged": 5,
+      "Agreement Rate": "100.0%",
+      "Avg Baseline Time": "33.6m",
+      "Avg Copilot Time": "13.2m",
+      "Time Reduction": "60.6%"
+    }
+  ],
+  "feedback_summary": {
+    "total_responses": 41,
+    "avg_rating": 5.0,
+    "nps_satisfaction_percent": 100.0,
+    "accuracy_breakdown": {
+      "Accurate & Appropriate": 41
+    },
+    "narrative_quality_breakdown": {
+      "High - minimal edits": 22,
+      "Adequate": 19
+    }
+  },
+  "simulation_records": [
+    {
+      "alert_id": "ALT-PILOT-0001",
+      "week": "Week 1",
+      "analyst_id": "ANALYST-01",
+      "analyst_name": "Sarah Chen",
+      "ai_recommendation": "Escalate",
+      "analyst_disposition": "Escalate",
+      "is_override": false,
+      "manual_time_min": 29.0,
+      "copilot_time_min": 14.4,
+      "time_saved_min": 14.6
+    },
+    {
+      "alert_id": "ALT-PILOT-0002",
+      "week": "Week 1",
+      "analyst_id": "ANALYST-02",
+      "analyst_name": "Marcus Brody",
+      "ai_recommendation": "Escalate",
+      "analyst_disposition": "Escalate",
+      "is_override": false,
+      "manual_time_min": 33.5,
+      "copilot_time_min": 16.2,
+      "time_saved_min": 17.3
+    },
+    {
+      "alert_id": "ALT-PILOT-0003",
+      "week": "Week 1",
+      "analyst_id": "ANALYST-03",
+      "analyst_name": "Elena Rostova",
+      "ai_recommendation": "Investigate",
+      "analyst_disposition": "Investigate",
+      "is_override": false,
+      "manual_time_min": 37.3,
+      "copilot_time_min": 12.1,
+      "time_saved_min": 25.2
+    },
+    {
+      "alert_id": "ALT-PILOT-0004",
+      "week": "Week 1",
+      "analyst_id": "ANALYST-04",
+      "analyst_name": "Kwame Osei",
+      "ai_recommendation": "Escalate",
+      "analyst_disposition": "Escalate",
+      "is_override": false,
+      "manual_time_min": 26.2,
+      "copilot_time_min": 13.5,
+      "time_saved_min": 12.7
+    },
+    {
+      "alert_id": "ALT-PILOT-0005",
+      "week": "Week 1",
+      "analyst_id": "ANALYST-05",
+      "analyst_name": "David Miller",
+      "ai_recommendation": "Investigate",
+      "analyst_disposition": "Investigate",
+      "is_override": false,
+      "manual_time_min": 31.8,
+      "copilot_time_min": 11.0,
+      "time_saved_min": 20.8
+    },
+    {
+      "alert_id": "ALT-PILOT-0006",
+      "week": "Week 2",
+      "analyst_id": "ANALYST-01",
+      "analyst_name": "Sarah Chen",
+      "ai_recommendation": "Close",
+      "analyst_disposition": "Close",
+      "is_override": false,
+      "manual_time_min": 31.3,
+      "copilot_time_min": 11.9,
+      "time_saved_min": 19.4
+    },
+    {
+      "alert_id": "ALT-PILOT-0007",
+      "week": "Week 2",
+      "analyst_id": "ANALYST-02",
+      "analyst_name": "Marcus Brody",
+      "ai_recommendation": "Close",
+      "analyst_disposition": "Close",
+      "is_override": false,
+      "manual_time_min": 39.4,
+      "copilot_time_min": 16.2,
+      "time_saved_min": 23.2
+    },
+    {
+      "alert_id": "ALT-PILOT-0008",
+      "week": "Week 2",
+      "analyst_id": "ANALYST-03",
+      "analyst_name": "Elena Rostova",
+      "ai_recommendation": "Close",
+      "analyst_disposition": "Close",
+      "is_override": false,
+      "manual_time_min": 38.7,
+      "copilot_time_min": 14.6,
+      "time_saved_min": 24.1
+    },
+    {
+      "alert_id": "ALT-PILOT-0009",
+      "week": "Week 2",
+      "analyst_id": "ANALYST-04",
+      "analyst_name": "Kwame Osei",
+      "ai_recommendation": "Investigate",
+      "analyst_disposition": "Investigate",
+      "is_override": false,
+      "manual_time_min": 28.9,
+      "copilot_time_min": 12.0,
+      "time_saved_min": 16.9
+    },
+    {
+      "alert_id": "ALT-PILOT-0010",
+      "week": "Week 2",
+      "analyst_id": "ANALYST-05",
+      "analyst_name": "David Miller",
+      "ai_recommendation": "Investigate",
+      "analyst_disposition": "Investigate",
+      "is_override": false,
+      "manual_time_min": 29.5,
+      "copilot_time_min": 15.4,
+      "time_saved_min": 14.1
+    },
+    {
+      "alert_id": "ALT-PILOT-0011",
+      "week": "Week 3",
+      "analyst_id": "ANALYST-01",
+      "analyst_name": "Sarah Chen",
+      "ai_recommendation": "Investigate",
+      "analyst_disposition": "Investigate",
+      "is_override": false,
+      "manual_time_min": 29.1,
+      "copilot_time_min": 13.9,
+      "time_saved_min": 15.2
+    },
+    {
+      "alert_id": "ALT-PILOT-0012",
+      "week": "Week 3",
+      "analyst_id": "ANALYST-02",
+      "analyst_name": "Marcus Brody",
+      "ai_recommendation": "Escalate",
+      "analyst_disposition": "Escalate",
+      "is_override": false,
+      "manual_time_min": 35.9,
+      "copilot_time_min": 14.3,
+      "time_saved_min": 21.6
+    },
+    {
+      "alert_id": "ALT-PILOT-0013",
+      "week": "Week 3",
+      "analyst_id": "ANALYST-03",
+      "analyst_name": "Elena Rostova",
+      "ai_recommendation": "Escalate",
+      "analyst_disposition": "Escalate",
+      "is_override": false,
+      "manual_time_min": 30.0,
+      "copilot_time_min": 15.5,
+      "time_saved_min": 14.5
+    },
+    {
+      "alert_id": "ALT-PILOT-0014",
+      "week": "Week 3",
+      "analyst_id": "ANALYST-04",
+      "analyst_name": "Kwame Osei",
+      "ai_recommendation": "Escalate",
+      "analyst_disposition": "Escalate",
+      "is_override": false,
+      "manual_time_min": 31.3,
+      "copilot_time_min": 12.2,
+      "time_saved_min": 19.1
+    },
+    {
+      "alert_id": "ALT-PILOT-0015",
+      "week": "Week 3",
+      "analyst_id": "ANALYST-05",
+      "analyst_name": "David Miller",
+      "ai_recommendation": "Investigate",
+      "analyst_disposition": "Investigate",
+      "is_override": false,
+      "manual_time_min": 32.9,
+      "copilot_time_min": 15.1,
+      "time_saved_min": 17.8
+    },
+    {
+      "alert_id": "ALT-PILOT-0016",
+      "week": "Week 4",
+      "analyst_id": "ANALYST-01",
+      "analyst_name": "Sarah Chen",
+      "ai_recommendation": "Escalate",
+      "analyst_disposition": "Escalate",
+      "is_override": false,
+      "manual_time_min": 32.7,
+      "copilot_time_min": 14.2,
+      "time_saved_min": 18.5
+    },
+    {
+      "alert_id": "ALT-PILOT-0017",
+      "week": "Week 4",
+      "analyst_id": "ANALYST-02",
+      "analyst_name": "Marcus Brody",
+      "ai_recommendation": "Investigate",
+      "analyst_disposition": "Investigate",
+      "is_override": false,
+      "manual_time_min": 36.6,
+      "copilot_time_min": 12.5,
+      "time_saved_min": 24.1
+    },
+    {
+      "alert_id": "ALT-PILOT-0018",
+      "week": "Week 4",
+      "analyst_id": "ANALYST-03",
+      "analyst_name": "Elena Rostova",
+      "ai_recommendation": "Close",
+      "analyst_disposition": "Close",
+      "is_override": false,
+      "manual_time_min": 31.2,
+      "copilot_time_min": 12.0,
+      "time_saved_min": 19.2
+    },
+    {
+      "alert_id": "ALT-PILOT-0019",
+      "week": "Week 4",
+      "analyst_id": "ANALYST-04",
+      "analyst_name": "Kwame Osei",
+      "ai_recommendation": "Close",
+      "analyst_disposition": "Close",
+      "is_override": false,
+      "manual_time_min": 31.6,
+      "copilot_time_min": 13.5,
+      "time_saved_min": 18.1
+    },
+    {
+      "alert_id": "ALT-PILOT-0020",
+      "week": "Week 4",
+      "analyst_id": "ANALYST-05",
+      "analyst_name": "David Miller",
+      "ai_recommendation": "Close",
+      "analyst_disposition": "Close",
+      "is_override": false,
+      "manual_time_min": 35.8,
+      "copilot_time_min": 14.0,
+      "time_saved_min": 21.8
+    }
+  ]
+}
