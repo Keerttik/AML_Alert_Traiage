@@ -10,9 +10,13 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from app.copilot.engine import CopilotEngine
+from app.copilot.conversational import ConversationalAssistant
+from app.copilot.prioritizer import AlertPrioritizer
+from app.copilot.str_generator import generate_draft_str
 from app.data.context_assembler import ContextAssembler
 from app.data.audit_logger import AuditLogger
 from app.data.feedback_store import FeedbackStore
+from app.monitoring.drift_detector import ModelDriftDetector
 from app.utils.config import PROMPT_BUNDLE_VERSION, EVALUATION_DIR
 from evaluation.metrics import compute_evaluation_metrics
 
@@ -137,12 +141,15 @@ with st.sidebar:
     st.divider()
     st.markdown("> **Design Axiom:**\n> The AI prepares and recommends.\n> The analyst decides.\n> *Never auto-close or auto-file.*")
 
-# Instantiate Engine
+# Instantiate Engine & Phase 3 Modules
 engine = CopilotEngine(api_key=st.session_state.api_key if st.session_state.api_key else None)
 engine.context_assembler = st.session_state.context_assembler
 assembler = st.session_state.context_assembler
 audit_log = st.session_state.audit_logger
 feedback_store = st.session_state.feedback_store
+conversational_assistant = ConversationalAssistant()
+alert_prioritizer = AlertPrioritizer()
+drift_detector = ModelDriftDetector()
 
 # Main Header
 st.title("🛡️ AML Alert Triage Copilot")
@@ -152,7 +159,7 @@ st.markdown(f"**Logged in as:** `{st.session_state.user_role}` | **Environment:*
 if st.session_state.user_role == "AML Analyst (L1/L2)":
     tabs = st.tabs(["📋 Triage Workspace", "🗂️ Alert Queue", "🛡️ Audit Log"])
 elif st.session_state.user_role == "Compliance Manager / BSA Officer":
-    tabs = st.tabs(["📈 Pilot A/B Performance", "🗂️ Team Queue Oversight", "⚖️ Override Analysis", "📋 Triage Inspection"])
+    tabs = st.tabs(["📈 Pilot A/B Performance", "🗂️ Team Queue Oversight", "⚖️ Override Analysis", "📡 Model Drift & Telemetry", "📋 Triage Inspection"])
 else: # Internal Auditor
     tabs = st.tabs(["🔒 Audit Trail & Hash Verification", "⚖️ Fairness & Demographic Audit", "📋 Case Inspector"])
 
@@ -257,7 +264,36 @@ if st.session_state.user_role == "AML Analyst (L1/L2)":
 
             if rec == "Escalate" or analysis.get("str_draft"):
                 with st.expander("📄 Draft Regulatory STR Narrative (5W1H)", expanded=True):
-                    str_text = st.text_area("Editable STR Draft", value=analysis.get("str_draft", ""), height=180, key=f"str_{current_alert_id}")
+                    str_lang = st.selectbox(
+                        "Filing Regulatory Jurisdiction / Language",
+                        options=["English (FinCEN / FCA)", "Spanish (ROS - Latinoamérica)", "French (TRACFIN - France)", "Arabic (FIU - MENA)"],
+                        index=0,
+                        key=f"lang_sel_{current_alert_id}"
+                    )
+                    lang_code = "en"
+                    if "Spanish" in str_lang: lang_code = "es"
+                    elif "French" in str_lang: lang_code = "fr"
+                    elif "Arabic" in str_lang: lang_code = "ar"
+
+                    reasons = [r["reason"] for r in analysis.get("rationale", []) if isinstance(r, dict)]
+                    draft_content = generate_draft_str(context, reasons, language=lang_code)
+
+                    str_text = st.text_area("Editable STR Draft", value=draft_content, height=190, key=f"str_{current_alert_id}_{lang_code}")
+
+            # Phase 3 Conversational Follow-Up Query Box
+            with st.expander("💬 Conversational Investigative Follow-Up (Ask Copilot)"):
+                st.caption("Ask dynamic questions about customer history, ratios, or counterparties:")
+                col_q, col_b = st.columns([3, 1])
+                with col_q:
+                    analyst_q = st.text_input("Ask about this alert:", placeholder="e.g. What is the ratio of flagged cash to declared income?", key=f"q_{current_alert_id}")
+                with col_b:
+                    ask_btn = st.button("Ask Copilot", key=f"btn_q_{current_alert_id}")
+
+                if ask_btn and analyst_q:
+                    ans_res = conversational_assistant.answer_query(analyst_q, context)
+                    st.info(f"**Answer:** {ans_res['answer']}")
+                    if ans_res["source_citations"]:
+                        st.caption("Citing: " + ", ".join([f"`{c}`" for c in ans_res["source_citations"]]))
 
             st.divider()
             st.markdown("### ✍️ Analyst Adjudication")
@@ -318,9 +354,35 @@ if st.session_state.user_role == "AML Analyst (L1/L2)":
                     st.success("Thank you! Feedback recorded.")
 
     with tabs[1]: # Alert Queue
-        st.subheader("🗂️ Active Alert Queue")
+        st.subheader("🗂️ Active Alert Queue (Intelligent Risk Prioritization)")
+        st.caption("Alerts pre-scored and ranked by financial velocity, sanctions risk, and income divergence.")
         all_alerts = assembler.get_all_alerts()
-        st.dataframe(pd.DataFrame(all_alerts)[["alert_id", "customer_id", "rule_name", "priority", "trigger_date", "status"]], use_container_width=True, hide_index=True)
+        queue_rows = []
+        for a in all_alerts:
+            # Score alert
+            try:
+                ctx_tmp = assembler.assemble_context(a["alert_id"])
+                p_res = alert_prioritizer.score_alert(ctx_tmp)
+                sev_score = p_res["severity_score"]
+                tier = p_res["priority_tier"]
+                sla = f"{p_res['target_sla_hours']}h"
+            except Exception:
+                sev_score = 50
+                tier = a.get("priority", "Medium")
+                sla = "24h"
+
+            queue_rows.append({
+                "Alert ID": a["alert_id"],
+                "Customer ID": a["customer_id"],
+                "Rule Name": a["rule_name"],
+                "Risk Score": sev_score,
+                "Priority Tier": tier,
+                "Target SLA": sla,
+                "Trigger Date": a["trigger_date"]
+            })
+
+        df_q = pd.DataFrame(queue_rows).sort_values(by="Risk Score", ascending=False)
+        st.dataframe(df_q, use_container_width=True, hide_index=True)
 
     with tabs[2]: # Audit Log
         st.subheader("🛡️ Audit Log (Analyst View)")
@@ -396,7 +458,41 @@ elif st.session_state.user_role == "Compliance Manager / BSA Officer":
         else:
             st.info("No overrides recorded yet.")
 
-    with tabs[3]: # Triage Inspection
+    with tabs[3]: # Model Drift & Telemetry
+        st.subheader("📡 Real-Time Model Telemetry & Drift Detection")
+        st.caption("Federal Reserve SR 11-7 Section III ongoing operational monitoring & calibration.")
+
+        drift_info = drift_detector.compute_monitoring_telemetry()
+
+        d1, d2, d3 = st.columns(3)
+        with d1:
+            st.metric("System Health", drift_info["system_health"])
+        with d2:
+            st.metric("Total Inferred Predictions", drift_info["total_predictions"])
+        with d3:
+            st.metric("P95 Latency", f"{drift_info['latency_metrics']['p95_ms']} ms", delta="SLA Target < 10,000ms")
+
+        st.markdown("---")
+        c_dist1, c_dist2 = st.columns(2)
+        with c_dist1:
+            st.markdown("#### 📊 Rolling Disposition Distribution")
+            df_disp = pd.DataFrame(list(drift_info["disposition_distribution"].items()), columns=["Disposition", "Share %"])
+            st.dataframe(df_disp, use_container_width=True, hide_index=True)
+            st.caption("Baseline expected: Close ~35-50%, Investigate ~25-40%, Escalate ~20-35%")
+
+        with c_dist2:
+            st.markdown("#### 🎯 Confidence Calibration")
+            df_conf = pd.DataFrame(list(drift_info["confidence_calibration"].items()), columns=["Confidence", "Share %"])
+            st.dataframe(df_conf, use_container_width=True, hide_index=True)
+
+        if drift_info["drift_alerts"]:
+            st.warning("⚠️ **Active Drift Alerts Detected:**")
+            for alert in drift_info["drift_alerts"]:
+                st.error(f"- [{alert['severity']}] {alert['message']}")
+        else:
+            st.success("✅ No distribution drift or performance anomalies detected. Model operating within expected calibration bounds.")
+
+    with tabs[4]: # Triage Inspection
         st.subheader("📋 Executive Case Inspector")
         all_alerts = assembler.get_all_alerts()
         sel = st.selectbox("Inspect Alert Case:", [a["alert_id"] for a in all_alerts])

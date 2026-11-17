@@ -61,15 +61,28 @@ During Phase 2, a 4-week pilot simulation was executed across **5 AML analysts**
 - A false `Close` recommendation on a true money laundering case results in criminal facilitation and multi-million dollar regulatory penalties.
 - The copilot is strictly calibrated with a conservative bias: when signals are ambiguous, it defaults to `Investigate`.
 
-### 4. Automated 5W1H Regulatory STR Narrative Drafter
+### 4. Automated 5W1H Regulatory STR Narrative Drafter (Multi-Language)
 - For `Escalate` recommendations, auto-drafts a standardized Suspicious Transaction Report narrative structured across **Who, What, When, Where, Why, How**.
+- **Multi-Jurisdiction Filing Support:** English (FinCEN/FCA), Spanish (ROS), French (TRACFIN), and Arabic (MENA FIU).
 - Prominently watermarked: `[DRAFT — REQUIRES ANALYST REVIEW BEFORE SUBMISSION]`.
 - Analysts can edit the text directly before committing.
 
-### 5. Tamper-Evident SHA-256 Chained Audit Trail
+### 5. Conversational Investigative Assistant
+- Analysts can ask natural-language questions directly in the triage workspace (e.g. *"What is the multiple of flagged cash deposits compared to declared income?"* or *"Are there any sanctions hits on counterparties?"*).
+- Grounded strictly in the assembled dossier with verified citations.
+
+### 6. Intelligent Risk Pre-Scoring & Queue Prioritization
+- Pre-scores incoming alerts to determine a deterministic **Severity Risk Score (0 - 100)** and priority tier (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) with SLA target countdowns.
+
+### 7. Tamper-Evident SHA-256 Chained Audit Trail
 - Every decision records the AI recommendation, analyst decision, pre-filled vs. analyst-edited rationale, override status, and timestamp.
-- Uses **SHA-256 cryptographic hash chaining** (`previous_entry_hash` linked to `audit_entry_hash`) so any tampering or retroactive deletion breaks the verification chain.
+- Uses **SHA-256 cryptographic hash chaining** (`previous_entry_hash` linked to `audit_entry_hash`) so any tampering breaks the verification chain.
 - 1-click export to **CSV** and **JSON** for regulatory examiners.
+
+### 8. Production Enterprise API & Real-Time Drift Telemetry
+- **FastAPI Core Gateway:** Endpoints for upstream alert ingestion (Actimize/Mantas), context assembly, triage inference, and case management adjudication.
+- **Model Drift Detector:** Tracks rolling disposition distributions, latency quantiles (p50, p95), and confidence calibration to detect potential false-negative suppression drift.
+- **Automated CI/CD Evaluation Gate:** GitHub Actions workflow enforcing a hard blocker if `missed_escalations > 0`.
 
 ---
 

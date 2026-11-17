@@ -9,7 +9,7 @@
     "citation_accuracy_percent": 100.0,
     "total_hallucinations": 0,
     "hallucination_rate_percent": 0.0,
-    "avg_response_time_ms": 0.2,
+    "avg_response_time_ms": 0.1,
     "confusion_matrix": {
       "Close": {
         "Close": 21,
@@ -219,19 +219,19 @@
         "valid_citations": [
           "[KYC: Account]",
           "[KYC: Occupation]",
-          "[KYC: Income]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-101001]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[Rule: STRUCT-001]"
+          "[KYC Profile]",
+          "[Rule: STRUCT-001]",
+          "[Txn: TXN-101001]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 3,
+      "response_time_ms": 2,
       "customer_demographics": {
         "nationality": "US",
         "gender": "Male",
@@ -253,21 +253,21 @@
         "invalid_count": 0,
         "valid_citations": [
           "[Txn: TXN-102001]",
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Rule: LAYER-002]",
-          "[Txn: TXN-102002]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[KYC: Occupation]"
+          "[KYC Profile]",
+          "[Txn: TXN-102002]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 1,
+      "response_time_ms": 0,
       "customer_demographics": {
         "nationality": "US",
         "gender": "Male",
@@ -288,8 +288,8 @@
         "valid_count": 8,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: INCOME-003]"
+          "[Rule: INCOME-003]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -317,15 +317,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[KYC: Account]",
-          "[KYC: Income]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-104001]",
-          "[Rule: DORMANT-004]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC Profile]",
+          "[KYC: Income]",
           "[Txn: TXN-104002]",
-          "[KYC: Occupation]"
+          "[Rule: DORMANT-004]",
+          "[Txn: TXN-104001]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -352,9 +352,9 @@
         "valid_count": 9,
         "invalid_count": 0,
         "valid_citations": [
+          "[KYC Profile]",
           "[Rule: ROUNDTRIP-005]",
-          "[Txn: TXN-105001]",
-          "[KYC Profile]"
+          "[Txn: TXN-105001]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -410,9 +410,9 @@
         "valid_count": 12,
         "invalid_count": 0,
         "valid_citations": [
-          "[Txn: TXN-107003]",
+          "[Rule: CASH-007]",
           "[KYC Profile]",
-          "[Rule: CASH-007]"
+          "[Txn: TXN-107003]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -439,9 +439,9 @@
         "valid_count": 10,
         "invalid_count": 0,
         "valid_citations": [
+          "[Txn: TXN-108001]",
           "[Rule: LARGE-008]",
-          "[KYC Profile]",
-          "[Txn: TXN-108001]"
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -468,8 +468,8 @@
         "valid_count": 7,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: RAPID-009]"
+          "[Rule: RAPID-009]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -524,9 +524,9 @@
         "valid_count": 14,
         "invalid_count": 0,
         "valid_citations": [
+          "[Rule: PEP-011]",
           "[Watchlist]",
           "[KYC Profile]",
-          "[Rule: PEP-011]",
           "[Txn: TXN-111001]"
         ],
         "invalid_citations": [],
@@ -554,21 +554,21 @@
         "valid_count": 22,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Txn: TXN-110003]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[Rule: SANCTION-012]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC: Income]",
           "[Watchlist]",
-          "[KYC: Occupation]"
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 0,
+      "response_time_ms": 1,
       "customer_demographics": {
         "nationality": "US",
         "gender": "Corporate",
@@ -591,13 +591,13 @@
         "valid_citations": [
           "[KYC: Account]",
           "[KYC: Occupation]",
-          "[KYC: Income]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-101001]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[Rule: STRUCT-001]"
+          "[KYC Profile]",
+          "[Rule: STRUCT-001]",
+          "[Txn: TXN-101001]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -625,15 +625,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[Txn: TXN-102001]",
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Rule: LAYER-002]",
-          "[Txn: TXN-102002]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[KYC: Occupation]"
+          "[KYC Profile]",
+          "[Txn: TXN-102002]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -689,9 +689,9 @@
         "valid_count": 12,
         "invalid_count": 0,
         "valid_citations": [
-          "[Txn: TXN-107003]",
+          "[Rule: CASH-007]",
           "[KYC Profile]",
-          "[Rule: CASH-007]"
+          "[Txn: TXN-107003]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -718,9 +718,9 @@
         "valid_count": 10,
         "invalid_count": 0,
         "valid_citations": [
+          "[Txn: TXN-108001]",
           "[Rule: LARGE-008]",
-          "[KYC Profile]",
-          "[Txn: TXN-108001]"
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -747,8 +747,8 @@
         "valid_count": 7,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: RAPID-009]"
+          "[Rule: RAPID-009]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -776,15 +776,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[KYC: Account]",
-          "[KYC: Income]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-104001]",
-          "[Rule: DORMANT-004]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC Profile]",
+          "[KYC: Income]",
           "[Txn: TXN-104002]",
-          "[KYC: Occupation]"
+          "[Rule: DORMANT-004]",
+          "[Txn: TXN-104001]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -811,15 +811,15 @@
         "valid_count": 22,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Txn: TXN-110003]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[Rule: SANCTION-012]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC: Income]",
           "[Watchlist]",
-          "[KYC: Occupation]"
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -846,9 +846,9 @@
         "valid_count": 9,
         "invalid_count": 0,
         "valid_citations": [
+          "[KYC Profile]",
           "[Rule: ROUNDTRIP-005]",
-          "[Txn: TXN-105001]",
-          "[KYC Profile]"
+          "[Txn: TXN-105001]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -875,8 +875,8 @@
         "valid_count": 8,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: INCOME-003]"
+          "[Rule: INCOME-003]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -903,9 +903,9 @@
         "valid_count": 14,
         "invalid_count": 0,
         "valid_citations": [
+          "[Rule: PEP-011]",
           "[Watchlist]",
           "[KYC Profile]",
-          "[Rule: PEP-011]",
           "[Txn: TXN-111001]"
         ],
         "invalid_citations": [],
@@ -935,13 +935,13 @@
         "valid_citations": [
           "[KYC: Account]",
           "[KYC: Occupation]",
-          "[KYC: Income]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-101001]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[Rule: STRUCT-001]"
+          "[KYC Profile]",
+          "[Rule: STRUCT-001]",
+          "[Txn: TXN-101001]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -997,9 +997,9 @@
         "valid_count": 12,
         "invalid_count": 0,
         "valid_citations": [
-          "[Txn: TXN-107003]",
+          "[Rule: CASH-007]",
           "[KYC Profile]",
-          "[Rule: CASH-007]"
+          "[Txn: TXN-107003]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1026,9 +1026,9 @@
         "valid_count": 10,
         "invalid_count": 0,
         "valid_citations": [
+          "[Txn: TXN-108001]",
           "[Rule: LARGE-008]",
-          "[KYC Profile]",
-          "[Txn: TXN-108001]"
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1056,15 +1056,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[Txn: TXN-102001]",
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Rule: LAYER-002]",
-          "[Txn: TXN-102002]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[KYC: Occupation]"
+          "[KYC Profile]",
+          "[Txn: TXN-102002]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1092,15 +1092,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[KYC: Account]",
-          "[KYC: Income]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-104001]",
-          "[Rule: DORMANT-004]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC Profile]",
+          "[KYC: Income]",
           "[Txn: TXN-104002]",
-          "[KYC: Occupation]"
+          "[Rule: DORMANT-004]",
+          "[Txn: TXN-104001]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1127,15 +1127,15 @@
         "valid_count": 22,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Txn: TXN-110003]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[Rule: SANCTION-012]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC: Income]",
           "[Watchlist]",
-          "[KYC: Occupation]"
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1162,9 +1162,9 @@
         "valid_count": 9,
         "invalid_count": 0,
         "valid_citations": [
+          "[KYC Profile]",
           "[Rule: ROUNDTRIP-005]",
-          "[Txn: TXN-105001]",
-          "[KYC Profile]"
+          "[Txn: TXN-105001]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1219,8 +1219,8 @@
         "valid_count": 7,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: RAPID-009]"
+          "[Rule: RAPID-009]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1249,13 +1249,13 @@
         "valid_citations": [
           "[KYC: Account]",
           "[KYC: Occupation]",
-          "[KYC: Income]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-101001]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[Rule: STRUCT-001]"
+          "[KYC Profile]",
+          "[Rule: STRUCT-001]",
+          "[Txn: TXN-101001]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1311,9 +1311,9 @@
         "valid_count": 12,
         "invalid_count": 0,
         "valid_citations": [
-          "[Txn: TXN-107003]",
+          "[Rule: CASH-007]",
           "[KYC Profile]",
-          "[Rule: CASH-007]"
+          "[Txn: TXN-107003]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1340,9 +1340,9 @@
         "valid_count": 10,
         "invalid_count": 0,
         "valid_citations": [
+          "[Txn: TXN-108001]",
           "[Rule: LARGE-008]",
-          "[KYC Profile]",
-          "[Txn: TXN-108001]"
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1370,15 +1370,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[Txn: TXN-102001]",
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Rule: LAYER-002]",
-          "[Txn: TXN-102002]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[KYC: Occupation]"
+          "[KYC Profile]",
+          "[Txn: TXN-102002]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1406,15 +1406,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[KYC: Account]",
-          "[KYC: Income]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-104001]",
-          "[Rule: DORMANT-004]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC Profile]",
+          "[KYC: Income]",
           "[Txn: TXN-104002]",
-          "[KYC: Occupation]"
+          "[Rule: DORMANT-004]",
+          "[Txn: TXN-104001]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1441,15 +1441,15 @@
         "valid_count": 22,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Txn: TXN-110003]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[Rule: SANCTION-012]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC: Income]",
           "[Watchlist]",
-          "[KYC: Occupation]"
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1476,9 +1476,9 @@
         "valid_count": 14,
         "invalid_count": 0,
         "valid_citations": [
+          "[Rule: PEP-011]",
           "[Watchlist]",
           "[KYC Profile]",
-          "[Rule: PEP-011]",
           "[Txn: TXN-111001]"
         ],
         "invalid_citations": [],
@@ -1506,9 +1506,9 @@
         "valid_count": 9,
         "invalid_count": 0,
         "valid_citations": [
+          "[KYC Profile]",
           "[Rule: ROUNDTRIP-005]",
-          "[Txn: TXN-105001]",
-          "[KYC Profile]"
+          "[Txn: TXN-105001]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1535,8 +1535,8 @@
         "valid_count": 8,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: INCOME-003]"
+          "[Rule: INCOME-003]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1563,8 +1563,8 @@
         "valid_count": 7,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: RAPID-009]"
+          "[Rule: RAPID-009]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1593,13 +1593,13 @@
         "valid_citations": [
           "[KYC: Account]",
           "[KYC: Occupation]",
-          "[KYC: Income]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-101001]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[Rule: STRUCT-001]"
+          "[KYC Profile]",
+          "[Rule: STRUCT-001]",
+          "[Txn: TXN-101001]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1655,9 +1655,9 @@
         "valid_count": 12,
         "invalid_count": 0,
         "valid_citations": [
-          "[Txn: TXN-107003]",
+          "[Rule: CASH-007]",
           "[KYC Profile]",
-          "[Rule: CASH-007]"
+          "[Txn: TXN-107003]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1684,9 +1684,9 @@
         "valid_count": 10,
         "invalid_count": 0,
         "valid_citations": [
+          "[Txn: TXN-108001]",
           "[Rule: LARGE-008]",
-          "[KYC Profile]",
-          "[Txn: TXN-108001]"
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1714,15 +1714,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[Txn: TXN-102001]",
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Rule: LAYER-002]",
-          "[Txn: TXN-102002]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[KYC: Occupation]"
+          "[KYC Profile]",
+          "[Txn: TXN-102002]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1749,15 +1749,15 @@
         "valid_count": 22,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Txn: TXN-110003]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[Rule: SANCTION-012]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC: Income]",
           "[Watchlist]",
-          "[KYC: Occupation]"
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1786,13 +1786,13 @@
         "valid_citations": [
           "[KYC: Account]",
           "[KYC: Occupation]",
-          "[KYC: Income]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-101001]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[Rule: STRUCT-001]"
+          "[KYC Profile]",
+          "[Rule: STRUCT-001]",
+          "[Txn: TXN-101001]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1820,21 +1820,21 @@
         "invalid_count": 0,
         "valid_citations": [
           "[Txn: TXN-102001]",
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Rule: LAYER-002]",
-          "[Txn: TXN-102002]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[KYC: Occupation]"
+          "[KYC Profile]",
+          "[Txn: TXN-102002]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 1,
+      "response_time_ms": 0,
       "customer_demographics": {
         "nationality": "UAE",
         "gender": "Male",
@@ -1855,8 +1855,8 @@
         "valid_count": 8,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: INCOME-003]"
+          "[Rule: INCOME-003]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1884,21 +1884,21 @@
         "invalid_count": 0,
         "valid_citations": [
           "[KYC: Account]",
-          "[KYC: Income]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-104001]",
-          "[Rule: DORMANT-004]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC Profile]",
+          "[KYC: Income]",
           "[Txn: TXN-104002]",
-          "[KYC: Occupation]"
+          "[Rule: DORMANT-004]",
+          "[Txn: TXN-104001]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 1,
+      "response_time_ms": 0,
       "customer_demographics": {
         "nationality": "South Africa",
         "gender": "Male",
@@ -1919,9 +1919,9 @@
         "valid_count": 9,
         "invalid_count": 0,
         "valid_citations": [
+          "[KYC Profile]",
           "[Rule: ROUNDTRIP-005]",
-          "[Txn: TXN-105001]",
-          "[KYC Profile]"
+          "[Txn: TXN-105001]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -1977,9 +1977,9 @@
         "valid_count": 12,
         "invalid_count": 0,
         "valid_citations": [
-          "[Txn: TXN-107003]",
+          "[Rule: CASH-007]",
           "[KYC Profile]",
-          "[Rule: CASH-007]"
+          "[Txn: TXN-107003]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2006,9 +2006,9 @@
         "valid_count": 10,
         "invalid_count": 0,
         "valid_citations": [
+          "[Txn: TXN-108001]",
           "[Rule: LARGE-008]",
-          "[KYC Profile]",
-          "[Txn: TXN-108001]"
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2035,8 +2035,8 @@
         "valid_count": 7,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: RAPID-009]"
+          "[Rule: RAPID-009]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2091,9 +2091,9 @@
         "valid_count": 14,
         "invalid_count": 0,
         "valid_citations": [
+          "[Rule: PEP-011]",
           "[Watchlist]",
           "[KYC Profile]",
-          "[Rule: PEP-011]",
           "[Txn: TXN-111001]"
         ],
         "invalid_citations": [],
@@ -2121,21 +2121,21 @@
         "valid_count": 22,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Txn: TXN-110003]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[Rule: SANCTION-012]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC: Income]",
           "[Watchlist]",
-          "[KYC: Occupation]"
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 1,
+      "response_time_ms": 0,
       "customer_demographics": {
         "nationality": "US",
         "gender": "Corporate",
@@ -2158,19 +2158,19 @@
         "valid_citations": [
           "[KYC: Account]",
           "[KYC: Occupation]",
-          "[KYC: Income]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-101001]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[Rule: STRUCT-001]"
+          "[KYC Profile]",
+          "[Rule: STRUCT-001]",
+          "[Txn: TXN-101001]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 2,
+      "response_time_ms": 1,
       "customer_demographics": {
         "nationality": "Singapore",
         "gender": "Female",
@@ -2192,21 +2192,21 @@
         "invalid_count": 0,
         "valid_citations": [
           "[Txn: TXN-102001]",
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Rule: LAYER-002]",
-          "[Txn: TXN-102002]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[KYC: Occupation]"
+          "[KYC Profile]",
+          "[Txn: TXN-102002]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 1,
+      "response_time_ms": 0,
       "customer_demographics": {
         "nationality": "UAE",
         "gender": "Male",
@@ -2227,8 +2227,8 @@
         "valid_count": 8,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: INCOME-003]"
+          "[Rule: INCOME-003]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2256,15 +2256,15 @@
         "invalid_count": 0,
         "valid_citations": [
           "[KYC: Account]",
-          "[KYC: Income]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-104001]",
-          "[Rule: DORMANT-004]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC Profile]",
+          "[KYC: Income]",
           "[Txn: TXN-104002]",
-          "[KYC: Occupation]"
+          "[Rule: DORMANT-004]",
+          "[Txn: TXN-104001]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2291,9 +2291,9 @@
         "valid_count": 9,
         "invalid_count": 0,
         "valid_citations": [
+          "[KYC Profile]",
           "[Rule: ROUNDTRIP-005]",
-          "[Txn: TXN-105001]",
-          "[KYC Profile]"
+          "[Txn: TXN-105001]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2349,9 +2349,9 @@
         "valid_count": 12,
         "invalid_count": 0,
         "valid_citations": [
-          "[Txn: TXN-107003]",
+          "[Rule: CASH-007]",
           "[KYC Profile]",
-          "[Rule: CASH-007]"
+          "[Txn: TXN-107003]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2378,9 +2378,9 @@
         "valid_count": 10,
         "invalid_count": 0,
         "valid_citations": [
+          "[Txn: TXN-108001]",
           "[Rule: LARGE-008]",
-          "[KYC Profile]",
-          "[Txn: TXN-108001]"
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2407,8 +2407,8 @@
         "valid_count": 7,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC Profile]",
-          "[Rule: RAPID-009]"
+          "[Rule: RAPID-009]",
+          "[KYC Profile]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2463,9 +2463,9 @@
         "valid_count": 14,
         "invalid_count": 0,
         "valid_citations": [
+          "[Rule: PEP-011]",
           "[Watchlist]",
           "[KYC Profile]",
-          "[Rule: PEP-011]",
           "[Txn: TXN-111001]"
         ],
         "invalid_citations": [],
@@ -2493,15 +2493,15 @@
         "valid_count": 22,
         "invalid_count": 0,
         "valid_citations": [
-          "[KYC: Account]",
-          "[KYC: Income]",
           "[Txn: TXN-110003]",
+          "[KYC: Account]",
+          "[KYC: Occupation]",
           "[KYC: Name]",
-          "[Rule: SANCTION-012]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
+          "[KYC: Income]",
           "[Watchlist]",
-          "[KYC: Occupation]"
+          "[Rule: SANCTION-012]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
@@ -2530,19 +2530,19 @@
         "valid_citations": [
           "[KYC: Account]",
           "[KYC: Occupation]",
-          "[KYC: Income]",
           "[KYC: Name]",
-          "[KYC Profile]",
-          "[Txn: TXN-101001]",
-          "[KYC: Baseline]",
           "[KYC: Risk]",
-          "[Rule: STRUCT-001]"
+          "[KYC Profile]",
+          "[Rule: STRUCT-001]",
+          "[Txn: TXN-101001]",
+          "[KYC: Income]",
+          "[KYC: Baseline]"
         ],
         "invalid_citations": [],
         "accuracy_percent": 100.0,
         "passed_threshold": true
       },
-      "response_time_ms": 1,
+      "response_time_ms": 0,
       "customer_demographics": {
         "nationality": "Singapore",
         "gender": "Female",
