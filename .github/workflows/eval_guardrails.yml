@@ -11,9 +11,6 @@ jobs:
     name: Evaluate Compliance Guardrails (Zero False Negatives)
     runs-on: ubuntu-latest
 
-    env:
-      PYTHONPATH: .
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -30,13 +27,19 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Unit Test Suite
+        env:
+          PYTHONPATH: .
         run: |
           python -m pytest tests/ -v
 
       - name: Execute 75-Scenario Golden Evaluation Harness
+        env:
+          PYTHONPATH: .
         run: |
           python evaluation/run_evaluation.py
 
       - name: Validate Regulatory Guardrail Gates
+        env:
+          PYTHONPATH: .
         run: |
           python evaluation/validate_ci_gate.py

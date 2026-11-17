@@ -5,15 +5,15 @@
     "account_number": "ACCT-8800001",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 57847.68,
-    "declared_monthly_income": 4820.64,
+    "declared_annual_income": 57520.44,
+    "declared_monthly_income": 4793.37,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5784.77,
-      "withdrawals": 5302.7
+      "deposits": 5752.04,
+      "withdrawals": 5272.71
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -23,15 +23,15 @@
     "account_number": "ACCT-8800002",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 18463.08,
-    "declared_monthly_income": 1538.59,
+    "declared_annual_income": 19906.2,
+    "declared_monthly_income": 1658.85,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1846.31,
-      "withdrawals": 1692.45
+      "deposits": 1990.62,
+      "withdrawals": 1824.74
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -41,15 +41,15 @@
     "account_number": "ACCT-8800003",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 82361.88,
-    "declared_monthly_income": 6863.49,
+    "declared_annual_income": 70723.2,
+    "declared_monthly_income": 5893.6,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8236.19,
-      "withdrawals": 7549.84
+      "deposits": 7072.32,
+      "withdrawals": 6482.96
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -59,15 +59,15 @@
     "account_number": "ACCT-8800004",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 80067.6,
-    "declared_monthly_income": 6672.3,
+    "declared_annual_income": 86397.48,
+    "declared_monthly_income": 7199.79,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8006.76,
-      "withdrawals": 7339.53
+      "deposits": 8639.75,
+      "withdrawals": 7919.77
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -77,15 +77,15 @@
     "account_number": "ACCT-8800005",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 103632.6,
-    "declared_monthly_income": 8636.05,
+    "declared_annual_income": 85862.88,
+    "declared_monthly_income": 7155.24,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 10363.26,
-      "withdrawals": 9499.66
+      "deposits": 8586.29,
+      "withdrawals": 7870.76
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -95,15 +95,15 @@
     "account_number": "ACCT-8800006",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 160180.68,
-    "declared_monthly_income": 13348.39,
+    "declared_annual_income": 168022.2,
+    "declared_monthly_income": 14001.85,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 16018.07,
-      "withdrawals": 14683.23
+      "deposits": 16802.22,
+      "withdrawals": 15402.04
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -113,15 +113,15 @@
     "account_number": "ACCT-8800007",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 123287.64,
-    "declared_monthly_income": 10273.97,
+    "declared_annual_income": 115084.56,
+    "declared_monthly_income": 9590.38,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12328.76,
-      "withdrawals": 11301.37
+      "deposits": 11508.46,
+      "withdrawals": 10549.42
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -131,15 +131,15 @@
     "account_number": "ACCT-8800008",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 254196.0,
-    "declared_monthly_income": 21183.0,
+    "declared_annual_income": 267258.96,
+    "declared_monthly_income": 22271.58,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 25419.6,
-      "withdrawals": 23301.3
+      "deposits": 26725.9,
+      "withdrawals": 24498.74
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -164,15 +164,15 @@
     "account_number": "ACCT-8800010",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 62378.88,
-    "declared_monthly_income": 5198.24,
+    "declared_annual_income": 63905.76,
+    "declared_monthly_income": 5325.48,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6237.89,
-      "withdrawals": 5718.06
+      "deposits": 6390.58,
+      "withdrawals": 5858.03
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -182,15 +182,15 @@
     "account_number": "ACCT-8800011",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 165591.6,
-    "declared_monthly_income": 13799.3,
+    "declared_annual_income": 204505.32,
+    "declared_monthly_income": 17042.11,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 16559.16,
-      "withdrawals": 15179.23
+      "deposits": 20450.53,
+      "withdrawals": 18746.32
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -200,15 +200,15 @@
     "account_number": "ACCT-8800012",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1047602.52,
-    "declared_monthly_income": 87300.21,
+    "declared_annual_income": 1180992.0,
+    "declared_monthly_income": 98416.0,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 104760.25,
-      "withdrawals": 96030.23
+      "deposits": 118099.2,
+      "withdrawals": 108257.6
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -218,15 +218,15 @@
     "account_number": "ACCT-8800013",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 48192.6,
-    "declared_monthly_income": 4016.05,
+    "declared_annual_income": 57170.16,
+    "declared_monthly_income": 4764.18,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 4819.26,
-      "withdrawals": 4417.66
+      "deposits": 5717.02,
+      "withdrawals": 5240.6
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -236,15 +236,15 @@
     "account_number": "ACCT-8800014",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 16619.16,
-    "declared_monthly_income": 1384.93,
+    "declared_annual_income": 19711.56,
+    "declared_monthly_income": 1642.63,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1661.92,
-      "withdrawals": 1523.42
+      "deposits": 1971.16,
+      "withdrawals": 1806.89
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -254,15 +254,15 @@
     "account_number": "ACCT-8800015",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 75325.2,
-    "declared_monthly_income": 6277.1,
+    "declared_annual_income": 70633.56,
+    "declared_monthly_income": 5886.13,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7532.52,
-      "withdrawals": 6904.81
+      "deposits": 7063.36,
+      "withdrawals": 6474.74
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -272,15 +272,15 @@
     "account_number": "ACCT-8800016",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 70435.44,
-    "declared_monthly_income": 5869.62,
+    "declared_annual_income": 85184.4,
+    "declared_monthly_income": 7098.7,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7043.54,
-      "withdrawals": 6456.58
+      "deposits": 8518.44,
+      "withdrawals": 7808.57
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -290,15 +290,15 @@
     "account_number": "ACCT-8800017",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 98860.08,
-    "declared_monthly_income": 8238.34,
+    "declared_annual_income": 99401.64,
+    "declared_monthly_income": 8283.47,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9886.01,
-      "withdrawals": 9062.17
+      "deposits": 9940.16,
+      "withdrawals": 9111.82
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -308,15 +308,15 @@
     "account_number": "ACCT-8800018",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 172032.24,
-    "declared_monthly_income": 14336.02,
+    "declared_annual_income": 200951.88,
+    "declared_monthly_income": 16745.99,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 17203.22,
-      "withdrawals": 15769.62
+      "deposits": 20095.19,
+      "withdrawals": 18420.59
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -326,15 +326,15 @@
     "account_number": "ACCT-8800019",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 122959.8,
-    "declared_monthly_income": 10246.65,
+    "declared_annual_income": 115215.0,
+    "declared_monthly_income": 9601.25,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12295.98,
-      "withdrawals": 11271.32
+      "deposits": 11521.5,
+      "withdrawals": 10561.38
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -344,15 +344,15 @@
     "account_number": "ACCT-8800020",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 221494.2,
-    "declared_monthly_income": 18457.85,
+    "declared_annual_income": 219494.76,
+    "declared_monthly_income": 18291.23,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 22149.42,
-      "withdrawals": 20303.63
+      "deposits": 21949.48,
+      "withdrawals": 20120.35
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -377,15 +377,15 @@
     "account_number": "ACCT-8800022",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 79537.92,
-    "declared_monthly_income": 6628.16,
+    "declared_annual_income": 68889.84,
+    "declared_monthly_income": 5740.82,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7953.79,
-      "withdrawals": 7290.98
+      "deposits": 6888.98,
+      "withdrawals": 6314.9
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -395,15 +395,15 @@
     "account_number": "ACCT-8800023",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 167317.44,
-    "declared_monthly_income": 13943.12,
+    "declared_annual_income": 215161.68,
+    "declared_monthly_income": 17930.14,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 16731.74,
-      "withdrawals": 15337.43
+      "deposits": 21516.17,
+      "withdrawals": 19723.15
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -413,15 +413,15 @@
     "account_number": "ACCT-8800024",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1042284.6,
-    "declared_monthly_income": 86857.05,
+    "declared_annual_income": 1273966.44,
+    "declared_monthly_income": 106163.87,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 104228.46,
-      "withdrawals": 95542.76
+      "deposits": 127396.64,
+      "withdrawals": 116780.26
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -431,15 +431,15 @@
     "account_number": "ACCT-8800025",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 50831.28,
-    "declared_monthly_income": 4235.94,
+    "declared_annual_income": 49956.48,
+    "declared_monthly_income": 4163.04,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5083.13,
-      "withdrawals": 4659.53
+      "deposits": 4995.65,
+      "withdrawals": 4579.34
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -449,15 +449,15 @@
     "account_number": "ACCT-8800026",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 19278.84,
-    "declared_monthly_income": 1606.57,
+    "declared_annual_income": 19648.92,
+    "declared_monthly_income": 1637.41,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1927.88,
-      "withdrawals": 1767.23
+      "deposits": 1964.89,
+      "withdrawals": 1801.15
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -467,15 +467,15 @@
     "account_number": "ACCT-8800027",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 65908.92,
-    "declared_monthly_income": 5492.41,
+    "declared_annual_income": 65194.32,
+    "declared_monthly_income": 5432.86,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6590.89,
-      "withdrawals": 6041.65
+      "deposits": 6519.43,
+      "withdrawals": 5976.15
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -485,15 +485,15 @@
     "account_number": "ACCT-8800028",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 90663.12,
-    "declared_monthly_income": 7555.26,
+    "declared_annual_income": 86329.08,
+    "declared_monthly_income": 7194.09,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9066.31,
-      "withdrawals": 8310.79
+      "deposits": 8632.91,
+      "withdrawals": 7913.5
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -503,15 +503,15 @@
     "account_number": "ACCT-8800029",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 81856.44,
-    "declared_monthly_income": 6821.37,
+    "declared_annual_income": 102123.36,
+    "declared_monthly_income": 8510.28,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8185.64,
-      "withdrawals": 7503.51
+      "deposits": 10212.34,
+      "withdrawals": 9361.31
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -521,15 +521,15 @@
     "account_number": "ACCT-8800030",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 161086.08,
-    "declared_monthly_income": 13423.84,
+    "declared_annual_income": 171480.12,
+    "declared_monthly_income": 14290.01,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 16108.61,
-      "withdrawals": 14766.22
+      "deposits": 17148.01,
+      "withdrawals": 15719.01
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -539,15 +539,15 @@
     "account_number": "ACCT-8800031",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 121552.8,
-    "declared_monthly_income": 10129.4,
+    "declared_annual_income": 149772.48,
+    "declared_monthly_income": 12481.04,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12155.28,
-      "withdrawals": 11142.34
+      "deposits": 14977.25,
+      "withdrawals": 13729.14
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -557,15 +557,15 @@
     "account_number": "ACCT-8800032",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 204060.72,
-    "declared_monthly_income": 17005.06,
+    "declared_annual_income": 265282.8,
+    "declared_monthly_income": 22106.9,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 20406.07,
-      "withdrawals": 18705.57
+      "deposits": 26528.28,
+      "withdrawals": 24317.59
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -590,15 +590,15 @@
     "account_number": "ACCT-8800034",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 66665.76,
-    "declared_monthly_income": 5555.48,
+    "declared_annual_income": 74694.48,
+    "declared_monthly_income": 6224.54,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6666.58,
-      "withdrawals": 6111.03
+      "deposits": 7469.45,
+      "withdrawals": 6846.99
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -608,15 +608,15 @@
     "account_number": "ACCT-8800035",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 165731.88,
-    "declared_monthly_income": 13810.99,
+    "declared_annual_income": 211417.32,
+    "declared_monthly_income": 17618.11,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 16573.19,
-      "withdrawals": 15192.09
+      "deposits": 21141.73,
+      "withdrawals": 19379.92
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -626,15 +626,15 @@
     "account_number": "ACCT-8800036",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1333926.36,
-    "declared_monthly_income": 111160.53,
+    "declared_annual_income": 1127098.68,
+    "declared_monthly_income": 93924.89,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 133392.64,
-      "withdrawals": 122276.58
+      "deposits": 112709.87,
+      "withdrawals": 103317.38
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -644,15 +644,15 @@
     "account_number": "ACCT-8800037",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 52742.88,
-    "declared_monthly_income": 4395.24,
+    "declared_annual_income": 43180.56,
+    "declared_monthly_income": 3598.38,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5274.29,
-      "withdrawals": 4834.76
+      "deposits": 4318.06,
+      "withdrawals": 3958.22
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -662,15 +662,15 @@
     "account_number": "ACCT-8800038",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 15957.84,
-    "declared_monthly_income": 1329.82,
+    "declared_annual_income": 19900.08,
+    "declared_monthly_income": 1658.34,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1595.78,
-      "withdrawals": 1462.8
+      "deposits": 1990.01,
+      "withdrawals": 1824.17
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -680,15 +680,15 @@
     "account_number": "ACCT-8800039",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 81591.72,
-    "declared_monthly_income": 6799.31,
+    "declared_annual_income": 71176.32,
+    "declared_monthly_income": 5931.36,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8159.17,
-      "withdrawals": 7479.24
+      "deposits": 7117.63,
+      "withdrawals": 6524.5
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -698,15 +698,15 @@
     "account_number": "ACCT-8800040",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 93554.64,
-    "declared_monthly_income": 7796.22,
+    "declared_annual_income": 91990.2,
+    "declared_monthly_income": 7665.85,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9355.46,
-      "withdrawals": 8575.84
+      "deposits": 9199.02,
+      "withdrawals": 8432.44
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -716,15 +716,15 @@
     "account_number": "ACCT-8800041",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 83328.24,
-    "declared_monthly_income": 6944.02,
+    "declared_annual_income": 105199.68,
+    "declared_monthly_income": 8766.64,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8332.82,
-      "withdrawals": 7638.42
+      "deposits": 10519.97,
+      "withdrawals": 9643.3
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -734,15 +734,15 @@
     "account_number": "ACCT-8800042",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 192319.2,
-    "declared_monthly_income": 16026.6,
+    "declared_annual_income": 192985.32,
+    "declared_monthly_income": 16082.11,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 19231.92,
-      "withdrawals": 17629.26
+      "deposits": 19298.53,
+      "withdrawals": 17690.32
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -752,15 +752,15 @@
     "account_number": "ACCT-8800043",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 140516.28,
-    "declared_monthly_income": 11709.69,
+    "declared_annual_income": 148855.68,
+    "declared_monthly_income": 12404.64,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 14051.63,
-      "withdrawals": 12880.66
+      "deposits": 14885.57,
+      "withdrawals": 13645.1
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -770,15 +770,15 @@
     "account_number": "ACCT-8800044",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 270411.0,
-    "declared_monthly_income": 22534.25,
+    "declared_annual_income": 207777.12,
+    "declared_monthly_income": 17314.76,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 27041.1,
-      "withdrawals": 24787.68
+      "deposits": 20777.71,
+      "withdrawals": 19046.24
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -803,15 +803,15 @@
     "account_number": "ACCT-8800046",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 80269.8,
-    "declared_monthly_income": 6689.15,
+    "declared_annual_income": 62507.64,
+    "declared_monthly_income": 5208.97,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8026.98,
-      "withdrawals": 7358.07
+      "deposits": 6250.76,
+      "withdrawals": 5729.87
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -821,15 +821,15 @@
     "account_number": "ACCT-8800047",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 185642.28,
-    "declared_monthly_income": 15470.19,
+    "declared_annual_income": 183608.88,
+    "declared_monthly_income": 15300.74,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 18564.23,
-      "withdrawals": 17017.21
+      "deposits": 18360.89,
+      "withdrawals": 16830.81
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -839,15 +839,15 @@
     "account_number": "ACCT-8800048",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1110781.44,
-    "declared_monthly_income": 92565.12,
+    "declared_annual_income": 1287632.76,
+    "declared_monthly_income": 107302.73,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 111078.14,
-      "withdrawals": 101821.63
+      "deposits": 128763.28,
+      "withdrawals": 118033.0
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -857,15 +857,15 @@
     "account_number": "ACCT-8800049",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 45631.44,
-    "declared_monthly_income": 3802.62,
+    "declared_annual_income": 45262.68,
+    "declared_monthly_income": 3771.89,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 4563.14,
-      "withdrawals": 4182.88
+      "deposits": 4526.27,
+      "withdrawals": 4149.08
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -875,15 +875,15 @@
     "account_number": "ACCT-8800050",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 18546.96,
-    "declared_monthly_income": 1545.58,
+    "declared_annual_income": 19218.96,
+    "declared_monthly_income": 1601.58,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1854.7,
-      "withdrawals": 1700.14
+      "deposits": 1921.9,
+      "withdrawals": 1761.74
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -893,15 +893,15 @@
     "account_number": "ACCT-8800051",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 69420.6,
-    "declared_monthly_income": 5785.05,
+    "declared_annual_income": 79715.16,
+    "declared_monthly_income": 6642.93,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6942.06,
-      "withdrawals": 6363.56
+      "deposits": 7971.52,
+      "withdrawals": 7307.22
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -911,15 +911,15 @@
     "account_number": "ACCT-8800052",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 84028.08,
-    "declared_monthly_income": 7002.34,
+    "declared_annual_income": 78366.96,
+    "declared_monthly_income": 6530.58,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8402.81,
-      "withdrawals": 7702.57
+      "deposits": 7836.7,
+      "withdrawals": 7183.64
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -929,15 +929,15 @@
     "account_number": "ACCT-8800053",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 103117.68,
-    "declared_monthly_income": 8593.14,
+    "declared_annual_income": 97779.84,
+    "declared_monthly_income": 8148.32,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 10311.77,
-      "withdrawals": 9452.45
+      "deposits": 9777.98,
+      "withdrawals": 8963.15
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -947,15 +947,15 @@
     "account_number": "ACCT-8800054",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 180864.48,
-    "declared_monthly_income": 15072.04,
+    "declared_annual_income": 206676.24,
+    "declared_monthly_income": 17223.02,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 18086.45,
-      "withdrawals": 16579.24
+      "deposits": 20667.62,
+      "withdrawals": 18945.32
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -965,15 +965,15 @@
     "account_number": "ACCT-8800055",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 126874.68,
-    "declared_monthly_income": 10572.89,
+    "declared_annual_income": 135946.56,
+    "declared_monthly_income": 11328.88,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12687.47,
-      "withdrawals": 11630.18
+      "deposits": 13594.66,
+      "withdrawals": 12461.77
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -983,15 +983,15 @@
     "account_number": "ACCT-8800056",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 265387.68,
-    "declared_monthly_income": 22115.64,
+    "declared_annual_income": 241661.04,
+    "declared_monthly_income": 20138.42,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 26538.77,
-      "withdrawals": 24327.2
+      "deposits": 24166.1,
+      "withdrawals": 22152.26
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -1016,15 +1016,15 @@
     "account_number": "ACCT-8800058",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 64434.0,
-    "declared_monthly_income": 5369.5,
+    "declared_annual_income": 65579.52,
+    "declared_monthly_income": 5464.96,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6443.4,
-      "withdrawals": 5906.45
+      "deposits": 6557.95,
+      "withdrawals": 6011.46
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -1034,15 +1034,15 @@
     "account_number": "ACCT-8800059",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 170031.48,
-    "declared_monthly_income": 14169.29,
+    "declared_annual_income": 211458.12,
+    "declared_monthly_income": 17621.51,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 17003.15,
-      "withdrawals": 15586.22
+      "deposits": 21145.81,
+      "withdrawals": 19383.66
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -1052,15 +1052,15 @@
     "account_number": "ACCT-8800060",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1062776.88,
-    "declared_monthly_income": 88564.74,
+    "declared_annual_income": 1098354.48,
+    "declared_monthly_income": 91529.54,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 106277.69,
-      "withdrawals": 97421.21
+      "deposits": 109835.45,
+      "withdrawals": 100682.49
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -1070,15 +1070,15 @@
     "account_number": "ACCT-8800061",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 53726.4,
-    "declared_monthly_income": 4477.2,
+    "declared_annual_income": 44206.8,
+    "declared_monthly_income": 3683.9,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5372.64,
-      "withdrawals": 4924.92
+      "deposits": 4420.68,
+      "withdrawals": 4052.29
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -1088,15 +1088,15 @@
     "account_number": "ACCT-8800062",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 18098.52,
-    "declared_monthly_income": 1508.21,
+    "declared_annual_income": 15714.6,
+    "declared_monthly_income": 1309.55,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1809.85,
-      "withdrawals": 1659.03
+      "deposits": 1571.46,
+      "withdrawals": 1440.51
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -1106,15 +1106,15 @@
     "account_number": "ACCT-8800063",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 72934.56,
-    "declared_monthly_income": 6077.88,
+    "declared_annual_income": 71266.92,
+    "declared_monthly_income": 5938.91,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7293.46,
-      "withdrawals": 6685.67
+      "deposits": 7126.69,
+      "withdrawals": 6532.8
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -1124,15 +1124,15 @@
     "account_number": "ACCT-8800064",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 93504.96,
-    "declared_monthly_income": 7792.08,
+    "declared_annual_income": 76612.92,
+    "declared_monthly_income": 6384.41,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9350.5,
-      "withdrawals": 8571.29
+      "deposits": 7661.29,
+      "withdrawals": 7022.85
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -1142,15 +1142,15 @@
     "account_number": "ACCT-8800065",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 101545.44,
-    "declared_monthly_income": 8462.12,
+    "declared_annual_income": 86459.76,
+    "declared_monthly_income": 7204.98,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 10154.54,
-      "withdrawals": 9308.33
+      "deposits": 8645.98,
+      "withdrawals": 7925.48
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -1160,15 +1160,15 @@
     "account_number": "ACCT-8800066",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 171353.64,
-    "declared_monthly_income": 14279.47,
+    "declared_annual_income": 202756.56,
+    "declared_monthly_income": 16896.38,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 17135.36,
-      "withdrawals": 15707.42
+      "deposits": 20275.66,
+      "withdrawals": 18586.02
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -1178,15 +1178,15 @@
     "account_number": "ACCT-8800067",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 147368.88,
-    "declared_monthly_income": 12280.74,
+    "declared_annual_income": 152223.36,
+    "declared_monthly_income": 12685.28,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 14736.89,
-      "withdrawals": 13508.81
+      "deposits": 15222.34,
+      "withdrawals": 13953.81
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -1196,15 +1196,15 @@
     "account_number": "ACCT-8800068",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 204084.24,
-    "declared_monthly_income": 17007.02,
+    "declared_annual_income": 217816.44,
+    "declared_monthly_income": 18151.37,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 20408.42,
-      "withdrawals": 18707.72
+      "deposits": 21781.64,
+      "withdrawals": 19966.51
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -1229,15 +1229,15 @@
     "account_number": "ACCT-8800070",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 70596.96,
-    "declared_monthly_income": 5883.08,
+    "declared_annual_income": 69124.32,
+    "declared_monthly_income": 5760.36,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7059.7,
-      "withdrawals": 6471.39
+      "deposits": 6912.43,
+      "withdrawals": 6336.4
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -1247,15 +1247,15 @@
     "account_number": "ACCT-8800071",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 184352.52,
-    "declared_monthly_income": 15362.71,
+    "declared_annual_income": 210143.76,
+    "declared_monthly_income": 17511.98,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 18435.25,
-      "withdrawals": 16898.98
+      "deposits": 21014.38,
+      "withdrawals": 19263.18
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -1265,15 +1265,15 @@
     "account_number": "ACCT-8800072",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1024687.32,
-    "declared_monthly_income": 85390.61,
+    "declared_annual_income": 1367123.4,
+    "declared_monthly_income": 113926.95,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 102468.73,
-      "withdrawals": 93929.67
+      "deposits": 136712.34,
+      "withdrawals": 125319.65
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -1283,15 +1283,15 @@
     "account_number": "ACCT-8800073",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 51277.56,
-    "declared_monthly_income": 4273.13,
+    "declared_annual_income": 49391.76,
+    "declared_monthly_income": 4115.98,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5127.76,
-      "withdrawals": 4700.44
+      "deposits": 4939.18,
+      "withdrawals": 4527.58
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -1301,15 +1301,15 @@
     "account_number": "ACCT-8800074",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 18721.8,
-    "declared_monthly_income": 1560.15,
+    "declared_annual_income": 20298.48,
+    "declared_monthly_income": 1691.54,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1872.18,
-      "withdrawals": 1716.17
+      "deposits": 2029.85,
+      "withdrawals": 1860.69
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -1319,15 +1319,15 @@
     "account_number": "ACCT-8800075",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 70311.96,
-    "declared_monthly_income": 5859.33,
+    "declared_annual_income": 66722.4,
+    "declared_monthly_income": 5560.2,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7031.2,
-      "withdrawals": 6445.26
+      "deposits": 6672.24,
+      "withdrawals": 6116.22
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -1337,15 +1337,15 @@
     "account_number": "ACCT-8800076",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 80747.88,
-    "declared_monthly_income": 6728.99,
+    "declared_annual_income": 83179.08,
+    "declared_monthly_income": 6931.59,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8074.79,
-      "withdrawals": 7401.89
+      "deposits": 8317.91,
+      "withdrawals": 7624.75
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -1355,15 +1355,15 @@
     "account_number": "ACCT-8800077",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 102092.04,
-    "declared_monthly_income": 8507.67,
+    "declared_annual_income": 102105.24,
+    "declared_monthly_income": 8508.77,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 10209.2,
-      "withdrawals": 9358.44
+      "deposits": 10210.52,
+      "withdrawals": 9359.65
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -1373,15 +1373,15 @@
     "account_number": "ACCT-8800078",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 206024.76,
-    "declared_monthly_income": 17168.73,
+    "declared_annual_income": 192280.92,
+    "declared_monthly_income": 16023.41,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 20602.48,
-      "withdrawals": 18885.6
+      "deposits": 19228.09,
+      "withdrawals": 17625.75
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -1391,15 +1391,15 @@
     "account_number": "ACCT-8800079",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 121429.92,
-    "declared_monthly_income": 10119.16,
+    "declared_annual_income": 116362.68,
+    "declared_monthly_income": 9696.89,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12142.99,
-      "withdrawals": 11131.08
+      "deposits": 11636.27,
+      "withdrawals": 10666.58
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -1409,15 +1409,15 @@
     "account_number": "ACCT-8800080",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 216777.72,
-    "declared_monthly_income": 18064.81,
+    "declared_annual_income": 267237.12,
+    "declared_monthly_income": 22269.76,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 21677.77,
-      "withdrawals": 19871.29
+      "deposits": 26723.71,
+      "withdrawals": 24496.74
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -1442,15 +1442,15 @@
     "account_number": "ACCT-8800082",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 66935.88,
-    "declared_monthly_income": 5577.99,
+    "declared_annual_income": 70456.92,
+    "declared_monthly_income": 5871.41,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6693.59,
-      "withdrawals": 6135.79
+      "deposits": 7045.69,
+      "withdrawals": 6458.55
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -1460,15 +1460,15 @@
     "account_number": "ACCT-8800083",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 164505.0,
-    "declared_monthly_income": 13708.75,
+    "declared_annual_income": 166708.68,
+    "declared_monthly_income": 13892.39,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 16450.5,
-      "withdrawals": 15079.63
+      "deposits": 16670.87,
+      "withdrawals": 15281.63
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -1478,15 +1478,15 @@
     "account_number": "ACCT-8800084",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1092684.48,
-    "declared_monthly_income": 91057.04,
+    "declared_annual_income": 1368755.4,
+    "declared_monthly_income": 114062.95,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 109268.45,
-      "withdrawals": 100162.74
+      "deposits": 136875.54,
+      "withdrawals": 125469.25
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -1496,15 +1496,15 @@
     "account_number": "ACCT-8800085",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 56932.8,
-    "declared_monthly_income": 4744.4,
+    "declared_annual_income": 52263.0,
+    "declared_monthly_income": 4355.25,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5693.28,
-      "withdrawals": 5218.84
+      "deposits": 5226.3,
+      "withdrawals": 4790.78
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -1514,15 +1514,15 @@
     "account_number": "ACCT-8800086",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 19612.56,
-    "declared_monthly_income": 1634.38,
+    "declared_annual_income": 19400.16,
+    "declared_monthly_income": 1616.68,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1961.26,
-      "withdrawals": 1797.82
+      "deposits": 1940.02,
+      "withdrawals": 1778.35
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -1532,15 +1532,15 @@
     "account_number": "ACCT-8800087",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 61359.0,
-    "declared_monthly_income": 5113.25,
+    "declared_annual_income": 64490.88,
+    "declared_monthly_income": 5374.24,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6135.9,
-      "withdrawals": 5624.58
+      "deposits": 6449.09,
+      "withdrawals": 5911.66
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -1550,15 +1550,15 @@
     "account_number": "ACCT-8800088",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 76025.64,
-    "declared_monthly_income": 6335.47,
+    "declared_annual_income": 83091.12,
+    "declared_monthly_income": 6924.26,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7602.56,
-      "withdrawals": 6969.02
+      "deposits": 8309.11,
+      "withdrawals": 7616.69
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -1568,15 +1568,15 @@
     "account_number": "ACCT-8800089",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 90764.88,
-    "declared_monthly_income": 7563.74,
+    "declared_annual_income": 88398.36,
+    "declared_monthly_income": 7366.53,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9076.49,
-      "withdrawals": 8320.11
+      "deposits": 8839.84,
+      "withdrawals": 8103.18
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -1586,15 +1586,15 @@
     "account_number": "ACCT-8800090",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 194797.08,
-    "declared_monthly_income": 16233.09,
+    "declared_annual_income": 173150.04,
+    "declared_monthly_income": 14429.17,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 19479.71,
-      "withdrawals": 17856.4
+      "deposits": 17315.0,
+      "withdrawals": 15872.09
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -1604,15 +1604,15 @@
     "account_number": "ACCT-8800091",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 117275.64,
-    "declared_monthly_income": 9772.97,
+    "declared_annual_income": 142892.88,
+    "declared_monthly_income": 11907.74,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 11727.56,
-      "withdrawals": 10750.27
+      "deposits": 14289.29,
+      "withdrawals": 13098.51
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -1622,15 +1622,15 @@
     "account_number": "ACCT-8800092",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 207915.72,
-    "declared_monthly_income": 17326.31,
+    "declared_annual_income": 271419.72,
+    "declared_monthly_income": 22618.31,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 20791.57,
-      "withdrawals": 19058.94
+      "deposits": 27141.97,
+      "withdrawals": 24880.14
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -1655,15 +1655,15 @@
     "account_number": "ACCT-8800094",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 69638.52,
-    "declared_monthly_income": 5803.21,
+    "declared_annual_income": 78306.6,
+    "declared_monthly_income": 6525.55,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6963.85,
-      "withdrawals": 6383.53
+      "deposits": 7830.66,
+      "withdrawals": 7178.11
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -1673,15 +1673,15 @@
     "account_number": "ACCT-8800095",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 174197.52,
-    "declared_monthly_income": 14516.46,
+    "declared_annual_income": 208767.12,
+    "declared_monthly_income": 17397.26,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 17419.75,
-      "withdrawals": 15968.11
+      "deposits": 20876.71,
+      "withdrawals": 19136.99
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -1691,15 +1691,15 @@
     "account_number": "ACCT-8800096",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1348533.36,
-    "declared_monthly_income": 112377.78,
+    "declared_annual_income": 1308980.04,
+    "declared_monthly_income": 109081.67,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 134853.34,
-      "withdrawals": 123615.56
+      "deposits": 130898.0,
+      "withdrawals": 119989.84
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -1709,15 +1709,15 @@
     "account_number": "ACCT-8800097",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 46801.56,
-    "declared_monthly_income": 3900.13,
+    "declared_annual_income": 47795.28,
+    "declared_monthly_income": 3982.94,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 4680.16,
-      "withdrawals": 4290.14
+      "deposits": 4779.53,
+      "withdrawals": 4381.23
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -1727,15 +1727,15 @@
     "account_number": "ACCT-8800098",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 18763.68,
-    "declared_monthly_income": 1563.64,
+    "declared_annual_income": 16936.32,
+    "declared_monthly_income": 1411.36,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1876.37,
-      "withdrawals": 1720.0
+      "deposits": 1693.63,
+      "withdrawals": 1552.5
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -1745,15 +1745,15 @@
     "account_number": "ACCT-8800099",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 78615.48,
-    "declared_monthly_income": 6551.29,
+    "declared_annual_income": 74767.44,
+    "declared_monthly_income": 6230.62,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7861.55,
-      "withdrawals": 7206.42
+      "deposits": 7476.74,
+      "withdrawals": 6853.68
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -1763,15 +1763,15 @@
     "account_number": "ACCT-8800100",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 74067.6,
-    "declared_monthly_income": 6172.3,
+    "declared_annual_income": 80287.68,
+    "declared_monthly_income": 6690.64,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7406.76,
-      "withdrawals": 6789.53
+      "deposits": 8028.77,
+      "withdrawals": 7359.7
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -1781,15 +1781,15 @@
     "account_number": "ACCT-8800101",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 108973.32,
-    "declared_monthly_income": 9081.11,
+    "declared_annual_income": 99959.04,
+    "declared_monthly_income": 8329.92,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 10897.33,
-      "withdrawals": 9989.22
+      "deposits": 9995.9,
+      "withdrawals": 9162.91
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -1799,15 +1799,15 @@
     "account_number": "ACCT-8800102",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 184701.6,
-    "declared_monthly_income": 15391.8,
+    "declared_annual_income": 175767.12,
+    "declared_monthly_income": 14647.26,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 18470.16,
-      "withdrawals": 16930.98
+      "deposits": 17576.71,
+      "withdrawals": 16111.99
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -1817,15 +1817,15 @@
     "account_number": "ACCT-8800103",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 138801.48,
-    "declared_monthly_income": 11566.79,
+    "declared_annual_income": 149932.68,
+    "declared_monthly_income": 12494.39,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 13880.15,
-      "withdrawals": 12723.47
+      "deposits": 14993.27,
+      "withdrawals": 13743.83
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -1835,15 +1835,15 @@
     "account_number": "ACCT-8800104",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 213612.84,
-    "declared_monthly_income": 17801.07,
+    "declared_annual_income": 263411.16,
+    "declared_monthly_income": 21950.93,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 21361.28,
-      "withdrawals": 19581.18
+      "deposits": 26341.12,
+      "withdrawals": 24146.02
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -1868,15 +1868,15 @@
     "account_number": "ACCT-8800106",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 61496.04,
-    "declared_monthly_income": 5124.67,
+    "declared_annual_income": 78396.0,
+    "declared_monthly_income": 6533.0,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6149.6,
-      "withdrawals": 5637.14
+      "deposits": 7839.6,
+      "withdrawals": 7186.3
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -1886,15 +1886,15 @@
     "account_number": "ACCT-8800107",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 174676.92,
-    "declared_monthly_income": 14556.41,
+    "declared_annual_income": 208515.96,
+    "declared_monthly_income": 17376.33,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 17467.69,
-      "withdrawals": 16012.05
+      "deposits": 20851.6,
+      "withdrawals": 19113.96
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -1904,15 +1904,15 @@
     "account_number": "ACCT-8800108",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1158823.32,
-    "declared_monthly_income": 96568.61,
+    "declared_annual_income": 1255014.96,
+    "declared_monthly_income": 104584.58,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 115882.33,
-      "withdrawals": 106225.47
+      "deposits": 125501.5,
+      "withdrawals": 115043.04
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -1922,15 +1922,15 @@
     "account_number": "ACCT-8800109",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 46035.72,
-    "declared_monthly_income": 3836.31,
+    "declared_annual_income": 50920.2,
+    "declared_monthly_income": 4243.35,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 4603.57,
-      "withdrawals": 4219.94
+      "deposits": 5092.02,
+      "withdrawals": 4667.69
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -1940,15 +1940,15 @@
     "account_number": "ACCT-8800110",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 18479.4,
-    "declared_monthly_income": 1539.95,
+    "declared_annual_income": 17630.16,
+    "declared_monthly_income": 1469.18,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1847.94,
-      "withdrawals": 1693.95
+      "deposits": 1763.02,
+      "withdrawals": 1616.1
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -1958,15 +1958,15 @@
     "account_number": "ACCT-8800111",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 78985.32,
-    "declared_monthly_income": 6582.11,
+    "declared_annual_income": 69636.24,
+    "declared_monthly_income": 5803.02,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7898.53,
-      "withdrawals": 7240.32
+      "deposits": 6963.62,
+      "withdrawals": 6383.32
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -1976,15 +1976,15 @@
     "account_number": "ACCT-8800112",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 79114.56,
-    "declared_monthly_income": 6592.88,
+    "declared_annual_income": 73747.8,
+    "declared_monthly_income": 6145.65,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7911.46,
-      "withdrawals": 7252.17
+      "deposits": 7374.78,
+      "withdrawals": 6760.22
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -1994,15 +1994,15 @@
     "account_number": "ACCT-8800113",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 84583.8,
-    "declared_monthly_income": 7048.65,
+    "declared_annual_income": 104839.92,
+    "declared_monthly_income": 8736.66,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8458.38,
-      "withdrawals": 7753.52
+      "deposits": 10483.99,
+      "withdrawals": 9610.33
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -2012,15 +2012,15 @@
     "account_number": "ACCT-8800114",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 199367.28,
-    "declared_monthly_income": 16613.94,
+    "declared_annual_income": 156623.76,
+    "declared_monthly_income": 13051.98,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 19936.73,
-      "withdrawals": 18275.33
+      "deposits": 15662.38,
+      "withdrawals": 14357.18
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -2030,15 +2030,15 @@
     "account_number": "ACCT-8800115",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 152248.08,
-    "declared_monthly_income": 12687.34,
+    "declared_annual_income": 143099.04,
+    "declared_monthly_income": 11924.92,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 15224.81,
-      "withdrawals": 13956.07
+      "deposits": 14309.9,
+      "withdrawals": 13117.41
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -2048,15 +2048,15 @@
     "account_number": "ACCT-8800116",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 223074.96,
-    "declared_monthly_income": 18589.58,
+    "declared_annual_income": 206177.52,
+    "declared_monthly_income": 17181.46,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 22307.5,
-      "withdrawals": 20448.54
+      "deposits": 20617.75,
+      "withdrawals": 18899.61
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -2081,15 +2081,15 @@
     "account_number": "ACCT-8800118",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 64005.96,
-    "declared_monthly_income": 5333.83,
+    "declared_annual_income": 69752.88,
+    "declared_monthly_income": 5812.74,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6400.6,
-      "withdrawals": 5867.21
+      "deposits": 6975.29,
+      "withdrawals": 6394.01
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -2099,15 +2099,15 @@
     "account_number": "ACCT-8800119",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 214499.04,
-    "declared_monthly_income": 17874.92,
+    "declared_annual_income": 196404.84,
+    "declared_monthly_income": 16367.07,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 21449.9,
-      "withdrawals": 19662.41
+      "deposits": 19640.48,
+      "withdrawals": 18003.78
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -2117,15 +2117,15 @@
     "account_number": "ACCT-8800120",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1354470.6,
-    "declared_monthly_income": 112872.55,
+    "declared_annual_income": 1126878.48,
+    "declared_monthly_income": 93906.54,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 135447.06,
-      "withdrawals": 124159.81
+      "deposits": 112687.85,
+      "withdrawals": 103297.19
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -2135,15 +2135,15 @@
     "account_number": "ACCT-8800121",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 47915.76,
-    "declared_monthly_income": 3992.98,
+    "declared_annual_income": 56884.68,
+    "declared_monthly_income": 4740.39,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 4791.58,
-      "withdrawals": 4392.28
+      "deposits": 5688.47,
+      "withdrawals": 5214.43
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -2153,15 +2153,15 @@
     "account_number": "ACCT-8800122",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 20576.52,
-    "declared_monthly_income": 1714.71,
+    "declared_annual_income": 19210.56,
+    "declared_monthly_income": 1600.88,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 2057.65,
-      "withdrawals": 1886.18
+      "deposits": 1921.06,
+      "withdrawals": 1760.97
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -2171,15 +2171,15 @@
     "account_number": "ACCT-8800123",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 65228.4,
-    "declared_monthly_income": 5435.7,
+    "declared_annual_income": 70084.92,
+    "declared_monthly_income": 5840.41,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6522.84,
-      "withdrawals": 5979.27
+      "deposits": 7008.49,
+      "withdrawals": 6424.45
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -2189,15 +2189,15 @@
     "account_number": "ACCT-8800124",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 81951.48,
-    "declared_monthly_income": 6829.29,
+    "declared_annual_income": 85827.6,
+    "declared_monthly_income": 7152.3,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8195.15,
-      "withdrawals": 7512.22
+      "deposits": 8582.76,
+      "withdrawals": 7867.53
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -2207,15 +2207,15 @@
     "account_number": "ACCT-8800125",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 89082.12,
-    "declared_monthly_income": 7423.51,
+    "declared_annual_income": 103206.84,
+    "declared_monthly_income": 8600.57,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8908.21,
-      "withdrawals": 8165.86
+      "deposits": 10320.68,
+      "withdrawals": 9460.63
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -2225,15 +2225,15 @@
     "account_number": "ACCT-8800126",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 165231.84,
-    "declared_monthly_income": 13769.32,
+    "declared_annual_income": 159321.12,
+    "declared_monthly_income": 13276.76,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 16523.18,
-      "withdrawals": 15146.25
+      "deposits": 15932.11,
+      "withdrawals": 14604.44
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -2243,15 +2243,15 @@
     "account_number": "ACCT-8800127",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 122536.8,
-    "declared_monthly_income": 10211.4,
+    "declared_annual_income": 149062.92,
+    "declared_monthly_income": 12421.91,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12253.68,
-      "withdrawals": 11232.54
+      "deposits": 14906.29,
+      "withdrawals": 13664.1
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -2261,15 +2261,15 @@
     "account_number": "ACCT-8800128",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 236794.56,
-    "declared_monthly_income": 19732.88,
+    "declared_annual_income": 268404.72,
+    "declared_monthly_income": 22367.06,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 23679.46,
-      "withdrawals": 21706.17
+      "deposits": 26840.47,
+      "withdrawals": 24603.77
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -2294,15 +2294,15 @@
     "account_number": "ACCT-8800130",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 82330.92,
-    "declared_monthly_income": 6860.91,
+    "declared_annual_income": 66085.32,
+    "declared_monthly_income": 5507.11,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8233.09,
-      "withdrawals": 7547.0
+      "deposits": 6608.53,
+      "withdrawals": 6057.82
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -2312,15 +2312,15 @@
     "account_number": "ACCT-8800131",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 210110.64,
-    "declared_monthly_income": 17509.22,
+    "declared_annual_income": 177549.48,
+    "declared_monthly_income": 14795.79,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 21011.06,
-      "withdrawals": 19260.14
+      "deposits": 17754.95,
+      "withdrawals": 16275.37
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -2330,15 +2330,15 @@
     "account_number": "ACCT-8800132",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1084974.72,
-    "declared_monthly_income": 90414.56,
+    "declared_annual_income": 1231010.4,
+    "declared_monthly_income": 102584.2,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 108497.47,
-      "withdrawals": 99456.02
+      "deposits": 123101.04,
+      "withdrawals": 112842.62
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -2348,15 +2348,15 @@
     "account_number": "ACCT-8800133",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 47240.4,
-    "declared_monthly_income": 3936.7,
+    "declared_annual_income": 46544.88,
+    "declared_monthly_income": 3878.74,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 4724.04,
-      "withdrawals": 4330.37
+      "deposits": 4654.49,
+      "withdrawals": 4266.61
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -2366,15 +2366,15 @@
     "account_number": "ACCT-8800134",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 17683.44,
-    "declared_monthly_income": 1473.62,
+    "declared_annual_income": 19206.96,
+    "declared_monthly_income": 1600.58,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1768.34,
-      "withdrawals": 1620.98
+      "deposits": 1920.7,
+      "withdrawals": 1760.64
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -2384,15 +2384,15 @@
     "account_number": "ACCT-8800135",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 71906.88,
-    "declared_monthly_income": 5992.24,
+    "declared_annual_income": 81213.36,
+    "declared_monthly_income": 6767.78,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7190.69,
-      "withdrawals": 6591.46
+      "deposits": 8121.34,
+      "withdrawals": 7444.56
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -2402,15 +2402,15 @@
     "account_number": "ACCT-8800136",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 91734.12,
-    "declared_monthly_income": 7644.51,
+    "declared_annual_income": 91983.96,
+    "declared_monthly_income": 7665.33,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9173.41,
-      "withdrawals": 8408.96
+      "deposits": 9198.4,
+      "withdrawals": 8431.86
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -2420,15 +2420,15 @@
     "account_number": "ACCT-8800137",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 108031.2,
-    "declared_monthly_income": 9002.6,
+    "declared_annual_income": 104931.12,
+    "declared_monthly_income": 8744.26,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 10803.12,
-      "withdrawals": 9902.86
+      "deposits": 10493.11,
+      "withdrawals": 9618.69
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -2438,15 +2438,15 @@
     "account_number": "ACCT-8800138",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 184022.16,
-    "declared_monthly_income": 15335.18,
+    "declared_annual_income": 171199.92,
+    "declared_monthly_income": 14266.66,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 18402.22,
-      "withdrawals": 16868.7
+      "deposits": 17119.99,
+      "withdrawals": 15693.33
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -2456,15 +2456,15 @@
     "account_number": "ACCT-8800139",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 122148.36,
-    "declared_monthly_income": 10179.03,
+    "declared_annual_income": 141981.0,
+    "declared_monthly_income": 11831.75,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12214.84,
-      "withdrawals": 11196.93
+      "deposits": 14198.1,
+      "withdrawals": 13014.93
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -2474,15 +2474,15 @@
     "account_number": "ACCT-8800140",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 209894.88,
-    "declared_monthly_income": 17491.24,
+    "declared_annual_income": 249426.6,
+    "declared_monthly_income": 20785.55,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 20989.49,
-      "withdrawals": 19240.36
+      "deposits": 24942.66,
+      "withdrawals": 22864.1
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -2507,15 +2507,15 @@
     "account_number": "ACCT-8800142",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 67134.12,
-    "declared_monthly_income": 5594.51,
+    "declared_annual_income": 71951.28,
+    "declared_monthly_income": 5995.94,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6713.41,
-      "withdrawals": 6153.96
+      "deposits": 7195.13,
+      "withdrawals": 6595.53
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -2525,15 +2525,15 @@
     "account_number": "ACCT-8800143",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 167322.72,
-    "declared_monthly_income": 13943.56,
+    "declared_annual_income": 166238.88,
+    "declared_monthly_income": 13853.24,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 16732.27,
-      "withdrawals": 15337.92
+      "deposits": 16623.89,
+      "withdrawals": 15238.56
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -2543,15 +2543,15 @@
     "account_number": "ACCT-8800144",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1284317.52,
-    "declared_monthly_income": 107026.46,
+    "declared_annual_income": 1048976.76,
+    "declared_monthly_income": 87414.73,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 128431.75,
-      "withdrawals": 117729.11
+      "deposits": 104897.68,
+      "withdrawals": 96156.2
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -2561,15 +2561,15 @@
     "account_number": "ACCT-8800145",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 51957.24,
-    "declared_monthly_income": 4329.77,
+    "declared_annual_income": 57874.08,
+    "declared_monthly_income": 4822.84,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5195.72,
-      "withdrawals": 4762.75
+      "deposits": 5787.41,
+      "withdrawals": 5305.12
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -2579,15 +2579,15 @@
     "account_number": "ACCT-8800146",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 16262.04,
-    "declared_monthly_income": 1355.17,
+    "declared_annual_income": 16015.56,
+    "declared_monthly_income": 1334.63,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1626.2,
-      "withdrawals": 1490.69
+      "deposits": 1601.56,
+      "withdrawals": 1468.09
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -2597,15 +2597,15 @@
     "account_number": "ACCT-8800147",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 73331.04,
-    "declared_monthly_income": 6110.92,
+    "declared_annual_income": 68619.96,
+    "declared_monthly_income": 5718.33,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7333.1,
-      "withdrawals": 6722.01
+      "deposits": 6862.0,
+      "withdrawals": 6290.16
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -2615,15 +2615,15 @@
     "account_number": "ACCT-8800148",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 91001.04,
-    "declared_monthly_income": 7583.42,
+    "declared_annual_income": 85005.12,
+    "declared_monthly_income": 7083.76,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9100.1,
-      "withdrawals": 8341.76
+      "deposits": 8500.51,
+      "withdrawals": 7792.14
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -2633,15 +2633,15 @@
     "account_number": "ACCT-8800149",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 91540.44,
-    "declared_monthly_income": 7628.37,
+    "declared_annual_income": 97381.56,
+    "declared_monthly_income": 8115.13,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9154.04,
-      "withdrawals": 8391.21
+      "deposits": 9738.16,
+      "withdrawals": 8926.64
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -2651,15 +2651,15 @@
     "account_number": "ACCT-8800150",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 169309.68,
-    "declared_monthly_income": 14109.14,
+    "declared_annual_income": 165790.32,
+    "declared_monthly_income": 13815.86,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 16930.97,
-      "withdrawals": 15520.05
+      "deposits": 16579.03,
+      "withdrawals": 15197.45
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -2669,15 +2669,15 @@
     "account_number": "ACCT-8800151",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 125734.32,
-    "declared_monthly_income": 10477.86,
+    "declared_annual_income": 133074.96,
+    "declared_monthly_income": 11089.58,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12573.43,
-      "withdrawals": 11525.65
+      "deposits": 13307.5,
+      "withdrawals": 12198.54
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -2687,15 +2687,15 @@
     "account_number": "ACCT-8800152",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 244392.6,
-    "declared_monthly_income": 20366.05,
+    "declared_annual_income": 275441.88,
+    "declared_monthly_income": 22953.49,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 24439.26,
-      "withdrawals": 22402.66
+      "deposits": 27544.19,
+      "withdrawals": 25248.84
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -2720,15 +2720,15 @@
     "account_number": "ACCT-8800154",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 63080.64,
-    "declared_monthly_income": 5256.72,
+    "declared_annual_income": 73884.36,
+    "declared_monthly_income": 6157.03,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6308.06,
-      "withdrawals": 5782.39
+      "deposits": 7388.44,
+      "withdrawals": 6772.73
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -2738,15 +2738,15 @@
     "account_number": "ACCT-8800155",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 194797.32,
-    "declared_monthly_income": 16233.11,
+    "declared_annual_income": 178953.12,
+    "declared_monthly_income": 14912.76,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 19479.73,
-      "withdrawals": 17856.42
+      "deposits": 17895.31,
+      "withdrawals": 16404.04
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -2756,15 +2756,15 @@
     "account_number": "ACCT-8800156",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1350249.48,
-    "declared_monthly_income": 112520.79,
+    "declared_annual_income": 1077262.2,
+    "declared_monthly_income": 89771.85,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 135024.95,
-      "withdrawals": 123772.87
+      "deposits": 107726.22,
+      "withdrawals": 98749.04
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -2774,15 +2774,15 @@
     "account_number": "ACCT-8800157",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 56964.84,
-    "declared_monthly_income": 4747.07,
+    "declared_annual_income": 54798.36,
+    "declared_monthly_income": 4566.53,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5696.48,
-      "withdrawals": 5221.78
+      "deposits": 5479.84,
+      "withdrawals": 5023.18
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -2792,15 +2792,15 @@
     "account_number": "ACCT-8800158",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 18362.64,
-    "declared_monthly_income": 1530.22,
+    "declared_annual_income": 16607.76,
+    "declared_monthly_income": 1383.98,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1836.26,
-      "withdrawals": 1683.24
+      "deposits": 1660.78,
+      "withdrawals": 1522.38
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -2810,15 +2810,15 @@
     "account_number": "ACCT-8800159",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 66835.32,
-    "declared_monthly_income": 5569.61,
+    "declared_annual_income": 77047.08,
+    "declared_monthly_income": 6420.59,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6683.53,
-      "withdrawals": 6126.57
+      "deposits": 7704.71,
+      "withdrawals": 7062.65
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -2828,15 +2828,15 @@
     "account_number": "ACCT-8800160",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 83334.84,
-    "declared_monthly_income": 6944.57,
+    "declared_annual_income": 84993.48,
+    "declared_monthly_income": 7082.79,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8333.48,
-      "withdrawals": 7639.03
+      "deposits": 8499.35,
+      "withdrawals": 7791.07
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -2846,15 +2846,15 @@
     "account_number": "ACCT-8800161",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 81355.8,
-    "declared_monthly_income": 6779.65,
+    "declared_annual_income": 90717.84,
+    "declared_monthly_income": 7559.82,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8135.58,
-      "withdrawals": 7457.61
+      "deposits": 9071.78,
+      "withdrawals": 8315.8
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -2864,15 +2864,15 @@
     "account_number": "ACCT-8800162",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 153807.84,
-    "declared_monthly_income": 12817.32,
+    "declared_annual_income": 200520.36,
+    "declared_monthly_income": 16710.03,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 15380.78,
-      "withdrawals": 14099.05
+      "deposits": 20052.04,
+      "withdrawals": 18381.03
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -2882,15 +2882,15 @@
     "account_number": "ACCT-8800163",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 133106.52,
-    "declared_monthly_income": 11092.21,
+    "declared_annual_income": 118143.84,
+    "declared_monthly_income": 9845.32,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 13310.65,
-      "withdrawals": 12201.43
+      "deposits": 11814.38,
+      "withdrawals": 10829.85
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -2900,15 +2900,15 @@
     "account_number": "ACCT-8800164",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 230512.68,
-    "declared_monthly_income": 19209.39,
+    "declared_annual_income": 259703.52,
+    "declared_monthly_income": 21641.96,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 23051.27,
-      "withdrawals": 21130.33
+      "deposits": 25970.35,
+      "withdrawals": 23806.16
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -2933,15 +2933,15 @@
     "account_number": "ACCT-8800166",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 74329.08,
-    "declared_monthly_income": 6194.09,
+    "declared_annual_income": 66757.2,
+    "declared_monthly_income": 5563.1,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7432.91,
-      "withdrawals": 6813.5
+      "deposits": 6675.72,
+      "withdrawals": 6119.41
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -2951,15 +2951,15 @@
     "account_number": "ACCT-8800167",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 176241.48,
-    "declared_monthly_income": 14686.79,
+    "declared_annual_income": 214062.84,
+    "declared_monthly_income": 17838.57,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 17624.15,
-      "withdrawals": 16155.47
+      "deposits": 21406.28,
+      "withdrawals": 19622.43
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -2969,15 +2969,15 @@
     "account_number": "ACCT-8800168",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1179409.8,
-    "declared_monthly_income": 98284.15,
+    "declared_annual_income": 1149539.04,
+    "declared_monthly_income": 95794.92,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 117940.98,
-      "withdrawals": 108112.57
+      "deposits": 114953.9,
+      "withdrawals": 105374.41
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -2987,15 +2987,15 @@
     "account_number": "ACCT-8800169",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 49758.12,
-    "declared_monthly_income": 4146.51,
+    "declared_annual_income": 48397.44,
+    "declared_monthly_income": 4033.12,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 4975.81,
-      "withdrawals": 4561.16
+      "deposits": 4839.74,
+      "withdrawals": 4436.43
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -3005,15 +3005,15 @@
     "account_number": "ACCT-8800170",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 20463.12,
-    "declared_monthly_income": 1705.26,
+    "declared_annual_income": 20257.92,
+    "declared_monthly_income": 1688.16,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 2046.31,
-      "withdrawals": 1875.79
+      "deposits": 2025.79,
+      "withdrawals": 1856.98
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -3023,15 +3023,15 @@
     "account_number": "ACCT-8800171",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 73919.88,
-    "declared_monthly_income": 6159.99,
+    "declared_annual_income": 63812.52,
+    "declared_monthly_income": 5317.71,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7391.99,
-      "withdrawals": 6775.99
+      "deposits": 6381.25,
+      "withdrawals": 5849.48
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -3041,15 +3041,15 @@
     "account_number": "ACCT-8800172",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 88509.36,
-    "declared_monthly_income": 7375.78,
+    "declared_annual_income": 92106.24,
+    "declared_monthly_income": 7675.52,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8850.94,
-      "withdrawals": 8113.36
+      "deposits": 9210.62,
+      "withdrawals": 8443.07
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -3059,15 +3059,15 @@
     "account_number": "ACCT-8800173",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 99720.96,
-    "declared_monthly_income": 8310.08,
+    "declared_annual_income": 94463.76,
+    "declared_monthly_income": 7871.98,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 9972.1,
-      "withdrawals": 9141.09
+      "deposits": 9446.38,
+      "withdrawals": 8659.18
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -3077,15 +3077,15 @@
     "account_number": "ACCT-8800174",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 197302.2,
-    "declared_monthly_income": 16441.85,
+    "declared_annual_income": 195783.48,
+    "declared_monthly_income": 16315.29,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 19730.22,
-      "withdrawals": 18086.03
+      "deposits": 19578.35,
+      "withdrawals": 17946.82
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -3095,15 +3095,15 @@
     "account_number": "ACCT-8800175",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 150467.04,
-    "declared_monthly_income": 12538.92,
+    "declared_annual_income": 140517.0,
+    "declared_monthly_income": 11709.75,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 15046.7,
-      "withdrawals": 13792.81
+      "deposits": 14051.7,
+      "withdrawals": 12880.73
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -3113,15 +3113,15 @@
     "account_number": "ACCT-8800176",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 252222.36,
-    "declared_monthly_income": 21018.53,
+    "declared_annual_income": 219879.12,
+    "declared_monthly_income": 18323.26,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 25222.24,
-      "withdrawals": 23120.38
+      "deposits": 21987.91,
+      "withdrawals": 20155.59
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -3146,15 +3146,15 @@
     "account_number": "ACCT-8800178",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 82452.6,
-    "declared_monthly_income": 6871.05,
+    "declared_annual_income": 68578.8,
+    "declared_monthly_income": 5714.9,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8245.26,
-      "withdrawals": 7558.16
+      "deposits": 6857.88,
+      "withdrawals": 6286.39
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -3164,15 +3164,15 @@
     "account_number": "ACCT-8800179",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 174272.4,
-    "declared_monthly_income": 14522.7,
+    "declared_annual_income": 205615.44,
+    "declared_monthly_income": 17134.62,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 17427.24,
-      "withdrawals": 15974.97
+      "deposits": 20561.54,
+      "withdrawals": 18848.08
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -3182,15 +3182,15 @@
     "account_number": "ACCT-8800180",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1308291.24,
-    "declared_monthly_income": 109024.27,
+    "declared_annual_income": 1076890.44,
+    "declared_monthly_income": 89740.87,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 130829.12,
-      "withdrawals": 119926.7
+      "deposits": 107689.04,
+      "withdrawals": 98714.96
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -3200,15 +3200,15 @@
     "account_number": "ACCT-8800181",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 44482.08,
-    "declared_monthly_income": 3706.84,
+    "declared_annual_income": 45801.36,
+    "declared_monthly_income": 3816.78,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 4448.21,
-      "withdrawals": 4077.52
+      "deposits": 4580.14,
+      "withdrawals": 4198.46
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -3218,15 +3218,15 @@
     "account_number": "ACCT-8800182",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 15611.4,
-    "declared_monthly_income": 1300.95,
+    "declared_annual_income": 18792.96,
+    "declared_monthly_income": 1566.08,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 1561.14,
-      "withdrawals": 1431.05
+      "deposits": 1879.3,
+      "withdrawals": 1722.69
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -3236,15 +3236,15 @@
     "account_number": "ACCT-8800183",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 61620.6,
-    "declared_monthly_income": 5135.05,
+    "declared_annual_income": 65238.0,
+    "declared_monthly_income": 5436.5,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 6162.06,
-      "withdrawals": 5648.56
+      "deposits": 6523.8,
+      "withdrawals": 5980.15
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -3254,15 +3254,15 @@
     "account_number": "ACCT-8800184",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 84982.08,
-    "declared_monthly_income": 7081.84,
+    "declared_annual_income": 90566.64,
+    "declared_monthly_income": 7547.22,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8498.21,
-      "withdrawals": 7790.02
+      "deposits": 9056.66,
+      "withdrawals": 8301.94
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -3272,15 +3272,15 @@
     "account_number": "ACCT-8800185",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 101996.88,
-    "declared_monthly_income": 8499.74,
+    "declared_annual_income": 107061.6,
+    "declared_monthly_income": 8921.8,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 10199.69,
-      "withdrawals": 9349.71
+      "deposits": 10706.16,
+      "withdrawals": 9813.98
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -3290,15 +3290,15 @@
     "account_number": "ACCT-8800186",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 194752.32,
-    "declared_monthly_income": 16229.36,
+    "declared_annual_income": 202795.68,
+    "declared_monthly_income": 16899.64,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 19475.23,
-      "withdrawals": 17852.3
+      "deposits": 20279.57,
+      "withdrawals": 18589.6
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -3308,15 +3308,15 @@
     "account_number": "ACCT-8800187",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 123905.76,
-    "declared_monthly_income": 10325.48,
+    "declared_annual_income": 115128.36,
+    "declared_monthly_income": 9594.03,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 12390.58,
-      "withdrawals": 11358.03
+      "deposits": 11512.84,
+      "withdrawals": 10553.43
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -3326,15 +3326,15 @@
     "account_number": "ACCT-8800188",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 256789.8,
-    "declared_monthly_income": 21399.15,
+    "declared_annual_income": 273833.16,
+    "declared_monthly_income": 22819.43,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 25678.98,
-      "withdrawals": 23539.07
+      "deposits": 27383.32,
+      "withdrawals": 25101.37
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   },
@@ -3359,15 +3359,15 @@
     "account_number": "ACCT-8800190",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 82122.72,
-    "declared_monthly_income": 6843.56,
+    "declared_annual_income": 77809.92,
+    "declared_monthly_income": 6484.16,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8212.27,
-      "withdrawals": 7527.92
+      "deposits": 7780.99,
+      "withdrawals": 7132.58
     },
     "notes": "Pilot dataset customer mapped from archetype 'Mixed Signals'."
   },
@@ -3377,15 +3377,15 @@
     "account_number": "ACCT-8800191",
     "account_type": "Personal Checking",
     "occupation": "Deputy Minister of Infrastructure (Former)",
-    "declared_annual_income": 171717.72,
-    "declared_monthly_income": 14309.81,
+    "declared_annual_income": 188534.76,
+    "declared_monthly_income": 15711.23,
     "account_open_date": "2024-02-01",
     "risk_rating": "High",
     "nationality": "Jordan",
     "pep_status": true,
     "expected_monthly_volume": {
-      "deposits": 17171.77,
-      "withdrawals": 15740.79
+      "deposits": 18853.48,
+      "withdrawals": 17282.35
     },
     "notes": "Pilot dataset customer mapped from archetype 'PEP Heightened Scrutiny'."
   },
@@ -3395,15 +3395,15 @@
     "account_number": "ACCT-8800192",
     "account_type": "Corporate Checking",
     "occupation": "Freight & Warehousing",
-    "declared_annual_income": 1281881.52,
-    "declared_monthly_income": 106823.46,
+    "declared_annual_income": 1128251.64,
+    "declared_monthly_income": 94020.97,
     "account_open_date": "2023-01-11",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 128188.15,
-      "withdrawals": 117505.81
+      "deposits": 112825.16,
+      "withdrawals": 103423.07
     },
     "notes": "Pilot dataset customer mapped from archetype 'Watchlist Counterparty Match'."
   },
@@ -3413,15 +3413,15 @@
     "account_number": "ACCT-8800193",
     "account_type": "Personal Checking",
     "occupation": "Retail Store Clerk",
-    "declared_annual_income": 52729.44,
-    "declared_monthly_income": 4394.12,
+    "declared_annual_income": 42920.52,
+    "declared_monthly_income": 3576.71,
     "account_open_date": "2023-03-15",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 5272.94,
-      "withdrawals": 4833.53
+      "deposits": 4292.05,
+      "withdrawals": 3934.38
     },
     "notes": "Pilot dataset customer mapped from archetype 'Classic Structuring'."
   },
@@ -3431,15 +3431,15 @@
     "account_number": "ACCT-8800194",
     "account_type": "Personal Checking",
     "occupation": "Unemployed / Student",
-    "declared_annual_income": 20068.44,
-    "declared_monthly_income": 1672.37,
+    "declared_annual_income": 17117.16,
+    "declared_monthly_income": 1426.43,
     "account_open_date": "2024-06-20",
     "risk_rating": "High",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 2006.84,
-      "withdrawals": 1839.61
+      "deposits": 1711.72,
+      "withdrawals": 1569.07
     },
     "notes": "Pilot dataset customer mapped from archetype 'Pass-Through / Layering'."
   },
@@ -3449,15 +3449,15 @@
     "account_number": "ACCT-8800195",
     "account_type": "Personal Checking",
     "occupation": "Freelance Graphic Designer",
-    "declared_annual_income": 76159.2,
-    "declared_monthly_income": 6346.6,
+    "declared_annual_income": 81687.96,
+    "declared_monthly_income": 6807.33,
     "account_open_date": "2022-08-10",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7615.92,
-      "withdrawals": 6981.26
+      "deposits": 8168.8,
+      "withdrawals": 7488.06
     },
     "notes": "Pilot dataset customer mapped from archetype 'Income Inconsistency'."
   },
@@ -3467,15 +3467,15 @@
     "account_number": "ACCT-8800196",
     "account_type": "Personal Savings",
     "occupation": "Registered Nurse",
-    "declared_annual_income": 76074.6,
-    "declared_monthly_income": 6339.55,
+    "declared_annual_income": 73154.76,
+    "declared_monthly_income": 6096.23,
     "account_open_date": "2018-09-14",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 7607.46,
-      "withdrawals": 6973.51
+      "deposits": 7315.48,
+      "withdrawals": 6705.85
     },
     "notes": "Pilot dataset customer mapped from archetype 'Dormant Account Spike'."
   },
@@ -3485,15 +3485,15 @@
     "account_number": "ACCT-8800197",
     "account_type": "Personal Checking",
     "occupation": "Digital Marketing Consultant",
-    "declared_annual_income": 85310.76,
-    "declared_monthly_income": 7109.23,
+    "declared_annual_income": 100559.04,
+    "declared_monthly_income": 8379.92,
     "account_open_date": "2021-04-18",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 8531.08,
-      "withdrawals": 7820.15
+      "deposits": 10055.9,
+      "withdrawals": 9217.91
     },
     "notes": "Pilot dataset customer mapped from archetype 'Round-Trip Flow'."
   },
@@ -3503,15 +3503,15 @@
     "account_number": "ACCT-8800198",
     "account_type": "Business Checking",
     "occupation": "Owner, Sharma Artisan Imports",
-    "declared_annual_income": 173844.6,
-    "declared_monthly_income": 14487.05,
+    "declared_annual_income": 188459.64,
+    "declared_monthly_income": 15704.97,
     "account_open_date": "2021-05-12",
     "risk_rating": "Medium",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 17384.46,
-      "withdrawals": 15935.76
+      "deposits": 18845.96,
+      "withdrawals": 17275.47
     },
     "notes": "Pilot dataset customer mapped from archetype 'Legitimate Business Seasonal Spike'."
   },
@@ -3521,15 +3521,15 @@
     "account_number": "ACCT-8800199",
     "account_type": "Personal Checking",
     "occupation": "Software Engineer",
-    "declared_annual_income": 132028.44,
-    "declared_monthly_income": 11002.37,
+    "declared_annual_income": 115854.12,
+    "declared_monthly_income": 9654.51,
     "account_open_date": "2019-11-04",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 13202.84,
-      "withdrawals": 12102.61
+      "deposits": 11585.41,
+      "withdrawals": 10619.96
     },
     "notes": "Pilot dataset customer mapped from archetype 'Benign Isolated Pattern'."
   },
@@ -3539,15 +3539,15 @@
     "account_number": "ACCT-8800200",
     "account_type": "Personal Wealth",
     "occupation": "Commercial Real Estate Broker",
-    "declared_annual_income": 247868.88,
-    "declared_monthly_income": 20655.74,
+    "declared_annual_income": 212306.88,
+    "declared_monthly_income": 17692.24,
     "account_open_date": "2020-01-19",
     "risk_rating": "Low",
     "nationality": "US",
     "pep_status": false,
     "expected_monthly_volume": {
-      "deposits": 24786.89,
-      "withdrawals": 22721.31
+      "deposits": 21230.69,
+      "withdrawals": 19461.46
     },
     "notes": "Pilot dataset customer mapped from archetype 'Large Explained Transaction'."
   }

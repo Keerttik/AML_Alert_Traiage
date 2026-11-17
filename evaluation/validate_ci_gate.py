@@ -2,10 +2,15 @@ import json
 import sys
 from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from app.utils.config import EVALUATION_DIR
+
 def validate_gate():
-    report_file = Path("evaluation/eval_report_latest.json")
+    report_file = EVALUATION_DIR / "eval_report_latest.json"
     if not report_file.exists():
-        print("ERROR: Evaluation report not found!")
+        print(f"ERROR: Evaluation report not found at {report_file}!")
         sys.exit(1)
 
     with open(report_file, "r", encoding="utf-8") as f:
