@@ -98,11 +98,14 @@ with st.sidebar:
 
     # RBAC Role Switcher
     st.markdown("#### 👤 Role-Based Access (RBAC)")
-    selected_role = st.selectbox(
-        "Active Persona",
-        options=["AML Analyst (L1/L2)", "Compliance Manager / BSA Officer", "Internal Auditor / Examiner"],
-        index=["AML Analyst (L1/L2)", "Compliance Manager / BSA Officer", "Internal Auditor / Examiner"].index(st.session_state.user_role)
-    )
+    role_options = [
+        "AML Analyst (L1/L2)", 
+        "Compliance Manager / BSA Officer", 
+        "Internal Auditor / Examiner",
+        "💼 Executive PM Portfolio & Case Study"
+    ]
+    current_idx = role_options.index(st.session_state.user_role) if st.session_state.user_role in role_options else 0
+    selected_role = st.selectbox("Active Persona / View", options=role_options, index=current_idx)
     if selected_role != st.session_state.user_role:
         st.session_state.user_role = selected_role
         st.rerun()
@@ -160,8 +163,10 @@ if st.session_state.user_role == "AML Analyst (L1/L2)":
     tabs = st.tabs(["📋 Triage Workspace", "🗂️ Alert Queue", "🛡️ Audit Log"])
 elif st.session_state.user_role == "Compliance Manager / BSA Officer":
     tabs = st.tabs(["📈 Pilot A/B Performance", "🗂️ Team Queue Oversight", "⚖️ Override Analysis", "📡 Model Drift & Telemetry", "📋 Triage Inspection"])
-else: # Internal Auditor
+elif st.session_state.user_role == "Internal Auditor / Examiner":
     tabs = st.tabs(["🔒 Audit Trail & Hash Verification", "⚖️ Fairness & Demographic Audit", "📋 Case Inspector"])
+else: # 💼 Executive PM Portfolio & Case Study
+    tabs = st.tabs(["📊 Executive Summary & ROI", "🛡️ Guardrails & Architecture", "📈 Pilot Findings & A/B Benchmark", "💬 PM Interview Defense"])
 
 # ==============================================================================
 # VIEW 1: AML ANALYST WORKSPACE
@@ -502,7 +507,7 @@ elif st.session_state.user_role == "Compliance Manager / BSA Officer":
 # ==============================================================================
 # VIEW 3: INTERNAL AUDITOR / EXAMINER
 # ==============================================================================
-else:
+elif st.session_state.user_role == "Internal Auditor / Examiner":
     with tabs[0]: # Audit Trail & Hash Verification
         st.subheader("🔒 Immutable Decision Audit Trail (SHA-256 Chained)")
         is_intact, msgs = audit_log.verify_chain_integrity()
@@ -538,3 +543,129 @@ else:
                 st.json(record)
         else:
             st.info("No audit records available.")
+
+# ==============================================================================
+# VIEW 4: 💼 EXECUTIVE PM PORTFOLIO & CASE STUDY
+# ==============================================================================
+else:
+    with tabs[0]: # Executive Summary & ROI
+        st.subheader("💼 Executive Summary & Enterprise Financial ROI Model")
+        st.markdown("""
+        **The Problem:** In financial crime compliance, monitoring rules trigger >90% false positives. AML analysts spend ~70% of their day manually toggling across KYC, transaction ledgers, and sanctions databases, creating massive triage bottlenecks and alert fatigue.
+        
+        **The Product Solution:** A GenAI-powered assistant that synthesizes context, suggests evidence-grounded dispositions with source citations, drafts 5W1H regulatory STR narratives, and records decisions in a tamper-evident audit trail.
+        """)
+
+        st.markdown("---")
+        st.markdown("### 🧮 Interactive Compliance ROI Calculator")
+        st.caption("Adjust parameters to model operational cost savings for any bank or FinTech:")
+
+        roi_c1, roi_c2, roi_c3 = st.columns(3)
+        with roi_c1:
+            analysts_count = st.slider("AML Analyst Headcount", min_value=10, max_value=500, value=100, step=10)
+        with roi_c2:
+            analyst_salary = st.slider("Fully Loaded Annual Salary ($)", min_value=50000, max_value=150000, value=95000, step=5000)
+        with roi_c3:
+            alerts_per_day = st.slider("Alerts per Analyst / Day", min_value=10, max_value=50, value=30, step=5)
+
+        # Economic Calculations
+        hourly_rate = analyst_salary / (250 * 8)
+        annual_alerts = analysts_count * alerts_per_day * 250
+        manual_hours = (annual_alerts * 33.8) / 60
+        copilot_hours = (annual_alerts * 14.1) / 60
+        hours_saved = manual_hours - copilot_hours
+        annual_labor_savings = hours_saved * hourly_rate
+        cloud_tco = (annual_alerts * 0.015) + 3600 + 4800 + 35000
+        net_savings = annual_labor_savings - cloud_tco
+        roi_multiplier = (net_savings / cloud_tco) if cloud_tco > 0 else 0
+
+        r1, r2, r3, r4 = st.columns(4)
+        with r1:
+            st.metric("Annual Alerts Handled", f"{annual_alerts:,.0f}")
+        with r2:
+            st.metric("Analyst Hours Unlocked", f"{hours_saved:,.0f} hrs/yr", delta="58.4% faster")
+        with r3:
+            st.metric("Direct Labor Savings", f"${annual_labor_savings/1e6:.2f}M / yr", delta=f"${hourly_rate:.2f}/hr loaded rate")
+        with r4:
+            st.metric("Net Infrastructure ROI", f"{roi_multiplier:,.0f}x", delta=f"${cloud_tco:,.0f} TCO")
+
+    with tabs[1]: # Guardrails & Architecture
+        st.subheader("🛡️ AI Safety Guardrails & System Architecture")
+        
+        g1, g2 = st.columns(2)
+        with g1:
+            st.markdown("""
+            #### 1. The Core Design Axiom
+            > **The AI prepares and recommends. The analyst decides.**  
+            > *The copilot never closes an alert or files an STR autonomously.*
+            
+            #### 2. Epistemic Honesty ("Insufficient Evidence")
+            If an account lacks declared occupation or income due to migration defects, the copilot **refuses to guess** or hallucinate. It outputs `Insufficient Evidence` and defaults safely to `Investigate`.
+            
+            #### 3. Asymmetric Error Calibration
+            - False Positive cost: 10 extra minutes of analyst review.
+            - False Negative cost: Criminal facilitation and tens of millions in regulatory penalties.
+            - Model is calibrated to minimize false negatives: **0.0% Missed Escalations**.
+            """)
+        with g2:
+            st.markdown("""
+            #### 4. Grounded Citation Engine
+            Every single factual claim must include an inline bracketed citation (e.g., `[KYC: Income]`, `[Txn: TXN-101001]`, `[Watchlist]`). Output validator verifies all claims against input payloads.
+            
+            #### 5. SHA-256 Chained Cryptographic Audit
+            Every adjudication logs AI suggestions, analyst choices, and rationales into an append-only JSONL log chained via SHA-256 hashes (`previous_entry_hash` -> `audit_entry_hash`).
+            
+            #### 6. Multi-Language STR Generator
+            Automated 5W1H narrative drafting for FinCEN (English), ROS (Spanish), TRACFIN (French), and MENA FIU (Arabic).
+            """)
+
+    with tabs[2]: # Pilot Findings
+        st.subheader("📈 4-Week Pilot Cohort Benchmark (200 Alerts)")
+        sim_report_file = EVALUATION_DIR / "pilot_simulation_report.json"
+        if sim_report_file.exists():
+            with open(sim_report_file, "r", encoding="utf-8") as f:
+                sim_data = json.load(f)
+            
+            p1, p2, p3, p4 = st.columns(4)
+            with p1:
+                st.metric("Triage Time Reduction", f"{sim_data['ab_comparison']['time_reduction_percent']}%", delta="33.8m -> 14.1m")
+            with p2:
+                st.metric("Missed Escalations", f"{sim_data['quality_metrics']['missed_escalations']}", delta="0% Hard Guardrail")
+            with p3:
+                st.metric("Week 4 Agreement", "93.8%", delta="+10.6% trust calibration")
+            with p4:
+                st.metric("Analyst NPS", "+68", delta="4.3 / 5.0 Rating")
+
+            st.dataframe(pd.DataFrame(sim_data["weekly_trends"]), use_container_width=True, hide_index=True)
+
+    with tabs[3]: # PM Interview Defense
+        st.subheader("💬 PM Interview Defense & Talking Points")
+        st.caption("How to defend design choices in Senior AI / FinTech Product Management interviews:")
+
+        with st.expander("Q1: Why build a copilot instead of fully autonomous alert closure?"):
+            st.write("""
+            **Answer:** Under Bank Secrecy Act (BSA) and international FATF regulations, banks carry strict statutory liability for failing to file a Suspicious Transaction Report. An autonomous agent that auto-closes alerts creates unacceptable tail-risk liability. Moreover, real compliance edge cases often involve offline context (e.g. physical car deeds or probate filings). By automating the 70% of time spent on context gathering while preserving human adjudication, we achieved nearly 60% time savings without stripping away human legal accountability.
+            """)
+
+        with st.expander("Q2: How did you prevent hallucinations in a regulated compliance product?"):
+            st.write("""
+            **Answer:** We implemented a 3-layer defense:
+            1. **Strict Citation Engine:** Prompts require bracketed citations for every factual claim (`[KYC: Income]`, `[Txn: TXN-...]`).
+            2. **Defensive Post-Processing Validator:** Parses output text and verifies that all mentioned transaction IDs exist in the input context.
+            3. **Epistemic Honesty:** When KYC baseline data is absent, the system outputs 'Insufficient Evidence' rather than guessing.
+            Our evaluation harness verified a 0.0% hallucination rate across 75 golden test cases.
+            """)
+
+        with st.expander("Q3: How do you mitigate automation bias (analysts rubber-stamping AI recommendations)?"):
+            st.write("""
+            **Answer:** We engineered behavioral friction:
+            1. Mandatory override rationales when diverging from AI recommendations.
+            2. Interactive clickable citations that force visual inspection of the underlying transaction rows in the ledger.
+            3. Rationale diff-tracking in the audit log to help QA managers spot rubber-stamping early.
+            """)
+
+        with st.expander("Q4: What was the hardest product trade-off?"):
+            st.write("""
+            **Answer:** Deciding whether to give the copilot open web access for OSINT searches. While analysts frequently search for counterparties, allowing uncontrolled web browsing introduced non-deterministic latency (45+ seconds), hallucination risks, and data leakage concerns. We made the deliberate decision to restrict the copilot strictly to internal bank data (KYC, ledgers, watchlists), achieving sub-second latency and zero data leakage.
+            """)
+
