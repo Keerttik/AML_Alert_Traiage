@@ -147,6 +147,14 @@ if "feedback_store" not in st.session_state:
 if "current_alert_id" not in st.session_state:
     st.session_state.current_alert_id = "ALT-2026-001042"
 
+# Query parameter handling for direct deep-linking
+if "alert_id" in st.query_params:
+    param_aid = st.query_params.get("alert_id")
+    if param_aid and st.session_state.get("_last_query_alert") != param_aid:
+        st.session_state.current_alert_id = param_aid
+        st.session_state._last_query_alert = param_aid
+        st.session_state.target_tab = "📋 Triage Workspace"
+
 # Instantiate Engine & Singletons (Clean offline deterministic engine out of the box)
 engine = CopilotEngine()
 engine.context_assembler = st.session_state.context_assembler
@@ -234,9 +242,27 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# Handle dynamic programmatic tab navigation
+if "target_tab" in st.session_state:
+    st.session_state.analyst_tab_key = st.session_state.pop("target_tab")
+
 # Conditional Tab Router based on Role
 if st.session_state.user_role == "AML Analyst (L1/L2)":
-    tabs = st.tabs(["📋 Triage Workspace", "🗂️ Active Alert Queue", "🛡️ Decision Audit Trail"])
+    analyst_tabs = ["📋 Triage Workspace", "🗂️ Active Alert Queue", "🛡️ Decision Audit Trail"]
+    if "analyst_tab_key" not in st.session_state:
+        st.session_state.analyst_tab_key = analyst_tabs[0]
+
+    import inspect
+    sig = inspect.signature(st.tabs)
+    tab_kwargs = {}
+    if "key" in sig.parameters:
+        tab_kwargs["key"] = "analyst_tab_key"
+    if "on_change" in sig.parameters:
+        tab_kwargs["on_change"] = "rerun"
+    if "default" in sig.parameters and st.session_state.analyst_tab_key in analyst_tabs:
+        tab_kwargs["default"] = st.session_state.analyst_tab_key
+
+    tabs = st.tabs(analyst_tabs, **tab_kwargs)
 elif st.session_state.user_role == "Compliance Manager / BSA Officer":
     tabs = st.tabs(["📈 Pilot A/B Performance", "🗂️ Team Queue Oversight", "⚖️ Override Analysis", "📡 Model Drift Telemetry"])
 elif st.session_state.user_role == "Internal Auditor / Examiner":
@@ -496,11 +522,16 @@ if st.session_state.user_role == "AML Analyst (L1/L2)":
     # Queue Tab
     with tabs[1]:
         st.subheader("🗂️ Active Alert Queue (Prioritized by Risk Score)")
+        st.markdown(
+            "💡 **Click any row or Alert ID below** to immediately open and triage it in the **Triage Workspace**."
+        )
+
         all_alerts = assembler.get_all_alerts()
         queue_rows = []
         for a in all_alerts:
+            aid = a["alert_id"]
             try:
-                c_tmp = assembler.assemble_context(a["alert_id"])
+                c_tmp = assembler.assemble_context(aid)
                 p_tmp = alert_prioritizer.score_alert(c_tmp)
                 score = p_tmp["severity_score"]
                 tier = p_tmp["priority_tier"]
@@ -513,22 +544,94 @@ if st.session_state.user_role == "AML Analyst (L1/L2)":
             c_obj = assembler.get_customer_by_id(a.get("customer_id", ""))
             c_name = c_obj.get("name", a.get("customer_id", "")) if c_obj else a.get("customer_id", "")
             queue_rows.append({
-                "Alert ID": a["alert_id"],
+                "Alert ID": aid,
                 "Customer Name": c_name,
                 "Rule Name": a["rule_name"],
                 "Severity Score": score,
                 "Priority Tier": tier,
                 "SLA Target": sla,
-                "Trigger Date": a["trigger_date"]
+                "Trigger Date": a["trigger_date"],
+                "Action": "⚡ Triage Case"
             })
-        st.dataframe(pd.DataFrame(queue_rows).sort_values(by="Severity Score", ascending=False), use_container_width=True, hide_index=True)
+
+        df_queue = pd.DataFrame(queue_rows).sort_values(by="Severity Score", ascending=False).reset_index(drop=True)
+
+        # Quick Dispatch Selector & 1-Click Launch Button
+        col_sel, col_btn = st.columns([3, 1])
+        with col_sel:
+            quick_aid = st.selectbox(
+                "Quick Triage Selector:",
+                options=df_queue["Alert ID"].tolist(),
+                format_func=lambda x: f"⚡ {x} — {df_queue[df_queue['Alert ID'] == x]['Customer Name'].values[0]} | {df_queue[df_queue['Alert ID'] == x]['Rule Name'].values[0]} [{df_queue[df_queue['Alert ID'] == x]['Priority Tier'].values[0]}]",
+                key="queue_quick_jump_select",
+                label_visibility="collapsed"
+            )
+        with col_btn:
+            if st.button("🚀 Triage Selected Case", type="primary", use_container_width=True, key="btn_jump_queue_triage"):
+                st.session_state.current_alert_id = quick_aid
+                st.session_state.target_tab = "📋 Triage Workspace"
+                st.rerun()
+
+        # Clickable Table (Row Selection)
+        selected_event = st.dataframe(
+            df_queue,
+            use_container_width=True,
+            hide_index=True,
+            selection_mode="single-row",
+            on_select="rerun",
+            key="queue_df_interactive",
+            column_config={
+                "Alert ID": st.column_config.TextColumn(
+                    "Alert ID",
+                    help="Click row to open this alert in Triage Workspace"
+                ),
+                "Severity Score": st.column_config.ProgressColumn(
+                    "Severity Score",
+                    min_value=0,
+                    max_value=100,
+                    format="%d"
+                ),
+                "Action": st.column_config.TextColumn(
+                    "Action",
+                    help="Click any cell or row to triage"
+                )
+            }
+        )
+
+        # Handle row click selection
+        if selected_event and hasattr(selected_event, "selection") and selected_event.selection.get("rows"):
+            selected_idx = selected_event.selection["rows"][0]
+            if 0 <= selected_idx < len(df_queue):
+                clicked_aid = df_queue.iloc[selected_idx]["Alert ID"]
+                if clicked_aid:
+                    st.session_state.current_alert_id = clicked_aid
+                    st.session_state.target_tab = "📋 Triage Workspace"
+                    st.rerun()
 
     # Audit Tab
     with tabs[2]:
         st.subheader("🛡️ Regulatory Audit Trail")
+        st.caption("💡 Click any logged adjudication record to inspect its case.")
         entries = audit_log.get_all_entries()
         st.write(f"Total auditable records logged: **{len(entries)}**")
-        st.dataframe(pd.DataFrame(entries), use_container_width=True)
+        if entries:
+            df_audit = pd.DataFrame(entries)
+            audit_selection = st.dataframe(
+                df_audit,
+                use_container_width=True,
+                hide_index=True,
+                selection_mode="single-row",
+                on_select="rerun",
+                key="audit_df_interactive"
+            )
+            if audit_selection and hasattr(audit_selection, "selection") and audit_selection.selection.get("rows"):
+                r_idx = audit_selection.selection["rows"][0]
+                if 0 <= r_idx < len(df_audit):
+                    audit_aid = df_audit.iloc[r_idx].get("alert_id")
+                    if audit_aid:
+                        st.session_state.current_alert_id = audit_aid
+                        st.session_state.target_tab = "📋 Triage Workspace"
+                        st.rerun()
 
 # ==============================================================================
 # VIEW 2: COMPLIANCE MANAGER / BSA OFFICER
@@ -559,7 +662,27 @@ elif st.session_state.user_role == "Compliance Manager / BSA Officer":
 
     with tabs[1]:
         st.subheader("🗂️ Team Queue Oversight")
-        st.dataframe(pd.DataFrame(assembler.get_all_alerts()), use_container_width=True)
+        st.caption("💡 Click any alert row below to jump into the Analyst Workspace and triage it.")
+        team_alerts = assembler.get_all_alerts()
+        df_team = pd.DataFrame(team_alerts)
+        if not df_team.empty:
+            mgr_sel = st.dataframe(
+                df_team,
+                use_container_width=True,
+                hide_index=True,
+                selection_mode="single-row",
+                on_select="rerun",
+                key="mgr_team_queue_selection"
+            )
+            if mgr_sel and hasattr(mgr_sel, "selection") and mgr_sel.selection.get("rows"):
+                m_idx = mgr_sel.selection["rows"][0]
+                if 0 <= m_idx < len(df_team):
+                    m_aid = df_team.iloc[m_idx].get("alert_id")
+                    if m_aid:
+                        st.session_state.current_alert_id = m_aid
+                        st.session_state.user_role = "AML Analyst (L1/L2)"
+                        st.session_state.target_tab = "📋 Triage Workspace"
+                        st.rerun()
 
     with tabs[2]:
         st.subheader("⚖️ Override Review & Root-Cause Analysis")
