@@ -37,15 +37,15 @@
     ]
   },
   "ab_comparison": {
-    "avg_manual_time_min": 32.5,
-    "avg_copilot_time_min": 13.0,
-    "time_saved_per_alert_min": 19.6,
-    "time_reduction_percent": 60.1,
+    "avg_manual_time_min": 32.3,
+    "avg_copilot_time_min": 12.9,
+    "time_saved_per_alert_min": 19.4,
+    "time_reduction_percent": 60.0,
     "total_hours_saved": 6.5
   },
   "quality_metrics": {
-    "overall_agreement_percent": 100.0,
-    "override_rate_percent": 0.0,
+    "overall_agreement_percent": 90.0,
+    "override_rate_percent": 10.0,
     "missed_escalations": 0,
     "guardrail_status": "PASSED (0 Missed Escalations)"
   },
@@ -54,45 +54,45 @@
       "Week": "Week 1",
       "Alerts Triaged": 5,
       "Agreement Rate": "100.0%",
-      "Avg Baseline Time": "31.3m",
-      "Avg Copilot Time": "13.0m",
-      "Time Reduction": "58.5%"
+      "Avg Baseline Time": "32.0m",
+      "Avg Copilot Time": "12.9m",
+      "Time Reduction": "59.8%"
     },
     {
       "Week": "Week 2",
       "Alerts Triaged": 5,
-      "Agreement Rate": "100.0%",
-      "Avg Baseline Time": "33.8m",
-      "Avg Copilot Time": "13.1m",
-      "Time Reduction": "61.2%"
+      "Agreement Rate": "80.0%",
+      "Avg Baseline Time": "32.0m",
+      "Avg Copilot Time": "13.8m",
+      "Time Reduction": "56.7%"
     },
     {
       "Week": "Week 3",
       "Alerts Triaged": 5,
       "Agreement Rate": "100.0%",
-      "Avg Baseline Time": "31.5m",
-      "Avg Copilot Time": "13.4m",
-      "Time Reduction": "57.5%"
+      "Avg Baseline Time": "32.8m",
+      "Avg Copilot Time": "13.1m",
+      "Time Reduction": "60.1%"
     },
     {
       "Week": "Week 4",
       "Alerts Triaged": 5,
-      "Agreement Rate": "100.0%",
-      "Avg Baseline Time": "33.6m",
-      "Avg Copilot Time": "12.4m",
-      "Time Reduction": "63.1%"
+      "Agreement Rate": "80.0%",
+      "Avg Baseline Time": "32.3m",
+      "Avg Copilot Time": "11.8m",
+      "Time Reduction": "63.3%"
     }
   ],
   "feedback_summary": {
-    "total_responses": 83,
+    "total_responses": 104,
     "avg_rating": 5.0,
     "nps_satisfaction_percent": 100.0,
     "accuracy_breakdown": {
-      "Accurate & Appropriate": 83
+      "Accurate & Appropriate": 104
     },
     "narrative_quality_breakdown": {
-      "High - minimal edits": 46,
-      "Adequate": 37
+      "High - minimal edits": 58,
+      "Adequate": 46
     }
   },
   "simulation_records": [
@@ -104,9 +104,9 @@
       "ai_recommendation": "Escalate",
       "analyst_disposition": "Escalate",
       "is_override": false,
-      "manual_time_min": 26.5,
-      "copilot_time_min": 12.0,
-      "time_saved_min": 14.5
+      "manual_time_min": 28.3,
+      "copilot_time_min": 10.9,
+      "time_saved_min": 17.4
     },
     {
       "alert_id": "ALT-PILOT-0002",
@@ -116,9 +116,9 @@
       "ai_recommendation": "Escalate",
       "analyst_disposition": "Escalate",
       "is_override": false,
-      "manual_time_min": 33.1,
-      "copilot_time_min": 15.8,
-      "time_saved_min": 17.3
+      "manual_time_min": 34.4,
+      "copilot_time_min": 14.0,
+      "time_saved_min": 20.4
     },
     {
       "alert_id": "ALT-PILOT-0003",
@@ -128,9 +128,9 @@
       "ai_recommendation": "Investigate",
       "analyst_disposition": "Investigate",
       "is_override": false,
-      "manual_time_min": 30.5,
-      "copilot_time_min": 15.1,
-      "time_saved_min": 15.4
+      "manual_time_min": 39.1,
+      "copilot_time_min": 15.4,
+      "time_saved_min": 23.7
     },
     {
       "alert_id": "ALT-PILOT-0004",
@@ -140,9 +140,9 @@
       "ai_recommendation": "Escalate",
       "analyst_disposition": "Escalate",
       "is_override": false,
-      "manual_time_min": 30.9,
-      "copilot_time_min": 10.9,
-      "time_saved_min": 20.0
+      "manual_time_min": 25.7,
+      "copilot_time_min": 13.1,
+      "time_saved_min": 12.6
     },
     {
       "alert_id": "ALT-PILOT-0005",
@@ -152,9 +152,9 @@
       "ai_recommendation": "Investigate",
       "analyst_disposition": "Investigate",
       "is_override": false,
-      "manual_time_min": 35.5,
-      "copilot_time_min": 11.2,
-      "time_saved_min": 24.3
+      "manual_time_min": 32.4,
+      "copilot_time_min": 10.9,
+      "time_saved_min": 21.5
     },
     {
       "alert_id": "ALT-PILOT-0006",
@@ -162,11 +162,11 @@
       "analyst_id": "ANALYST-01",
       "analyst_name": "Sarah Chen",
       "ai_recommendation": "Close",
-      "analyst_disposition": "Close",
-      "is_override": false,
-      "manual_time_min": 26.1,
-      "copilot_time_min": 13.1,
-      "time_saved_min": 13.0
+      "analyst_disposition": "Investigate",
+      "is_override": true,
+      "manual_time_min": 31.4,
+      "copilot_time_min": 14.0,
+      "time_saved_min": 17.4
     },
     {
       "alert_id": "ALT-PILOT-0007",
@@ -176,9 +176,9 @@
       "ai_recommendation": "Close",
       "analyst_disposition": "Close",
       "is_override": false,
-      "manual_time_min": 41.1,
-      "copilot_time_min": 15.9,
-      "time_saved_min": 25.2
+      "manual_time_min": 34.1,
+      "copilot_time_min": 13.8,
+      "time_saved_min": 20.3
     },
     {
       "alert_id": "ALT-PILOT-0008",
@@ -188,9 +188,9 @@
       "ai_recommendation": "Close",
       "analyst_disposition": "Close",
       "is_override": false,
-      "manual_time_min": 39.6,
-      "copilot_time_min": 12.7,
-      "time_saved_min": 26.9
+      "manual_time_min": 36.6,
+      "copilot_time_min": 14.8,
+      "time_saved_min": 21.8
     },
     {
       "alert_id": "ALT-PILOT-0009",
@@ -200,9 +200,9 @@
       "ai_recommendation": "Investigate",
       "analyst_disposition": "Investigate",
       "is_override": false,
-      "manual_time_min": 32.1,
-      "copilot_time_min": 11.7,
-      "time_saved_min": 20.4
+      "manual_time_min": 27.4,
+      "copilot_time_min": 13.9,
+      "time_saved_min": 13.5
     },
     {
       "alert_id": "ALT-PILOT-0010",
@@ -212,9 +212,9 @@
       "ai_recommendation": "Investigate",
       "analyst_disposition": "Investigate",
       "is_override": false,
-      "manual_time_min": 30.0,
-      "copilot_time_min": 12.2,
-      "time_saved_min": 17.8
+      "manual_time_min": 30.4,
+      "copilot_time_min": 12.7,
+      "time_saved_min": 17.7
     },
     {
       "alert_id": "ALT-PILOT-0011",
@@ -224,9 +224,9 @@
       "ai_recommendation": "Investigate",
       "analyst_disposition": "Investigate",
       "is_override": false,
-      "manual_time_min": 26.4,
-      "copilot_time_min": 13.6,
-      "time_saved_min": 12.8
+      "manual_time_min": 29.6,
+      "copilot_time_min": 13.4,
+      "time_saved_min": 16.2
     },
     {
       "alert_id": "ALT-PILOT-0012",
@@ -236,9 +236,9 @@
       "ai_recommendation": "Escalate",
       "analyst_disposition": "Escalate",
       "is_override": false,
-      "manual_time_min": 38.8,
-      "copilot_time_min": 14.5,
-      "time_saved_min": 24.3
+      "manual_time_min": 41.0,
+      "copilot_time_min": 13.8,
+      "time_saved_min": 27.2
     },
     {
       "alert_id": "ALT-PILOT-0013",
@@ -248,9 +248,9 @@
       "ai_recommendation": "Escalate",
       "analyst_disposition": "Escalate",
       "is_override": false,
-      "manual_time_min": 37.9,
-      "copilot_time_min": 16.4,
-      "time_saved_min": 21.5
+      "manual_time_min": 30.6,
+      "copilot_time_min": 12.4,
+      "time_saved_min": 18.2
     },
     {
       "alert_id": "ALT-PILOT-0014",
@@ -260,9 +260,9 @@
       "ai_recommendation": "Escalate",
       "analyst_disposition": "Escalate",
       "is_override": false,
-      "manual_time_min": 27.6,
-      "copilot_time_min": 10.8,
-      "time_saved_min": 16.8
+      "manual_time_min": 30.0,
+      "copilot_time_min": 11.5,
+      "time_saved_min": 18.5
     },
     {
       "alert_id": "ALT-PILOT-0015",
@@ -272,9 +272,9 @@
       "ai_recommendation": "Investigate",
       "analyst_disposition": "Investigate",
       "is_override": false,
-      "manual_time_min": 26.6,
-      "copilot_time_min": 11.6,
-      "time_saved_min": 15.0
+      "manual_time_min": 32.8,
+      "copilot_time_min": 14.4,
+      "time_saved_min": 18.4
     },
     {
       "alert_id": "ALT-PILOT-0016",
@@ -284,9 +284,9 @@
       "ai_recommendation": "Escalate",
       "analyst_disposition": "Escalate",
       "is_override": false,
-      "manual_time_min": 26.0,
-      "copilot_time_min": 11.5,
-      "time_saved_min": 14.5
+      "manual_time_min": 30.5,
+      "copilot_time_min": 11.4,
+      "time_saved_min": 19.1
     },
     {
       "alert_id": "ALT-PILOT-0017",
@@ -296,9 +296,9 @@
       "ai_recommendation": "Investigate",
       "analyst_disposition": "Investigate",
       "is_override": false,
-      "manual_time_min": 39.5,
-      "copilot_time_min": 13.9,
-      "time_saved_min": 25.6
+      "manual_time_min": 38.4,
+      "copilot_time_min": 14.6,
+      "time_saved_min": 23.8
     },
     {
       "alert_id": "ALT-PILOT-0018",
@@ -306,11 +306,11 @@
       "analyst_id": "ANALYST-03",
       "analyst_name": "Elena Rostova",
       "ai_recommendation": "Close",
-      "analyst_disposition": "Close",
-      "is_override": false,
-      "manual_time_min": 34.9,
-      "copilot_time_min": 14.3,
-      "time_saved_min": 20.6
+      "analyst_disposition": "Investigate",
+      "is_override": true,
+      "manual_time_min": 33.5,
+      "copilot_time_min": 11.9,
+      "time_saved_min": 21.6
     },
     {
       "alert_id": "ALT-PILOT-0019",
@@ -320,9 +320,9 @@
       "ai_recommendation": "Close",
       "analyst_disposition": "Close",
       "is_override": false,
-      "manual_time_min": 32.2,
-      "copilot_time_min": 11.0,
-      "time_saved_min": 21.2
+      "manual_time_min": 26.8,
+      "copilot_time_min": 10.3,
+      "time_saved_min": 16.5
     },
     {
       "alert_id": "ALT-PILOT-0020",
@@ -332,9 +332,9 @@
       "ai_recommendation": "Close",
       "analyst_disposition": "Close",
       "is_override": false,
-      "manual_time_min": 35.6,
-      "copilot_time_min": 11.3,
-      "time_saved_min": 24.3
+      "manual_time_min": 32.2,
+      "copilot_time_min": 11.0,
+      "time_saved_min": 21.2
     }
   ]
 }
