@@ -2,7 +2,7 @@ import json
 import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from app.utils.config import AUDIT_LOG_FILE
 
 class AuditLogger:
